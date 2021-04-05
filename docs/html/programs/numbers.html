@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>javascript numbers</h2>
+        <p>numbers can be written as with or without decimals.</p>
+        <p id="demo"></p>
+
+
+
+        <h2>numbers</h2>
+
+        <p id="demo1"></p>
+        <p>NaN(Not a number)</p>
+
+
+        <h2>infinity</h2>
+        <p id="demo2"></p>
+        <p>infinity</p>
+        <script>
+            var x = 100;
+            var y = 10;
+            var z = x/y;
+           document.getElementById("demo").innerHTML = z;
+            </script>
+        
+        <script>
+            var x = 100;
+            var y = "apple";
+            document.getElementById("demo1").innerHTML = x / y ;
+        </script>
+        <script>
+            var myNumber = 2; 
+            var txt = "";
+            while (myNumber != Infinity) {
+               myNumber = myNumber * myNumber;
+               txt = txt + myNumber + "<br>";
+            }
+            document.getElementById("demo2").innerHTML = txt;
+            </script
+  
+    </body>
+
+</html>

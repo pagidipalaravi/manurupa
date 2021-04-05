@@ -1,0 +1,23 @@
+Which pattern are you following to develop application?
+MVC pattern
+whats RDBMS?
+what is enterprise application?
+how to install the database?
+how to connect the database?
+how to unlock hr schema in oracle 11g?
+ALTER USER hr ACCOUNT UNLOCK IDENTIFIED BY hr;
+how to check current login user in oracle sql?
+C:\Users\Uday Kiran Mallela\AppData\Local\Programs\Microsoft VS Code\Code.exe
+
+
+1.RDBMS?
+relational database management system.
+2.what are the database relation?
+3.normalization?
+4.what is schema?
+5.what is user?
+6.what is difference between schema and user?
+7.waht is table?
+8.what is delete,trumcat,drop table?
+9.what is select?
+10.what is view?
