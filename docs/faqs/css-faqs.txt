@@ -1,0 +1,8 @@
+1.What is Z-index?
+	z- index means alligning element on top of behind another element. it is works only position propertys.
+2.What are position property values?
+	position:fixed;
+	position:relative;
+	position:static;
+	position:sticky;
+3.

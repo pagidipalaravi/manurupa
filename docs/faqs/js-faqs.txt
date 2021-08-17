@@ -1,0 +1,7 @@
+1.How to use arrow function?
+	arrow functions are anonymous function -the function without a name.
+	we can use arrow function use write smaller function syntax.
+	it is more readable and structured.
+2.What is the difference between ES5 and ES6?
+	major difference arrow functions are introduced in ES6.
+	
