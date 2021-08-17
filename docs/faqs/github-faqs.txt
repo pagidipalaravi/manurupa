@@ -1,0 +1,7 @@
+1.What is cloning?
+	Creating a local repository to remote repository
+2.What is commit?
+	commiting the changes into local repository.
+3.What is push?
+	pushing the changes local repository to remote repository.
+
