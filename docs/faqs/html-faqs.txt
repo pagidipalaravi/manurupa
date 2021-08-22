@@ -1,0 +1,10 @@
+1.What is the use of <span>tag?
+	it is a unsematic tag.
+	the <span>tag is an inline container used to mark of part of the text,or part of a document.
+	the <span> tag is easily styled by css or manipulated by javascript.
+2.What is the use of <div> tag?
+	defines a division or a section in an html document.
+	it is used as a containerof html elements.
+	it is easily styled by css or manipulated by javascript.
+3.
+	

@@ -4,4 +4,17 @@
 	it is more readable and structured.
 2.What is the difference between ES5 and ES6?
 	major difference arrow functions are introduced in ES6.
+3.What is hoisting? 
+4.what is the difference between arrays and object?
+	if want to group similar properteys by using arrays.
+5.What is difference between "" and undefined?
+6.What is closure in javascript?
+	It is a javascript variable.
+	Inner function is acess to the outer function variable.
+	In every time closure function is created with the creation of a function.
+7.What is callback function?
+	Callback function can be defined as function passed into another function as a parameter.
+	Callbacks generally used to continue the execution after completing asynchoronous operation. it is also called as asynchronous callbacks.
+
+	
 	

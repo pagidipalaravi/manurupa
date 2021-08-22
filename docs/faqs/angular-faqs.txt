@@ -1,7 +1,7 @@
-1.what is interceptors?
+1.What is interceptors?
 	this is a unique type angular service.
 	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.
-2. What is Dependency Injection?
+2.What is Dependency Injection?
 	By using angular Di to increase the flexibility and modularity in your application.
 3.what is difference between JIT and AOT?
 	jit and AOT both are same compilers 
@@ -10,5 +10,45 @@
 	AOT- Ahead-of- time
 	 it compiled by the machine itself using cli
 	 all code compiled together.suitable for production builds.
-4. What is pipes?
+4.What is pipes?
 	it takes data as input transform into output.
+5.What is lazy loading?
+6. What is view encapsulation?
+	The template and style defined within the component can effect the whole application or vice versa. Angular provides three encapsulation stratagies.
+	They are
+		1.Emulated -> styles from the main HTML propagate to the component.
+		2.Native-> Styles from the main HTML don't propagate to the component.
+		3.None->Styles from the component propagate back to the main HTML and therfore it visible for all components on the page.
+7.What is difference between TDF and Reactive forms?
+Template Driven Froms:--> 
+	It used in simple forms like login page. with two way data binding.
+	We can simply assign value to variable from ui and vice versa.
+
+	Easy to use
+	Suitable for simple scenarios and fails for complex scenarios
+	Similar to AngularJS
+	Two way data binding(using [(NgModel)] syntax)
+	Minimal component
+	Automatic track of the form and its data(handled by Angular)
+	Unit testing is another challenge.
+	
+	Simple example is if we are givng two way binding for the below input.
+	<input [(ngModel)]="username">
+	
+	We can simply display the value that user is giving in the UI.
+	<p>Hello {{username}}!</p>
+	
+Reactive forms:-->
+	Complex forms with more number of fields.
+	Multiple complex validation are there. Custom validations are required.
+	Require JSON structure to be send with the values in the form.
+	
+	More flexible, but needs a lot of practice
+
+	Handles any complex scenarios
+	More component code and less HTML markup
+	Reactive transformations can be made possible such as
+	Handling a event based on a debounce time
+	Handling events when the components are distinct until changed
+	Adding elements dynamically
+	Easier unit testing
