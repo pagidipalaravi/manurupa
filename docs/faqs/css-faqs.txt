@@ -1,0 +1,17 @@
+1.What is Z-index?
+	z- index means alligning element on top of behind another element. it is works only position propertys.
+2.What are position property values?
+	position:fixed;
+	position:relative;
+	position:static;
+	position:sticky;
+	HTML elements position is static by default.
+3.What s psudeo classes?
+	Psudeo classes starts with (:).
+	:active:--> It is used to add style to an active element.
+	:hover:-->It adds special effects to an element when the user moves the mouse pointer over the element.
+	:link:--> It adds style to the unvisited link.
+	:visited:-->It adds style to a visited link.
+	:lang:--> It is used to define a language to use in a specified element.
+	:focus:--> It selects the element which is focused by the user currently.
+	:first:-->child	It adds special effects to an element, which is the first child of another element.

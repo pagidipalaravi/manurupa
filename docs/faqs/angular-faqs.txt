@@ -1,184 +1,7 @@
-How to check node version?
-	Open command prompt or terminal to give “node –v”.
-	Current version is “14.6”
-How to check Angular version?
-	Open command prompt or terminal to give “npm  --v”.
-	Current version is “12”
-Angular:
-Angular is the most popular JavaScript framework and platform for developing client-side (front end) mobile and desktop applications or single page applications.
-Angular community has released his latest version known as angular8.
-Angular8:
- Angular8 is a client side typescript based framework which is used to create dynamic web applications.
-It is very similar to previous versions.
-Angular8 is an open source; it is written in typescript and compiled into JavaScript. Which has tendency to change data/information with respect to 3parameters? 
-Dynamic web applications are simply dynamic websites.
-	Time-to-time. (news update web applications)
-	Location-to-location.
-	User –to – user. (Gmail, face book type applications)
-How to install Angular:
-1.	Install node.js
-2.	To check your version, run ng –version.
-3.	To use npm to install Angular CLI. 
-To give npm install –g @angular/cli (or) npm install –g@angular/cli@latest.
-  How to create an APP in Angular:
-1.	To create an app “ng new app_name”.
- Ex:  ng new angular demo.
-2.	You can see that a folder is created. This is your first creating APP.
-3.	Open that folder and you will see the some sub folders.
-4.	Here, src is the main folder of your project. Open the src folder you will see the some other sub folders.
-
-
-1. Angular is built is using typescript.
-2. Implement responsive navigation using bootstrap and angular?
-3. Implement table with pagination?
-4. What is module?
- 	Collection of components is called module, which can perform specific task.
-4. How to check the rest url is working or not?
-	By using postman.
-5.  What is difference between null and undefined in Javascript?
-	Undefined: It means a variable declared, but no value has been assigned a value.
-	var demo;
-alert(demo); //shows undefined
-	Null:
-	var demo = null;
-alert(demo); //shows null
-6. How to invoke the rest services in angular?
- by using httpclient module.
-8. How the angular app gets started first?
-9. What happen when open the angular app in the browser?
-10. What is a basic building block of angular?
-Modules, components, data bindings, directives, services, dependency injection these all are the basic building blocks in angular. 
-	
-11.What is starting page of angular app?
-main.ts
-	app.module.ts
-		@NgModule
-			declaration
-			imports
-			providers
-			bootstrap
-				app.component
-12. How to create component with in the folder?
-	ng g c  foldername/component name.
-12. what is the root component in angular?
- 	Main.ts file is root component in angular.
-13. Whare is app root component is configured?
-	App root component is configured in app.component.ts file 
-	@component({
-		Selector: ‘app-root’})
-14. What happen when you run ng serve command from CLI?
-	To build and serve the application.
-	The CLI supports a live browser reload experience. 
-	Using this Url “http://localhost:4200”
-	
-15. What is difference between promise and observable?
- Observable: 
-Observable is a synchronized (sequential) 
-Once you initiate the request we can cancel the request. 
-We will use observables to retrieve the large volume of data like arrays, collections, map and list. 
-Promise:
-Promise is an asynchronous (parallel)
-Once you initiate the request we cannot cancel the request.
-We will use promise for to retrieve single value or error message.
-
-
-16.What is difference between synchronous and asynchronous?
-Synchronous: If your calling one rest request it will wait until execution completes.
-Asynchronous: you can call multiple rest requests parallely.  
-
-17.How to execute some logic the time of component load or page load?
-	Implement the “OnInit” class and override the “ngOnit” method.
-
-
-
-
-
-18. How to call rest services?
-Create a service package and service classes and add the service classes in the in the provider section of app.module.ts 
-Use the HttpClient angular library and request methods.
-19. What is angular life cycle?
- Angular calls lifecycle hook methods on directives and components as it creates, changes, and destroys them.
-	OnInit
-	ngOnInit
-  	
-20. If I want to execute some logic at time of class initialization in angular?
-
-21. Where we have to write that logic?
-
-22. How to add bootstrap in angular?
-	Go to “angular.json” file 
-	Then select “styles”:[
-	“node_Modules/bootstrap/css/bootstrap.css/bootstrap.min.css.
-(Or)
-	Following bootstrap CDNs in index.html file
-
-23. How to install bootstrap in angular cli?
-
-	npm install –save bootstrap@4
-
-24. How to uninstall node packages?
-
-	npm uninstall <package_name>
-
-25. What is CDN?
-  
-	Content delivery network (CDN).
-
-
-26. How many ways to add bootstrap in angular project?
-
-•	Including the Bootstrap CSS and JavaScript files in the <head> section of the index.html file of your Angular project with a <link> and <script> tags.
-•	Importing the Bootstrap CSS file in the global styles.css file of your Angular project with an @import keywords.
-•	Adding the Bootstrap CSS and JavaScript files in the styles and scripts arrays of the angular.json file of your project
-
-
-How many angular form approaches there?
-
-Template driven and reactive 
-
-How to choose the angular form approach?
-
-Reactive Forms: reactive forms are most robust, scalable, testable and reusable. It is using small login forms. It is used to “reactive formModules”.
-Template-Driven Forms: Template driven forms are used in basic form requirements and logic that can be managed soley in the template, template driven forms are good fit for bigger applications. It mostly uses in directives. And “formModule”.
-
-What are the difference between TDF and RF? 
-•	Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
-•	Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
-
-
-What is difference between mutable and immutable?
-
-Template driven forms are unstructured and mutable and reactive forms are structured and immutable. 
-
-
-Can we access TDF values without using  Viewchild?
-
-yes we can access 
-
-form.value.firstname
-
-What is difference between dirty-touch and in-valid in TDF? 
-if you are touched and enter the value is dirty in that dirty is error then become a invalid.
-1. Touched 
-2. Dirty
-3. Invalid
-The difference between touched and dirty is that with touched the user doesn’t need to actually change the value of the input control.
-
-
-
-
-How to implement logging in ui applications?
-	Console.error();
-	Console.info();
-	Console.warn();
-	Console.log();
-
-How to implement navigation in angular application?
-
-1.what is interceptors?
+1.What is interceptors?
 	this is a unique type angular service.
 	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.
-2. What is Dependency Injection?
+2.What is Dependency Injection?
 	By using angular Di to increase the flexibility and modularity in your application.
 3.what is difference between JIT and AOT?
 	jit and AOT both are same compilers 
@@ -187,208 +10,45 @@ How to implement navigation in angular application?
 	AOT- Ahead-of- time
 	 it compiled by the machine itself using cli
 	 all code compiled together.suitable for production builds.
-4. What is pipes?
+4.What is pipes?
 	it takes data as input transform into output.
-Links:
+5.What is lazy loading?
+6. What is view encapsulation?
+	The template and style defined within the component can effect the whole application or vice versa. Angular provides three encapsulation stratagies.
+	They are
+		1.Emulated -> styles from the main HTML propagate to the component.
+		2.Native-> Styles from the main HTML don't propagate to the component.
+		3.None->Styles from the component propagate back to the main HTML and therfore it visible for all components on the page.
+7.What is difference between TDF and Reactive forms?
+Template Driven Froms:--> 
+	It used in simple forms like login page. with two way data binding.
+	We can simply assign value to variable from ui and vice versa.
 
-https://www.interviewbit.com/angular-interview-questions/
+	Easy to use
+	Suitable for simple scenarios and fails for complex scenarios
+	Similar to AngularJS
+	Two way data binding(using [(NgModel)] syntax)
+	Minimal component
+	Automatic track of the form and its data(handled by Angular)
+	Unit testing is another challenge.
+	
+	Simple example is if we are givng two way binding for the below input.
+	<input [(ngModel)]="username">
+	
+	We can simply display the value that user is giving in the UI.
+	<p>Hello {{username}}!</p>
+	
+Reactive forms:-->
+	Complex forms with more number of fields.
+	Multiple complex validation are there. Custom validations are required.
+	Require JSON structure to be send with the values in the form.
+	
+	More flexible, but needs a lot of practice
 
-Wipro interview questions:
-
-1.	Git and github?
-2.	Why are you using angular compare to other frameworks?
-3.	Dependency injection?
-4.	 html tags using in javascript drawbacks?
-5.	Architecture of httprequest(rest services)?
-6.	How to use variables in angular?
-7.	Single page application?
-8.	How to use call and apply in javascript?
-9.	Which type third party librarys are using angular application?
-10.	Which softwares are used for testing?
-
-Telephonic round:
-1.	Difference between website and web application?
-Website is a static html content.
-Web application is a dynamic html content it will get the content from the Rest server. 
-2.	What is difference between display: none and visibility: hidden?
-Display: none: remove the element from the document.it does not take up any space.
-Visibility: hidden: hides the element but it still takes up space in layout.
-3.	Sematics in HTML?
- In HTML there are some sematic elements that can be used to different parts of  a webpage.
-
-1.	Introduction
-We can develop reactive single page applications by using angular.
-
-2.	What is angular?
-Angular is a javascript framework which allows you to create reactive single page applications.
-What is SPA?
-The application which has only one HTML file and bunch of javascript code we got from the server and every change is render in browser.
-The javascript changes the DOM, changes the content in browser, by changing the HTML code during run time.
-3.	What is difference between angularJs and angular?
-Angularjs is javascript based frame work
-Angular is a typescript based frame work.
-4	Difference between angular vs angular 2 vs angular 8
-Anjualr.js is the first version. It is also referred as angular1 or angular
-Angular 2 is completely re –written. And it is different from angular.js
-For every six months a new release of angular is happening. Now we are using angular 8. It has advanced features.
-       6.   How to set up angular project?
-	We need angular command line interface (CLI) to create angular projects. So for that,
-	First install node.js
-	Then open command prompt. Type following command: 
-npm install –g @angular/cli@latest
-
-How to create first app?
-Go to your required folder. From that open command prompt and type following command: 
-ng new firstapp
-Now it will ask you to add routing or not, press y or n
-Now it will ask style sheet format, choose CSS
-
-How to run angular application?
-Now go to application folder. Open command from that folder. Type following command:   
-ng serve
-This application defaults runs on http://localhost:4200 address.
-        7.   How to edit the angular firstapp?
-	To edit a code we need code editor or an IDE. Ex. Visual studio.
- 	Add your project folder to visual studio.
-       	We have to write code in only src/app folder only.
-      
-
-     10. 	What is typescript?
-It is a super set of javascript. It is strongly typed. This type script does not load in bowser. It is compiled to javascript. 
-     11. 	How to integrate bootstrap with angular project in visual studio?
-Open terminal in vs code and type following command
-Npm install  --save bootstrap@3. Then a bootstrap folder is created in node modules folder.
-Now go to angular.json folder in vs code and search for styles, now add bootstrap folder relative path there.
-
-How to check whether bootstrap is successfully added or not?
-Go to http://localhost:4200 and go to inspect element and open styles tag there u will find bootstrap with version.
-      13. 	What is module?
-Group components, directives, pipes and services that are related and these modules can be combined with other modules to create an application. 
-      14.  	How an angular app gets loaded and started?
-Angular gets started, main.ts file gets started, there we bootstrap an angular application and we pass app module as an argument .In this module, we tell angular hey there is the app component which you know when you try to start yourself and angular reads the set we pass here and therefore selector, app-root and now angular is able to handle app-root in the index.html file
-main.ts  >>   app.Module.ts  >>  app.component.ts  >>  index.html  >>  app.component.html  
-      15. 	Why components are important?
-The components are important building block of angular. These are used to split one page into small components. Every component has selector, template, style and other properties. 
-      16.  	How to create a new component?
-	Type following command in terminal in vs code
-	Ng g c componentName
-
-      17.  	What is the role of app module and component declaration?
-	Modules basically bundle different pieces, for example components of app, into packages.
-Creating a component is not sufficient we have declare in ngmodule in appmodule.ts as angular don’t know about these components.
-      18. 	How to use custom components?
-By using selector after adding them (COMONENTS) to app module
-      19.  	How to create new components with CLI and nested components?
-Open terminal and enter “ng g c componentname” press enter.
-Nested components means components within components. If we want generate component in another component then follow below command
-Ng g c oldcomponent or folder/newcomponentname 
-      20. 	How to work with component templates?
-Here template means HTML code. We can use internal or external templates. Both internal and external templates are represented in templateUrl property.
-      21. 	How to work with styles?
-We can use internal or external styles. Both internal and external style sheets are represented in stylesUrl property. Here any no. of external style sheets can be added.
-      22. 	What is component selector?
-The selector attribute allows us to define how Angular is identified when the component is used in HTML. It tell Angular to create and insert an instance of this component where it finds the selector tag in the Parent HTML file in your angular app.
-     24. 	What is data binding?
-Communication between typescript code (business logic) and template. 
-     25.	 What is string interpolation?
-Data transfer from type script to html in one direction by this technique.  {{}}
-     26. 	What is Property binding?
-Property binding allows Angular to directly access the elements property in the html. When you say [value] = "hello" Angular is grabbing the value property of the element, and setting your variable as that property's value.
-      27. 	Difference between property binding and event binding?
-If you want to output something in your template, print some text, use string interpolation.
-If you want to change some property, be that of html element or of directive, or a component, then use property binding.
-
-      28.	 What is event binding?
-A click, hover, or a keyboard action are all events that you can use to call component logic within Angular. That's what Angular event binding is all about. It's one-way data binding, in that it sends information from the view to the component class.
-Example: (onClick)=”submit()”;
-       30. 	How to pass data with event binding?
-We will create onClick or any even action and for that, method will be passed. And that method is implemented where it is needed. When the user click on button that method will be called and the implementation logic will be executed.
-
-
-      32. 	What is two way data binding?
-The angular is not only watching your variables for changes. It also keeps track of changes that are made by the user and updates the variables accordingly. The transfer between model (typescript) and view (html) takes place at a time by the decorator ngModel
-example:     [(ngModel)] = ”serverName”;
-       33. 	Combining all forms of data binding
-	Even binding to listen to the click
-	String interpolation to output the data
-	Property binding to enable the button in the first place after some duration
-	Two way binding, to fetch our input data. 
-
-      35. 	What are the directives?
-Directive are the instructions in the DOM. These are add extra behavior to html.
-Directives are used to manipulate the DOM. By using Angular directives, you can change the appearance, behavior or a layout of a DOM element. It also helps you to extend HTML.
-There 3 types of directives are available.
-Component Directives
-Structural Directives
-Attribute Directives
-https://www.javatpoint.com/angular-8-directives 
-
-      36. 	What is ngIf directive?
-It works like if statement. It is a structural directive. The ngif element is used to add elements to the HTML code if it evaluates to true, else it will not add the elements to the HTML code. It changes DOM dynamically.
-       37.	 How to enhance ngIf with else?
-	We will be using <ng-template #else Block>
-If the ngIf condition fails then else block will be executed, hence program will not terminated.
-
-       38. 	 What is ngStyle directive?
-It is an attribute directive. The ngStyle directive facilitates you to modify the style of an HTML element using the expression. You can also use ngStyle directive to dynamically change the style of your HTML element.
-Example:   p [ngStyle] = "{'background-color':red;}">
-      
-
-
-      39. 	What is ngClass directive?
-The ngClass directive is used to add or remove CSS classes to an HTML element dynamically.
-[ngClass]="{'text-success': true}". Here if the condition is true then it adds text-success style to HTML.
-       40.	 What is ngFor?
-It is a structural directive. The *ngFor directive is used to repeat a portion of HTML template once per each item from an iterable list (Collection).
-Example:    *ngFor= let employee of employees
-
-1.what is interceptors?
-	this is a unique type angular service.
-	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.
-2. What is Dependency Injection?
-	By using angular Di to increase the flexibility and modularity in your application.
-3.what is difference between JIT and AOT?
-	jit and AOT both are same compilers 
-	JIT-just in time
-	jit compiles your application in the browser at run time. it is suitable for local development. and each file compiled seperatly.
-	AOT- Ahead-of- time
-	 it compiled by the machine itself using cli
-	 all code compiled together.suitable for production builds.
-4. What is pipes?
-	it takes data as input transform into output.
-
-1.what is directives?
-2.what is intersectors?
-2.what is observable?
-3.life cycle hooks?
-4.Aot and jit  compiler?
-5.injectable?
-6.how to load angular Application?
-7.what is clousure?
-8.undefined and null?
-9.display:none, visibility:hidden?
-10.Es5 and ESC6?
-11.shematic of html?
-12.web worker?
-13.position propertey?
-14.difference between local scope and session scope in html?
-15.media quarries?
-16.how to develop multi languagage web applications?
-	we are using custom text librarys based on user loggedin country we load different text file into our application.
-
-
-
-
-
-
-
-
- 
-
-
-
-
- 
- 
- 
-
+	Handles any complex scenarios
+	More component code and less HTML markup
+	Reactive transformations can be made possible such as
+	Handling a event based on a debounce time
+	Handling events when the components are distinct until changed
+	Adding elements dynamically
+	Easier unit testing
