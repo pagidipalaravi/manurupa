@@ -1,0 +1,13 @@
+How can i know the type of variable?
+	typeof
+What is function in js
+What is diff b/w parameters and arguments?
+what is diff b/w local var and global var?
+What is diff types of data types in js?
+	string
+	number
+	boolean
+	array
+	object
+	undefined
+What is diffrence b/w undefined and null?
