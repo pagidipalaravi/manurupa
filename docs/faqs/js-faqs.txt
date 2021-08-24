@@ -8,6 +8,7 @@
 	Arrow functions
 	for..of
 	object manipulation became easy.
+	spread operator(. . .) also in ES6.
 3.What is hoisting?
 	Hoisting is a concept.
 	we must declare the variable before using.
@@ -22,7 +23,11 @@
 	Callback function can be defined as function passed into another function as a parameter.
 	Callbacks generally used to continue the execution after completing asynchoronous operation. it is also called as asynchronous callbacks.
 7.What is difference between block scope,function scope and global scope?
-	
+	function scope and global scope is introduced in ES5, block scope is introduced in ES6.
+	ES6 is introduced two important keywords "let" and "const" these both are  in block scope.
+	variables declared inside the function is called "function scope"
+	variables declared otside the function is called "global scope".
+	global variables can be accessed any where in the javascript program.	
 8.What difference between == and === ?
 	==   operator comapares the values but not type and memory.
 	=== operator comapres values,types and memory also.
@@ -31,6 +36,23 @@
 	var redeclartion possible.
 	let redeclartion is not  possible.
 	const reassignment is not possible.
+10.I want to execute the some logic at the time of page load?
+	call a js function on a body tag bind with onload attribute.
+	<body onLoad="dateFunction()"></body>
+11.What is difference between undefined and null?
+	undefined-> assigned a value ,variable is not declared is called unde   
+	fined.
+	null-> variable is declared and assigned to null. it can be print in object.
+	
+12.what is spread operator?
+	by using ". . ."
+13.what is iife?
+	Immediately Invoked Function Expression.
+	TO avoiding the variable hosting from within the blocks.
+	(function() { console.log("Immediately Invoked Function Expression")})();  
+14.What is modularization?
+15.how to debugging the errors in js?
+16.how to link the one component to another component?
 
 
 	

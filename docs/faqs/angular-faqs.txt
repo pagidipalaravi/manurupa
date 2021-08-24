@@ -51,4 +51,11 @@ Reactive forms:-->
 	Handling a event based on a debounce time
 	Handling events when the components are distinct until changed
 	Adding elements dynamically
-	Easier unit testing
+	Easier unit testing.
+Angular:
+1.What is dependency injection?
+2.what are the directives?
+3.how to use pipes?
+4.media quaries?
+5.what is routing?
+6.what is services?
