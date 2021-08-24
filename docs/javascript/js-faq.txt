@@ -1,5 +1,5 @@
-How can i know the type of variable?
-	typeof
+How can i know the type of idenetifier?
+	typeof idenetifier_name
 What is function in js
 What is diff b/w parameters and arguments?
 what is diff b/w local var and global var?
@@ -11,3 +11,28 @@ What is diff types of data types in js?
 	object
 	undefined
 What is diffrence b/w undefined and null?
+What is the difference between Array and Object in JS?
+	Array is for similar propeties?
+	Object is for multiple properties and different values?
+Wow to define object in js?
+What is this in js?
+	Current object reference
+What is an Event?
+How to create an object in JS?
+ new keyword
+What is the different b/w == and === operators ?
+	value	value, type and storage
+What are the string methods
+Diff b/w slice and subStr?
+What is diff b/w else if ladder and switch case in js?
+
+I want to execute my logic atleast once, so i have to do?
+
+What is the diif b/w while and do while?
+What is diff b/w break and continue?
+Difference Between Undefined and Null and ""?
+I want to execute some logic at the time of page load, what is process?
+	Bind js function with onload attribute of body tag.
+	Ex: <body onload="onLoad()">
+
+
