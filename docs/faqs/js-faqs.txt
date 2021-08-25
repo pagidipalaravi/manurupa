@@ -45,14 +45,16 @@
 	null-> variable is declared and assigned to null. it can be print in object.
 	
 12.what is spread operator?
-	by using ". . ."
+	by using ". . ." is called spread operator or rest operator.
+	While merging if we use Spread operator automatially application performance will be increases.
+	
 13.what is iife?
 	Immediately Invoked Function Expression.
 	TO avoiding the variable hosting from within the blocks.
 	(function() { console.log("Immediately Invoked Function Expression")})();  
 14.What is modularization?
 15.how to debugging the errors in js?
-16.how to link the one component to another component?
+16.How to link the one component to another component?
 
 
 	
