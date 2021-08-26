@@ -4,6 +4,7 @@
 	if you want write a function within the function and cannot be  acessed outside the we can go for arrow function.
 	it is more readable and structured.
 2.What is the difference between ES5 and ES6?
+<<<<<<< Updated upstream
 	let and const 
 	Arrow functions
 	for..of
@@ -13,6 +14,12 @@
 	Hoisting is a concept.
 	we must declare the variable before using.
 	We have to  move variable declaration to the top. after that we have to use the variables.
+=======
+	major difference arrow functions are introduced in ES6.
+	IIFEs
+	let and const
+3.What is hoisting? 
+>>>>>>> Stashed changes
 4.what is the difference between arrays and object?
 	if want to group similar properteys by using arrays.
 5.What is closure in javascript?

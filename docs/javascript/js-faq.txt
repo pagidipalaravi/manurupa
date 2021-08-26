@@ -25,14 +25,19 @@ What is the different b/w == and === operators ?
 What are the string methods
 Diff b/w slice and subStr?
 What is diff b/w else if ladder and switch case in js?
-
 I want to execute my logic atleast once, so i have to do?
 
 What is the diif b/w while and do while?
 What is diff b/w break and continue?
 Difference Between Undefined and Null and ""?
 I want to execute some logic at the time of page load, what is process?
-	Bind js function with onload attribute of body tag.
+	1. Bind js function with onload attribute of body tag.
 	Ex: <body onload="onLoad()">
+	2. Use IIFE global scope function
+	3. JQuery
+	4. NodeJS
+	
+	
+	
 
 
