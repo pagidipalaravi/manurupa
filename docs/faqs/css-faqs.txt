@@ -15,3 +15,26 @@
 	:lang:--> It is used to define a language to use in a specified element.
 	:focus:--> It selects the element which is focused by the user currently.
 	:first:-->child	It adds special effects to an element, which is the first child of another element.
+4.What is advantages and disadvantages of reffereing css,js files from CDN?  		
+	No maintanance
+	auto update.
+	application size is less.
+	disadvantages:
+	if the CDN server is down then your application won't render properly.
+5.What are the different values of position property?
+6.How to develop responsive web applications by ussing css media quries?
+	by using css media quaries we can develop the  Responsive web applications.
+	based on our requirement we have divide our screen width different categories.
+	min 320 and max 767 for mobiles.
+	min 768 and max 1023 for tablets.
+	min 1024 for desktops.
+	note: width and float is very important.
+7.What is difference between display inline,inline-block and block?
+8.What is display:none and visibility:hidden?
+	display:none - it dont accupuy the space.
+	visibility:hidden- it occupy the space.but code will be in there.
+9.What is difference between margin,padding?
+	Padding provides the space between the border and the content of an element.(within the element)
+	Margin provides the space between the border and outer elements.(margin from another element)
+	border is a immediatley on top of element.
+	

@@ -6,5 +6,97 @@
 	defines a division or a section in an html document.
 	it is used as a containerof html elements.
 	it is easily styled by css or manipulated by javascript.
-3.
+3.HTML Introduction:
+	Html stands for hypertext markup language.Html is standard markup language for WebPages. With html you can create the own website. And it describes the structure of a webpage. And it consist of series of elements
+HTML Elements:
+	Html elements tell the browser how to display the content.
+	Html element is defined by start tag, some content, an end tag.
+     Ex: <h1>html elements</>
+	Some elements have no content they are <br>.these elements are called empty elements. Empty elements have no end tag. 
+HTML page structure:
+	<html>
+           <head>
+                    <title> page title</title>
+           </head>
+             <body>
+                     <h1>Udaykiran</h1>
+             </body>
+	</html>
+HTML DOCUMENTS:
+	All HTML documents must start with a document type declaration.
+	<!DOCTYPE html> declaration represents the document type, and helps browsers to display web pages correctly. This declaration for HTML5. This is also called root element.
+HTML HEADINGS:
+	HTML headings defined to the <h1>to  <h6> tags.
+	<h1> is the most important headings.
+	<h6> is the least important headings.
+HTML paragraphs:
+	HTML paragraphs are defined with the <P> tag.
+	Example: <p>this is paragraph</p>
+HTML Links:
+	Html links are defined with the <a> tag.
+	The link's destination is specified in the href attribute. 
+	Attributes are used to provide additional information about HTML elements.
+	<a href=”https://google.com”>this is anchor tag</a>.
+HTML Images:
+	Html images are defined with the  <img> tag.
+Href attribute:
+	The <a> defines a hyperlink. The href  attribute is specifies url of the page.
+Absolute url: 
+	It means links to an external image that is hosted on another website.
+Relative url:
+	It links to an image that is hosted within the website.
+Width and Height attributes:
+	The image tag should contain width and height attribute, which specifies the height and width of image in pixels (px).
+Lang attributes:
+	Lang attributes is defines the language of WebPages. Lang attributes always   placed inside the <html> tag.
+HTML Styles:
+	The Html styles attributes used to add styles to an element, such a color, font size and more.	
+	In html style attributes has following syntax
+	<body  style=”property:value;”></body>
+Background color:
+	<body style=”backround-color:tomato”;>
+	<h1> this is heading</h1>
+	<p> this is paragraph</p>
+	</body>
+Set background color for two different elements is
+	<body>
+	<h1  style=”background –color:red;”>this is heading</h1>
+	<p style=”background color:yellow;”>this is paragraph</p>
+	</body>
+	In that styles
+	To use color is text colors.
+	To use font –family is text fonts.
+	To use font-size is text size.
+	To use background color for background color.
+	To use text-align is text alignments.
+Inline, Internal And External styling:
+	Inline: By using  a style attribute inside the HTML is called inline styling.
+Internal: by using a style element in the head section.
+External: by using a link element to link to an external css file.
+
+HTML Tables:
+	Html tables to allow   web developers to arrange the data into rows and columns’.
+	The <table>tag defines an html table.
+	<tr>  is the table row.
+	<th> is the table header.
+	<td> is the table data.
+Html table to add a border .
+	Ex:  table,  th , tr, td{
+            Border: 1px solid black;
+	}
+	In html table border collapse : collapse;
+Colspan attribute:
+	To make a cell span more than one column, use colspan attribute
+Rowspan: to make a cell span more than one row. Use rowspan attribute.
+Html lists:
+	This is two types, they are 
+	•	Ordered list.
+	•	Unordered list.
+	Unordered list starts with the <ul> tag. each list starts with the <li> tag.
+	The list item will be marked with bullets by default.
+	Ordered list starts with the <ol> tag. Each list starts with the <li> tag.
+	The list item starts with numbers by default.
+
+
+
 	

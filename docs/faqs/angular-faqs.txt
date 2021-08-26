@@ -51,4 +51,143 @@ Reactive forms:-->
 	Handling a event based on a debounce time
 	Handling events when the components are distinct until changed
 	Adding elements dynamically
-	Easier unit testing
+	Easier unit testing.
+
+	1. Angular is built is using typescript.
+2. Implement responsive navigation using bootstrap and angular?
+3. Implement table with pagination?
+4. What is module?
+ 	Collection of components is called module, which can perform specific task.
+4. How to check the rest url is working or not?
+	By using postman.
+5.  What is difference between null and undefined in Javascript?
+	Undefined: It means a variable declared, but no value has been assigned a value.
+	var demo;
+	alert(demo); //shows undefined
+	Null:
+	var demo = null;
+	alert(demo); //shows null
+6. How to invoke the rest services in angular?
+	by using httpclient module.
+8. How the angular app gets started first?
+9. What happen when open the angular app in the browser?
+10. What is a basic building block of angular?
+	Modules	, components, data bindings, directives, services, dependency injection these all are the basic building blocks in angular. 
+	
+11.What is starting page of angular app?
+	main.ts
+	app.module.ts
+		@NgModule
+			declaration
+			imports
+			providers
+			bootstrap
+				app.component
+12. How to create component with in the folder?
+	ng g c  foldername/component name.
+12. what is the root component in angular?
+ 	Main.ts file is root component in angular.
+13. Whare is app root component is configured?
+	App root component is configured in app.component.ts file 
+	@component({
+		Selector: ‘app-root’})
+14. What happen when you run ng serve command from CLI?
+	To build and serve the application.
+	The CLI supports a live browser reload experience. 
+	Using this Url “http://localhost:4200”
+	
+15. What is difference between promise and observable?
+ Observable: 
+	Observable is a synchronized (sequential). 
+	Once you initiate the request we can cancel the request. 
+	We will use observables to retrieve the large volume of data like arrays, collections, map and list. 
+Promise:
+	Promise is an asynchronous (parallel)
+	Once you initiate the request we cannot cancel the request.
+	We will use promise for to retrieve single value or error message.
+
+
+16.What is difference between synchronous and asynchronous?
+	Synchronous: If your calling one rest request it will wait until execution completes.
+	Asynchronous: you can call multiple rest requests parallely.  
+
+17.How to execute some logic the time of component load or page load?
+	Implement the “OnInit” class and override the “ngOnit” method.
+18. How to call rest services?
+	Create a service package and service classes and add the service classes in the in the provider section of app.module.ts 
+	Use the HttpClient angular library and request methods.
+19. What is angular life cycle?
+	Angular calls lifecycle hook methods on directives and components as it creates, changes, and destroys them.
+	OnInit
+	ngOnInit
+  	
+20. If I want to execute some logic at time of class initialization in angular?
+
+21. Where we have to write that logic?
+
+22. How to add bootstrap in angular?
+	Go to “angular.json” file 
+	Then select “styles”:[
+	“node_Modules/bootstrap/css/bootstrap.css/bootstrap.min.css.
+(Or)
+	Following bootstrap CDNs in index.html file
+
+23. How to install bootstrap in angular cli?
+
+	npm install –save bootstrap@4
+
+24. How to uninstall node packages?
+
+	npm uninstall <package_name>
+
+25. What is CDN?
+  
+	Content delivery network (CDN).
+
+
+26. How many ways to add bootstrap in angular project?
+
+	•	Including the Bootstrap CSS and JavaScript files in the <head> section of the index.html file of your Angular project with a <link> and <script> tags.
+	•	Importing the Bootstrap CSS file in the global styles.css file of your Angular project with an @import keywords.
+	•	Adding the Bootstrap CSS and JavaScript files in the styles and scripts arrays of the angular.json file of your project
+	
+How many angular form approaches there?
+
+	Template driven forms and reactive forms
+
+How to choose the angular form approach?
+
+	Reactive Forms: reactive forms are most robust, scalable, testable and reusable. It is using small login forms. It is used to “reactive formModules”.
+	Template-Driven Forms: Template driven forms are used in basic form requirements and logic that can be managed soley in the template, template driven forms are good fit for bigger applications. It mostly uses in directives. And “formModule”.
+
+What are the difference between TDF and RF? 
+	•	Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
+	•	Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
+
+
+What is difference between mutable and immutable?
+
+	Template driven forms are unstructured and mutable and reactive forms are structured and immutable. 
+
+
+Can we access TDF values without using  Viewchild?
+
+	yes we can access 
+
+	form.value.firstname
+
+What is difference between dirty-touch and in-valid in TDF? 
+	if you are touched and enter the value is dirty in that dirty is error then become a invalid.
+	1. Touched 
+	2. Dirty
+	3. Invalid
+	The difference between touched and dirty is that with touched the user doesn’t need to actually change the value of the input control.
+How to implement logging in ui applications?
+	Console.error();
+	Console.info();
+	Console.warn();
+	Console.log();
+
+
+
+
