@@ -1,25 +1,43 @@
-1.What is interceptors?
+What is Angular?
+	Angular is a javascript framework which allows you to create reactive single page applications.
+What is SPA?
+	The application which has only one HTML file and bunch of javascript code we got from the server and every change is render in browser.
+	The javascript changes the DOM, changes the content in browser, by changing the HTML code during run time.
+What is difference between angularJs and angular?
+Architecture
+	AngularJS uses MVC or Model-View-Controller architecture, where the Model contains the business logic, Controller processes information and View shows the information present in the Model.
+	Angular replaces controllers with Components. Components are nothing but directives with a predefined template.
+								
+Language
+	AngularJS uses JavaScript language, which is a dynamically typed language.
+	Angular uses TypeScript language, which is a statically typed language and is a superset of JavaScript. By using statically typed language, Angular provides better performance while developing larger applications.
+
+Mobile Support
+	AngularJS does not provide mobile support.
+	Angular is supported by all popular mobile browsers.
+
+What is interceptors?
 	this is a unique type angular service.
 	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.
-2.What is Dependency Injection?
+What is Dependency Injection?
 	By using angular Di to increase the flexibility and modularity in your application.
-3.what is difference between JIT and AOT?
+what is difference between JIT and AOT?
 	jit and AOT both are same compilers 
 	JIT-just in time
 	jit compiles your application in the browser at run time. it is suitable for local development. and each file compiled seperatly.
 	AOT- Ahead-of- time
 	 it compiled by the machine itself using cli
 	 all code compiled together.suitable for production builds.
-4.What is pipes?
+What is pipes?
 	it takes data as input transform into output.
-5.What is lazy loading?
-6. What is view encapsulation?
+What is lazy loading?
+What is view encapsulation?
 	The template and style defined within the component can effect the whole application or vice versa. Angular provides three encapsulation stratagies.
 	They are
 		1.Emulated -> styles from the main HTML propagate to the component.
 		2.Native-> Styles from the main HTML don't propagate to the component.
 		3.None->Styles from the component propagate back to the main HTML and therfore it visible for all components on the page.
-7.What is difference between TDF and Reactive forms?
+What is difference between TDF and Reactive forms?
 Template Driven Froms:--> 
 	It used in simple forms like login page. with two way data binding.
 	We can simply assign value to variable from ui and vice versa.
@@ -53,28 +71,28 @@ Reactive forms:-->
 	Adding elements dynamically
 	Easier unit testing.
 
-	1. Angular is built is using typescript.
+1. Angular is built is using typescript.
 2. Implement responsive navigation using bootstrap and angular?
 3. Implement table with pagination?
-4. What is module?
+What is module?
  	Collection of components is called module, which can perform specific task.
-4. How to check the rest url is working or not?
+How to check the rest url is working or not?
 	By using postman.
-5.  What is difference between null and undefined in Javascript?
+What is difference between null and undefined in Javascript?
 	Undefined: It means a variable declared, but no value has been assigned a value.
 	var demo;
 	alert(demo); //shows undefined
 	Null:
 	var demo = null;
 	alert(demo); //shows null
-6. How to invoke the rest services in angular?
+How to invoke the rest services in angular?
 	by using httpclient module.
-8. How the angular app gets started first?
-9. What happen when open the angular app in the browser?
-10. What is a basic building block of angular?
+How the angular app gets started first?
+What happen when open the angular app in the browser?
+What is a basic building block of angular?
 	Modules	, components, data bindings, directives, services, dependency injection these all are the basic building blocks in angular. 
 	
-11.What is starting page of angular app?
+What is starting page of angular app?
 	main.ts
 	app.module.ts
 		@NgModule
@@ -83,20 +101,20 @@ Reactive forms:-->
 			providers
 			bootstrap
 				app.component
-12. How to create component with in the folder?
+How to create component with in the folder?
 	ng g c  foldername/component name.
-12. what is the root component in angular?
+what is the root component in angular?
  	Main.ts file is root component in angular.
-13. Whare is app root component is configured?
+Whare is app root component is configured?
 	App root component is configured in app.component.ts file 
 	@component({
 		Selector: ‘app-root’})
-14. What happen when you run ng serve command from CLI?
+What happen when you run ng serve command from CLI?
 	To build and serve the application.
 	The CLI supports a live browser reload experience. 
 	Using this Url “http://localhost:4200”
 	
-15. What is difference between promise and observable?
+What is difference between promise and observable?
  Observable: 
 	Observable is a synchronized (sequential). 
 	Once you initiate the request we can cancel the request. 
@@ -107,45 +125,44 @@ Promise:
 	We will use promise for to retrieve single value or error message.
 
 
-16.What is difference between synchronous and asynchronous?
+What is difference between synchronous and asynchronous?
 	Synchronous: If your calling one rest request it will wait until execution completes.
 	Asynchronous: you can call multiple rest requests parallely.  
 
-17.How to execute some logic the time of component load or page load?
+How to execute some logic the time of component load or page load?
 	Implement the “OnInit” class and override the “ngOnit” method.
-18. How to call rest services?
+How to call rest services?
 	Create a service package and service classes and add the service classes in the in the provider section of app.module.ts 
 	Use the HttpClient angular library and request methods.
-19. What is angular life cycle?
+What is angular life cycle?
 	Angular calls lifecycle hook methods on directives and components as it creates, changes, and destroys them.
 	OnInit
 	ngOnInit
   	
-20. If I want to execute some logic at time of class initialization in angular?
+If I want to execute some logic at time of class initialization in angular?
+Where we have to write that logic?
 
-21. Where we have to write that logic?
-
-22. How to add bootstrap in angular?
+How to add bootstrap in angular?
 	Go to “angular.json” file 
 	Then select “styles”:[
 	“node_Modules/bootstrap/css/bootstrap.css/bootstrap.min.css.
 (Or)
 	Following bootstrap CDNs in index.html file
 
-23. How to install bootstrap in angular cli?
+How to install bootstrap in angular cli?
 
 	npm install –save bootstrap@4
 
-24. How to uninstall node packages?
+How to uninstall node packages?
 
 	npm uninstall <package_name>
 
-25. What is CDN?
+What is CDN?
   
 	Content delivery network (CDN).
 
 
-26. How many ways to add bootstrap in angular project?
+How many ways to add bootstrap in angular project?
 
 	•	Including the Bootstrap CSS and JavaScript files in the <head> section of the index.html file of your Angular project with a <link> and <script> tags.
 	•	Importing the Bootstrap CSS file in the global styles.css file of your Angular project with an @import keywords.
@@ -187,7 +204,17 @@ How to implement logging in ui applications?
 	Console.info();
 	Console.warn();
 	Console.log();
-
-
-
+	
+What is whieldcard entrys in Angular?
+	The whieldcard routes is basically used for invalid URLs, then by default 404 page not found error is displayed.
+	A Wildcard route has a path consisting of two asterisks (**).
+	the syntax is
+	{
+	path:'**', component: errorcomponent
+	};
+Can you discribe the MVVM architecture?
+	view means HTMl templates, view model means component typescript classes and model means typescript service classes.
+	ex: create.employee.html --> view.
+	create.employee.ts -->view model.
+	EmployeeService.ts-->>model.
 
