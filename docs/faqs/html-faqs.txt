@@ -71,8 +71,8 @@ Set background color for two different elements is
 	To use text-align is text alignments.
 Inline, Internal And External styling:
 	Inline: By using  a style attribute inside the HTML is called inline styling.
-Internal: by using a style element in the head section.
-External: by using a link element to link to an external css file.
+	Internal: by using a style element in the head section.
+	External: by using a link element to link to an external css file.
 
 HTML Tables:
 	Html tables to allow   web developers to arrange the data into rows and columns’.
@@ -97,6 +97,9 @@ Html lists:
 	Ordered list starts with the <ol> tag. Each list starts with the <li> tag.
 	The list item starts with numbers by default.
 
+What is local storage and session storage?
+	localStorage - stores data with no expiration date
+	sessionStorage - stores data for one session (data is lost when the browser tab is closed).
 
 
 	

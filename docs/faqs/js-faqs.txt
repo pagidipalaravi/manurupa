@@ -36,8 +36,8 @@
 	variables declared otside the function is called "global scope".
 	global variables can be accessed any where in the javascript program.	
 8.What difference between == and === ?
-	==   operator comapares the values but not type and memory.
-	=== operator comapres values,types and memory also.
+	==   operator comapares the content(value).
+	=== operator comapres content as well as data type also.
 	=== is a strict comparizing.it will check value and datatype.
 9.What is var,let and const?
 	var redeclartion possible.
@@ -62,7 +62,17 @@
 14.What is modularization?
 15.how to debugging the errors in js?
 16.How to link the one component to another component?
+What is splice() method?
+	To add or remove the array elements is called splice() method.
+What is difference between Var and Let?
+		VAR 								LET
+var is introduced in ES1			let is introduced in ES6
+duplicate variables are allowed		duplicate values are not allowed.
+variable hoisting raised because	we can overcome the variable hoisting by using "Let" keyword.
+var keyword.
 
-
+what is call and apply in js?
+	Call invokes the function and allows you to pass in arguments one by one.
+	Apply invokes the function and allows you to pass in arguments as an array
 	
 	
