@@ -1,0 +1,46 @@
+hr-web(web application) html, css, javascript, typescript, nodejs
+hr-service (web services) - java spring boot, hibernet, jpa
+
+http server --> tomcat server -->hr-web --> hr-service --> data-base
+
+rest service
+
+
+*/
+@RestController
+// @CrossOrigin(origins = "http://localhost:8085")
+@CrossOrigin
+@RequestMapping("/archiveService")
+public class ArchiveController extends AbstractDataServiceController {
+
+private static final Logger log = LogManager.getLogger(ArchiveController.class);
+@Autowired
+private ArchivalService archivalService;
+
+
+@RequestMapping(value = "/getArchivalConfig", method = RequestMethod.POST, produces = "application/json")
+public String getArchivalConfig(@RequestBody String request) throws DataServiceException {
+
+String response = null;
+log.debug("Executing getArchivalConfig STARTS");
+log.debug("Request=> " + request);
+GetArchivalConfigRequest requestObj = null;
+try {
+requestObj = JsonParserUtil.fromJson(request, GetArchivalConfigRequest.class);
+GetArchivalConfigResponse responseObj = archivalService.getArchivalConfig(requestObj);
+response = JsonParserUtil.toJson(responseObj);
+
+log.debug("Response=> " + response);
+} catch (DataServiceException e) {
+log.error("Error during processing checkArchivalPurgeStatus", e);
+return generateErrorResponse((requestObj != null ? requestObj.getHeader() : null), e);
+} catch (Exception e) {
+throw new DataServiceException(e);
+}
+log.debug("Executing getArchivalConfig END");
+
+return response;
+}
+
+
+

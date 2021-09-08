@@ -1,0 +1,34 @@
+HOW TO CONNECT ORACLE DATA BASE TO WINDOWS 10 ?
+
+Press windows + S , then it will opens the search bar
+Type sql in the search bar then it will show SQL command line application.
+Click on SQL command line application
+Then it will open sql command line application in the command prompt
+Then we have to connect sys user with the below command.
+sql> conn sys as sysdba 
+it will ask you provide the password so please provide the sys password (Oracle123) and press enter.
+If password is correct it will shows as connected
+
+How to connect HR Schema in Oracle data base?
+Connect Oracle data base with sys user
+Connect hr schema by typing the below command
+sql> conn hr
+it will ask you provide the password so please provide the sys password (Oracle123) and press enter.
+If password is correct it will shows as connected
+
+How to check the sys date in oracle data base?
+sql> select sysdate from dual;
+
+How to check the sys time in oracle data base?
+Sql> select systimestamp from dual;
+
+How to check all the tables and views in the oracle schema?
+Sql> select * from tab;
+
+How to see the table description in oracle data base?
+Sql> desc <table name>
+Ex:
+ Sql> desc employees;
+
+How to see all records from the table?
+Sql> select * from <table-name>;
