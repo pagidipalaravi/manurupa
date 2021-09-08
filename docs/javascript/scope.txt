@@ -18,4 +18,11 @@ Block scope
 	Variables declared inside a { } block cannot be accessed from outside the block:
 	
 What is the reason to introduced let and const in ES6?
+	Before introducing let and const variables ,var is used  to declare the variables within the function and block scope.
+	If we are decalring variables with var type in function and block scope, we can access the variables outside of the function.
+	This is a security/accessibility issue. That is the reason let and const are introduced in ES6.
+	So if you want to declare a variable within the function or block level then use let and const.
+	If declare the variable inside the function or block with let and const we cannot access outside the function or block.
+	
+	
 What is diff b/w global, function and block scope?
