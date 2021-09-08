@@ -1,8 +1,19 @@
+https://en.wikipedia.org/wiki/CERN
+
 What is IP?
+	How to check IP in windows machine?
+		Open command promt and type ipconfig
+What is difference b/w IPv4 and IPv6?
+	
+What is Internet?
+What is Protocal?
+
 What is LAN?
 What is WAN?
 What is TCP?
-What is Http? 
+What is Http?
+		TCP/IP
+What is SSL?
 What is Https?
 What is WWW?
 What is URI?

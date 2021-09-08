@@ -9,8 +9,8 @@ function onLoad() {
 	let f3 = 6; // function scope let type variable
 	{
 		/* Block scope variables */
-		b1 = 7; 	//block scope undefined type variable.
-		var b2 = 8; // block scope var type variable
+		b1 = 7; 	//bad syntax, use let instead of undefined //block scope undefined type variable.
+		var b2 = 8; //bad syntax, use let instead of var // block scope var type variable
 		let b3 = 9; // block scope let type variable
 		console.log("g1=" + g1);
 		console.log("g2=" + g2);
@@ -35,9 +35,9 @@ function onLoad() {
 console.log("g1=" + g1);
 console.log("g2=" + g2);
 console.log("g3=" + g3);
-console.log("f1=" + f1);
-console.log("f2=" + f2);
-console.log("f3=" + f3);
-console.log("b1=" + b1);
-console.log("b2=" + b2);
-console.log("b3=" + b3);
+//console.log("f1=" + f1);
+//console.log("f2=" + f2);
+//console.log("f3=" + f3);
+//console.log("b1=" + b1);
+//console.log("b2=" + b2);
+//console.log("b3=" + b3);
