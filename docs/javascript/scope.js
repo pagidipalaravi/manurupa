@@ -1,7 +1,7 @@
 /* Global scope varaibles */
-g1 = 1; 	//global scope undeclaredtype variable.
-var g2 = 2; //global scope var type variable.
-let g3 = 3; //global scope let type variable.
+g1 = 1; 	// global scope undeclared type variable.
+var g2 = 2; // global scope var type variable.
+let g3 = 3; // global scope let type variable.
 onLoad();
 function onLoad() {
 	/* Function scope variables */
