@@ -174,8 +174,10 @@ How many angular form approaches there?
 
 How to choose the angular form approach?
 
-	Reactive Forms: reactive forms are most robust, scalable, testable and reusable. It is using small login forms. It is used to “reactive formModules”.
-	Template-Driven Forms: Template driven forms are used in basic form requirements and logic that can be managed soley in the template, template driven forms are good fit for bigger applications. It mostly uses in directives. And “formModule”.
+	Reactive Forms: reactive forms are most robust, scalable, testable and reusable. It is using small login forms. 
+	It is used to “reactive formModules”.
+	Template-Driven Forms: Template driven forms are used in basic form requirements and logic that can be managed soley in the template.
+	Template driven forms are good fit for bigger applications. It mostly uses in directives. And “formModule”.
 
 What are the difference between TDF and RF? 
 	•	Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
@@ -185,8 +187,7 @@ What are the difference between TDF and RF?
 What is difference between mutable and immutable?
 
 	Template driven forms are unstructured and mutable and reactive forms are structured and immutable. 
-
-
+	
 Can we access TDF values without using  Viewchild?
 
 	yes we can access 
@@ -194,7 +195,7 @@ Can we access TDF values without using  Viewchild?
 	form.value.firstname
 
 What is difference between dirty-touch and in-valid in TDF? 
-	if you are touched and enter the value is dirty in that dirty is error then become a invalid.
+	If you are touched and enter the value is dirty in that dirty is error then become a invalid.
 	1. Touched 
 	2. Dirty
 	3. Invalid
@@ -213,8 +214,25 @@ What is whieldcard entrys in Angular?
 	path:'**', component: errorcomponent
 	};
 Can you discribe the MVVM architecture?
-	view means HTMl templates, view model means component typescript classes and model means typescript service classes.
+	view means HTML templates, view model means component typescript classes and model means typescript service classes.
 	ex: create.employee.html --> view.
 	create.employee.ts -->view model.
 	EmployeeService.ts-->>model.
+What is package.json file contains?
+	The dependencies section of package.json contains:
+
+	Angular packages: Angular core and optional modules; their package names begin @angular/.
+		Ex:  @angular/core, @angular/forms, @angular/router, @angular/compiler	
+	Support packages: 3rd party libraries that must be present for Angular applications to run.
+		Ex: Rxjs libraries,
+	Polyfill packages: Polyfills plug gaps in a browser's JavaScript implementation.
+
+	Development dependencies is
+		Karma, jasmine, @angular/cli,
+		
+What is angular.json file contains?
+	Angular.json contains a set of Architect target commands.
+		EX:architect/build,architect/serve,architect/e2e, architect/test commands.
+
+
 

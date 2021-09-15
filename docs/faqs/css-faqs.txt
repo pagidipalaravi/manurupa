@@ -9,6 +9,7 @@ What is the difference between display:none and visiblity: hidden?
 2.What are position property values?
 	fixed;
 	relative;
+	obsulute;
 	static;
 	sticky;
 	HTML elements position is static by default.
