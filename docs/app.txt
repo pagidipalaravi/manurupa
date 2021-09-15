@@ -1,5 +1,5 @@
 hr-web(web application) html, css, javascript, typescript, nodejs
-hr-service (web services) - java spring boot, hibernet, jpa
+hr-service (web services) - java spring boot, hibernet, jpa, J2EE
 
 http server --> tomcat server -->hr-web --> hr-service --> data-base
 

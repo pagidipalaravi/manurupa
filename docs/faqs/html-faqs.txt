@@ -1,3 +1,5 @@
+What is HTML?
+What is meaning of <!DOCTYPE html>?
 1.What is the use of <span>tag?
 	it is a unsematic tag.
 	the <span>tag is an inline container used to mark of part of the text,or part of a document.
