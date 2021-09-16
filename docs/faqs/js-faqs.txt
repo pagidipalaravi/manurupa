@@ -1,5 +1,5 @@
 1.How to use arrow function?
-	arrow functions are anonymous function -the function without a name.
+	arrow functions are anonymous function the function without a name.
 	we can use arrow function use write smaller function syntax.
 	if you want write a function within the function and cannot be  acessed outside the we can go for arrow function.
 	it is more readable and structured.
@@ -33,7 +33,7 @@
 	function scope and global scope is introduced in ES5, block scope is introduced in ES6.
 	ES6 is introduced two important keywords "let" and "const" these both are  in block scope.
 	variables declared inside the function is called "function scope"
-	variables declared otside the function is called "global scope".
+	variables declared outside the function is called "global scope".
 	global variables can be accessed any where in the javascript program.	
 8.What difference between == and === ?
 	==   operator comapares the content(value).
@@ -47,8 +47,7 @@
 	call a js function on a body tag bind with onload attribute.
 	<body onLoad="dateFunction()"></body>
 11.What is difference between undefined and null?
-	undefined-> assigned a value ,variable is not declared is called unde   
-	fined.
+	undefined-> assigned a value ,variable is not declared is called undefined.
 	null-> variable is declared and assigned to null. it can be print in object.
 	
 12.what is spread operator?
@@ -75,4 +74,4 @@ what is call and apply in js?
 	Call invokes the function and allows you to pass in arguments one by one.
 	Apply invokes the function and allows you to pass in arguments as an array
 	
-	
+	b
