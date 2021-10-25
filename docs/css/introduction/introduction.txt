@@ -1,0 +1,12 @@
+What is CSS?
+	CSS is a language we used to style html Web pages.
+	CSS describe how HTML element are to be displayed on screen, media, paper, etc.
+	CSS save a lot of work. It can control the layout of multiple web pages at onces.
+	External stylesheets are stored in css files.
+why use CSS?
+	CSS is used to define style for a web pages, including the design,layout and variatins in display for difrent devices and screen sizes.
+How CSS solve problems?
+	HTML was never intended to contain tags for formatting a web page.
+	Befor HTML 3.2 there was no <font> tag  and color attribute.so it so hard to write a and also the length of the code also increase 
+	for that reason CSS was introduced to solve the problems.
+	

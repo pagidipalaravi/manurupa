@@ -1,32 +1,42 @@
 What is HTML?
-What is meaning of <!DOCTYPE html>?
-1.What is the use of <span>tag?
-	it is a unsematic tag.
-	the <span>tag is an inline container used to mark of part of the text,or part of a document.
-	the <span> tag is easily styled by css or manipulated by javascript.
-2.What is the use of <div> tag?
-	defines a division or a section in an html document.
-	it is used as a containerof html elements.
-	it is easily styled by css or manipulated by javascript.
-3.HTML Introduction:
-	Html stands for hypertext markup language.Html is standard markup language for WebPages. With html you can create the own website. And it describes the structure of a webpage. And it consist of series of elements
-HTML Elements:
-	Html elements tell the browser how to display the content.
-	Html element is defined by start tag, some content, an end tag.
-     Ex: <h1>html elements</>
-	Some elements have no content they are <br>.these elements are called empty elements. Empty elements have no end tag. 
-HTML page structure:
+	Html stands for hypertext markup language. It is standard markup language for WebPages.
+	With html you can create the own website. It describes the structure of a webpage.
+	And it consist of series of elements.
+--
+What are HTML elements?
+	HTML elements tell the browser how to display the content.
+	HTML element is defined by start tag, some content, an end tag.
+	Syntax
+		<tag-name>Some content here</tag-name>
+	Example
+		<h1>html elements</h1>
+	Some elements have no content they are <br>
+	These elements are called as empty elements, empty elements have no end tag.
+--
+HTML page structure?
 	<html>
-           <head>
-                    <title> page title</title>
-           </head>
-             <body>
-                     <h1>Udaykiran</h1>
-             </body>
+		<head>
+			<title>Page Title</title>
+		</head>
+		<body>
+			<h1>Visible content here</h1>
+		</body>
 	</html>
+--
+What is meaning of <!DOCTYPE html>?
+--
+What is the use of <span>tag?
+	It is a unsematic tag.
+	It is an inline container used to mark of part of the text,or part of a document.
+	It is easily styled by css or manipulated by javascript.
+What is the use of <div> tag?
+	Defines a division or a section in an html document.
+	It is used as a container of html elements.
+	It is easily styled by css or manipulated by javascript.
 HTML DOCUMENTS:
 	All HTML documents must start with a document type declaration.
-	<!DOCTYPE html> declaration represents the document type, and helps browsers to display web pages correctly. This declaration for HTML5. This is also called root element.
+	<!DOCTYPE html> declaration represents the document type, and helps browsers to display web pages correctly.
+	This declaration for HTML5.
 HTML HEADINGS:
 	HTML headings defined to the <h1>to  <h6> tags.
 	<h1> is the most important headings.
@@ -39,10 +49,18 @@ HTML Links:
 	The link's destination is specified in the href attribute. 
 	Attributes are used to provide additional information about HTML elements.
 	<a href=”https://google.com”>this is anchor tag</a>.
-HTML Images:
-	Html images are defined with the  <img> tag.
+What is the use of alt attribute of img tag?
+What is the use of lang attribute of html tag?
+	1.
+	2.
+What is the use of screen reader?
+Do you have an experience in developing RTL web pages?
+
+	
 Href attribute:
 	The <a> defines a hyperlink. The href  attribute is specifies url of the page.
+	
+What is the difference between Absolute url and Relative url?
 Absolute url: 
 	It means links to an external image that is hosted on another website.
 Relative url:
@@ -76,7 +94,9 @@ Inline, Internal And External styling:
 	Internal: by using a style element in the head section.
 	External: by using a link element to link to an external css file.
 
-HTML Tables:
+HTML Tables
+	If we want to arrange data into columns and rows in html, what we need to do?
+	
 	Html tables to allow   web developers to arrange the data into rows and columns’.
 	The <table>tag defines an html table.
 	<tr>  is the table row.
