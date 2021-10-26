@@ -1,0 +1,9 @@
+What is CSS backgrounds?
+	CSS background properties are used to add background effects for elements. 
+	There are five backgrounds properties:
+	1.background-color
+	2.background-image
+	3.background-attachment
+	4.background-position
+	5.background-repeat
+	
