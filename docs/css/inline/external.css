@@ -1,0 +1,18 @@
+p {
+	text-align:center;
+	color:red;
+}
+
+#welcome {
+	color:blue;
+	font-size:24px;
+}
+
+#golive {
+	color:blue;
+	font-size:24px;
+}
+
+.dev {
+	color:green;
+}

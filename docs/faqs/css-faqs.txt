@@ -1,3 +1,9 @@
+How many ways we can apply css to HTML element?
+	3 Ways
+		1 	Inline
+		2	Internal
+		3	External
+		
 What is the difference between display:none and visiblity: hidden?
 	display:none
 		Removes the element from the document.

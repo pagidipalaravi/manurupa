@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+		<form action = "techmahindra/student_registration.jsp" method="post" novalidate>
+			<label for="firstName">First Name * :</label>
+			<input id="firstName" name="firstName" type="text" value="" autocomplete="off"></input><br><br>
+			<label for="lastName">Last Name * :</label>
+			<input id="lastName" name="lastName" type="text" value=""></input><br><br>
+			<!--gender selection-->
+			<input id="male" name="gender" type="radio">
+			<label for="gender">Male</label>
+			<input id="female" name="gender" type="radio">
+			<label for="gender">Female</label>
+			<input id="other" name="gender" type="radio">
+			<label for="gender">Other</label>
+			</input><br>
+			<!--Languages selection-->
+			<input id="male" name="languages" type="checkbox">
+			<label for="languages">HTML</label>
+			<input id="female" name="languages" type="checkbox">
+			<label for="languages">CSS</label>
+			<input id="other" name="languages" type="checkbox">
+			<label for="languages">Javascript</label><br>
+			<label for="languages">Manager Name</label>
+			<select id="manager" name="manager">
+				<option value = "manager">Select</option>
+				<option value = "101">Ravi</option>
+				<option value = "102">Ramesh</option>
+				<option value = "103">Raju</option>
+			</select>
+			<input type="submit" value="Save"></input>
+		</form>
+    </body>
+</html>
