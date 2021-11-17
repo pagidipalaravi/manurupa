@@ -1,0 +1,26 @@
+<table class="table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th></th>
+    </tr>
+    <tr>        
+        <!-- <td [attr.colspan]="myColspan">{{firstName}}</td> Attribute Binding -->
+        <td>{{firstName}}</td>
+        <td>{{lastName}}</td>
+        <td>{{gender}}</td>
+        <td>{{age}}</td>
+        <td><button class="btn" [style.background-color]="isApplied ? 'red' : 'blue'">Cancel</button></td> <!--Style  Binding-->
+    </tr>
+</table>
+<p>{{item}}</p>
+<button class="btn" [class.btn-primary]="isApplied" (click)="myFunction()">SAVE</button>
+<form>
+    <input type="text" class="form-control" [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}">
+</form>
+<h1 *ngIf="show" appHighlight>Structural Directive</h1>
+<ul>
+    <li *ngFor="let hero of HEROES">{{hero.name}}</li>
+</ul>

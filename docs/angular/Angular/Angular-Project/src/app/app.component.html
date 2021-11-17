@@ -1,0 +1,10 @@
+<h1>{{pageHeader}}</h1>
+<!-- Interpolation -->
+<img src="{{imagePath}}">
+<!-- Property Binding -->
+<img [src]="imagePath">
+
+<app-employee [item]="currentItem"></app-employee>
+<app-students (items)="addItem($event)"></app-students>
+<br>
+<button class="btn btn-success" [disabled]="status == 'Deprecate'">Login</button>
