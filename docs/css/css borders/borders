@@ -21,5 +21,17 @@ What is the use of border color?
 	The border-color property is used to set the color of the four borders.
 	It uses the color from css.
 	Specific Side Colors
-	The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+	The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border).
+
+Border-sides
+
+		specifies which side of border
+		
+		border-top-style
+		border-left-style
+		border-right-style
+		border-bottom-style
+		
+Border Shorthand
+		border-style, border-width, border-color
 

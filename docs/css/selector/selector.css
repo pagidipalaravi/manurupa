@@ -1,24 +1,33 @@
-/*Elememt selector*/
+/* Elememt Selector */
 p {
-	text-align : center;
+	
 	color : red;
 }
-/*Id selector*/	
+/* Id Selector */	
 #para1 {
-	text-align : left;
+	text-align: left;
 	color : blue;
 }
-/*class selector*/
-.center {
-	text-align : center large;
-	color : green;
+/* Class Selector */
+p.center {
+	color:grey;
+
 }
-/*Universal selector*/
+h3.center {
+	color : green;
+	font-size: 100px;
+}
+h3.large {
+	font-size: 50px;
+}
+
+/* Universal Selector */
 * {
-	text-align : center;
+	text-align: right;
 	color : orange;
 }
-h1,h2,h3{
-	text-align: center;
+/* Grouping Selector */
+/*h1,h2,h3,p{
+	
 	color:yellow;
-}
+}*/

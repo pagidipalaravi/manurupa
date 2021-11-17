@@ -1,5 +1,7 @@
 What are CSS colors?
 	Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA.
+	HSL - hue 0-red, 120-green , 240-blue
+	HEX - #RRGGBB
 Define Color Names?
 	In CSS, a color can be specified by predefined color names.
 How to use background color to an element?

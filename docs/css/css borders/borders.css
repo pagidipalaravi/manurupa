@@ -1,0 +1,13 @@
+h1{
+/* border-style:solid;*/
+ /*border-color: Green;
+ border-top-style:solid;
+ border-left-style:dashed;
+ border-right-style:dotted;
+ border-bottom-style:inset;*/
+ border: 1px solid red;
+ border-radius: 5px;
+ /*margin: 10px;*/
+ margin-top:10px;
+ padding:10px;
+ }

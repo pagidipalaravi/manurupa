@@ -23,7 +23,7 @@ Selectors in CSS
 			It uses id attribute of an html element to select specific element.
 			The id of an element  must be unique within the page.
 			If you want to select element with specific id, then use hash(#) character then followed by id of an element.
-			Example: #unique
+			Example: #para1
 			
 		CSS Class Selector
 			It slects html element with a specific class attribute.
