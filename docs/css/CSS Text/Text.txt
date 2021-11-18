@@ -1,0 +1,36 @@
+CSS Text:
+	CSS has a lot of properties for formatting text.
+Text Color
+	Properties under text color:
+		color
+		background-color
+CSS Text Alignment:
+	The text-align property is used to set the horizontal alignment of a text.
+	A text can be left or right aligned, centered, or justified.
+CSS Text Align Last:
+	The text-align-last property specifies how to align the last line of a text.
+CSS Vertical Alignment:
+	The vertical-align property sets the vertical alignment of an element.
+CSS Text Decoration:
+	The text-decoration property is used to set or remove decorations from text.
+	The value text-decoration: none; is often used to remove underlines from links.
+CSS Text Transformation:
+	The text-transform property is used to specify uppercase and lowercase letters in a text.
+	It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word.
+CSS Text Spacing:
+	Text Indentation:
+		The text-indent property is used to specify the indentation of the first line of a text
+	Letter Spacing:
+		The letter-spacing property is used to specify the space between the characters in a text.
+	Line Height:
+		The line-height property is used to specify the space between lines.
+	Word Spacing:
+		The word-spacing property is used to specify the space between the words in a text
+	White Space:
+		The white-space property specifies how white-space inside an element is handled
+CSS Text Shadow:
+	The text-shadow property adds shadow to text.
+	In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px)
+	ex: text-shadow: 2px 2px 5px red
+
+

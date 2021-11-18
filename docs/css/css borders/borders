@@ -35,3 +35,8 @@ Border-sides
 Border Shorthand
 		border-style, border-width, border-color
 
+
+Border-Radius
+
+	is used to add rounded corners to element
+	border-radius

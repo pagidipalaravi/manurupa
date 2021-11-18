@@ -25,3 +25,5 @@ What is the use of background-attachment in CSS?
 What is the background shorthand?
 	To shorten the code, it is posible to specify all the background properties in one single property.
 	This is called a shorthand property.
+	
+	background: #ffffff url("sample.jpg") no-repeat right top; 
