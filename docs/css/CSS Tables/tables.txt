@@ -1,0 +1,15 @@
+CSS Tables:
+	Table Borders:
+		To specify table borders in CSS, use the border property.
+	
+	Collapse Table Borders:
+		The border-collapse property sets whether the table borders should be collapsed into a single border.
+		
+	Table Width and Height:
+		The width and height of a table are defined by the width and height properties.
+		
+	Horizontal Alignment:
+		The text-align property sets the horizontal alignment of the content.
+
+	Responsive Table:
+		A responsive table will display a horizontal scroll bar if the screen is too small to display the full content

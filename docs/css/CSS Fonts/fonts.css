@@ -1,0 +1,14 @@
+.font_style{
+	font-style: italic;
+	font-size: 20px;
+	font-family: serif;
+}
+
+.font_weight{
+	font-weight: bold;
+}
+
+.font_variant{
+	font-variant: small-caps;
+	/*font: italic small-caps bold 12px/30px Georgia, serif;*/
+}

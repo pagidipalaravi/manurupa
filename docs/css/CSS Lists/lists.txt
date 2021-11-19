@@ -1,0 +1,20 @@
+CSS Lists:
+	The CSS list properties allow you to:
+
+		Set different list item markers for ordered lists
+		Set different list item markers for unordered lists
+		Set an image as the list item marker
+		Add background colors to lists and list items
+		
+List Style Type:
+	The list-style-type property specifies the type of list item marker.
+	
+An Image as The List Item Marker:
+	The list-style-image property specifies an image as the list item marker.
+	
+Position The List Item Markers:
+	The list-style-position property specifies the position of the list-item markers .
+
+List - Shorthand property:
+	The list-style property is a shorthand property. 
+	It is used to set all the list properties in one declaration.

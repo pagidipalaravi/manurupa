@@ -1,0 +1,19 @@
+a.a:link {color:#ff0000;}
+a.a:visited {color:#0000ff;}
+a.a:hover {color:#ffcc00;}
+
+a.b:link {color:#ff0000;}
+a.b:visited {color:#0000ff;}
+a.b:hover {font-size:150%;}
+
+a.c:link {color:#ff0000;}
+a.c:visited {color:#0000ff;}
+a.c:hover {background:#66ff66;}
+
+a.d:link {color:#ff0000;}
+a.d:visited {color:#0000ff;}
+a.d:hover {font-family:monospace;}
+
+a.e:link {color:#ff0000;text-decoration:none;}
+a.e:visited {color:#0000ff;text-decoration:none;}
+a.e:hover {text-decoration:underline;}
