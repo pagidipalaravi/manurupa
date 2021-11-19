@@ -6,7 +6,7 @@ CSS Outline:
 		outline-color
 		outline-width
 		outline-offset
-		outline
+		outline-shorthand
 		
 css outline-style:
 	The outline-style property specifies the style of the outline.

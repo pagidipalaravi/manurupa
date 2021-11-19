@@ -1,9 +1,15 @@
 h1{
 	height: 200px;
 	border:1px solid red;
+	outline:black solid 1px;
 }
 
 h2{
-	width: 200px;
+	max-width: 200px;
 	border:1px solid green;
+}
+
+p{
+	max-width:50px;
+	border:1px solid blue;
 }

@@ -31,6 +31,6 @@ CSS Text Spacing:
 CSS Text Shadow:
 	The text-shadow property adds shadow to text.
 	In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px)
-	ex: text-shadow: 2px 2px 5px red
+	ex: text-shadow: 2px 2px 5px red;
 
 
