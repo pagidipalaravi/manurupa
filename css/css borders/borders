@@ -1,0 +1,25 @@
+What are the use of the borders?
+	border properties allow you to Specify the style, width, and color of an element's border.
+how many CSS border-styles?
+	border-styles are:
+	1.dotted - defines a dotted border
+	2.dashed - define a dashed border
+	3.solid - Defines a solid border
+	4.double - defines a double border
+	5.groove - defines a 3D grooved border. the effect depend on the border-color values
+	6.ridge - defines a 3D ridge border.the effect depend on the border-color values
+	7.inset - defines a 3D inset border.The effect depends on the border-color values
+	8.outet - define a 3D outset border .The effect depends on the border-color values
+	9.none - define no border
+	10.hidden - defines a hiffen border
+What is use of border widths?
+	It is used to specifie the width for borders.
+	The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick
+	specific side:
+	The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border
+What is the use of border color?
+	The border-color property is used to set the color of the four borders.
+	It uses the color from css.
+	Specific Side Colors
+	The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border). 
+

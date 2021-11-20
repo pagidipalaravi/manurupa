@@ -1,0 +1,83 @@
+What is HTML?
+	HTML stands for Hyper Text Markup Language.
+	It is the only language to create a webpage.
+	It describes the structure of a Web page.
+	It consist of many elements (approx 100).
+	Elements tell the browser how to display the content.
+--
+What is <!doctype html>?
+	It defines that this document is an HTML5 document.
+	It must be written in the top of the page.
+	We are giving information to the browser that this document is an html5 document.
+	Browser also compiles the html document by following html5 standards.
+what is <html>?
+	This is the root element in html page.
+what is <head>?
+	It contains meta information about the page.//TODO
+	The content which is written in this element will not be visible in the web page.
+what is <title>?
+	It specifies a title for the HTML page.
+	It is shown in the browser's title bar or in the page's tab.
+what is <body>?
+	It defines the document's body.
+	It is a container for all the visible contents.
+	The content that is written in this element only visible in the web page.
+what is <h1>?
+	It defines a large heading ,here in this we are having from <h1> to <h6>.
+what is <p>?
+	This element defines a paragraph.
+What is an HTML Element?
+ 	HTML elements tell the browser how to display the content.
+	HTML element is defined by start tag, some content, and end tag.
+	--
+	Syntax:
+		<tag-name>Some content here</tag-name>
+	--
+	Example:
+		<h1>Content here</h1>
+	--
+What is Empty Elemnts?
+	Some elements have no content.
+	These elements are called as empty elements.
+	Empty elements have no end tag.
+What are the tags that doesn't have end tag?
+	br, img, etc...
+==
+What is Web Browsers?
+	The purpose of a web browser is to read HTML documents and display them correctly.
+	Browser does not display the HTML tags, but uses them to determine how to display the document.
+	Example
+	Chrome, Edge, Firefox, Safari.
+--
+What is Webserver?
+// TODO?
+What is difference between element and tag?
+What is the difference between web browser and web server?
+	web browser
+		It will be installed in client machine.
+		Example:
+			chrome, firefox, edge
+	Web Server
+		It will be installed in server machine.
+		Example:
+			Tomcat, Jboss, weblogic
+==
+HTML History
+Since the early days of the World Wide Web, there have been many versions of HTML:
+Year	Version
+1989	Tim Berners-Lee invented www
+1991	Tim Berners-Lee invented HTML
+1993	Dave Raggett drafted HTML+
+1995	HTML Working Group defined HTML 2.0
+1997	W3C Recommendation: HTML 3.2
+1999	W3C Recommendation: HTML 4.01
+2000	W3C Recommendation: XHTML 1.0
+2008	WHATWG HTML5 First Public Draft
+2012	WHATWG HTML5 Living Standard
+2014	W3C Recommendation: HTML5
+2016	W3C Candidate Recommendation: HTML 5.1
+2017	W3C Recommendation: HTML5.1 2nd Edition
+2017	W3C Recommendation: HTML5.2
+==
+What is the difference between html4 and html5?
+	//TODO

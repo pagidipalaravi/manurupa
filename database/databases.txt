@@ -1,0 +1,23 @@
+Databases
+	No SQL Based-	Non_Relational_DataBase_Management_Systems
+		Mongo-DB, Cassandra,
+	NoSQL	Oracle
+----
+	SQL Based	-	Relational_DataBase_Management_Systems	: RDBMS
+	Oracle		Oracle
+		Xpress Edition	:	Open Source
+		Enterprise Edition	:	Licencing
+	MySql		Oracle	:	Open Source
+	DB2			IBM
+	SQL-Server 	Microsoft
+	Postgre		PostgreSQL
+----------------------------------------
+Database Languages
+	SQL, PL/SQL.
+Operation on Table Employee
+	Create		Insert ***	
+	Read		Select ***
+	Update		Update ***
+	Delete		Delete ***
+	CRUD
+	

@@ -1,5 +1,0 @@
-JavaScript Use Strict:
-	JavaScript code should be executed in "strict mode".
-	Use strict is introduced by ES5 version.
-	The "use strict" directive is only recognized at the beginning of a script or a function.
-	Reserved keywords cannot be used in variable names.

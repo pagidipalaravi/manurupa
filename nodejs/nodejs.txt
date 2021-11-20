@@ -1,0 +1,3 @@
+What is NodeJs?
+	Node.js is a JavaScript runtime, Which is built on Chrome's [V8 JavaScript engine (JS Compiler)].
+	By Using nodejs we can run js files without having any web browser for the CLI.

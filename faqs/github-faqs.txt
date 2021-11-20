@@ -1,0 +1,17 @@
+1.What is cloning?
+	Creating a local repository from remote repository
+2.What is commit?
+	commiting the changes into local repository.
+3.What is push?
+	pushing the changes local repository to remote repository.
+4.What is fetch?
+	getting the changes from local repository to working repository.	
+5.What is pull?
+	 getting the changes from remote repository to local repository.
+6.What is Merge?
+	to merging the changes from child branch to parent branch or main branch.
+7.What is conflict?
+	if two developers changing the same file and same line then github will conflict.
+8.How to slove the conflicts?
+	as a developer we have to solve and we have to take a decision. which line we have to keep and which line is added.
+

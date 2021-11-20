@@ -1,1 +1,0 @@
-when we perform an action on a html page, an event will be triggered, a subsequencial function will be excuted.

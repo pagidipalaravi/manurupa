@@ -1,0 +1,6 @@
+what is syntax to write a css code?
+	A CSS consists of a selector and a declaration block.
+	Where selector points to the HTML element you want to style.
+	The declaration block contains one or more declarations separated by semicolons.
+	multiple CSS declaration are saprated with semicolons, and declaration block are surrounded by curly braces.
+	
