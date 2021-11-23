@@ -1,0 +1,4 @@
+What is CSS?
+	CSS is the language use to style html document.
+	CSS describes how html elements should be displayed.
+	

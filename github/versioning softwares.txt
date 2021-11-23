@@ -1,0 +1,14 @@
+Do you know versioning softwares?
+	Yes I know, I have an experience on versioning softwares.
+What are versioning softwares that you know?
+	cvs
+	SVN
+	git
+	github bitbucket gerrit
+What are versioning softwares that you have experienced?
+	git
+	github
+what is the diff b/w git and github?
+
+
+

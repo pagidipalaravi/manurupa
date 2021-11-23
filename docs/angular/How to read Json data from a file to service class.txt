@@ -1,9 +1,0 @@
-How Read an External JSON file in Angular11 and Convert Data to HTML Table?
-		Keep the Json file in Assets folder.
-		We can read any file from the server by using Get() method of HttpClient Module.
-			 this.httpClient.get('./assets/active.json')
-		Convert the Json data as a string and assign it to any type property.
-			this.actives = data as string[];
-		Use ngFor to iterate any type property in template.
-			<tr *ngFor="let active of actives; let i=index">
-		

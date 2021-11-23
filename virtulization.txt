@@ -1,0 +1,22 @@
+TechM	
+	Vodafone
+		Local Laptop	0 RS
+		Commit the code into github
+			Windows-10 	Laptop
+	==
+	JIO
+		Company Laptop - 50,000
+		Commit the code into github
+	==
+	AIRTEL
+		Windows Server-2012
+			MY Code is Here
+			100 members
+	==
+	BSNL
+		Come to office
+	==
+
+		- 10.240.12.252
+		VPN
+		RDP

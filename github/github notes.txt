@@ -1,0 +1,12 @@
+commit to local
+Push to Remote
+pull from remote
+fetch from local
+
+merge
+main
+branchs
+conflict
+resolving
+stashing
+discard

@@ -1,0 +1,14 @@
+Learning Approches:
+Compare unknown things with known things.
+	EX: Learing French Language comparing with English Langauge.
+Solution comes from Problem
+	Problem: Want to sell Oraganic Vegitables from Online
+	Solution: Develop a Web Application - html, css, javascript
+Problem:
+	Share the research docs from Europe to USA
+Solution: 
+	Internet, IP appress, WWW, HTTP, HTML, CSS, Javascript
+https://www.bigbasket.com/
+https://in.bookmyshow.com/
+https://www.amazon.in/
+https://www.primevideo.com/

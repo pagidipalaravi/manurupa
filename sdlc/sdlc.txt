@@ -1,0 +1,16 @@
+SDLC which stands for software developement cycle.
+client provides requirements.
+requirements would be gathered by BA(BUSINESS ANALYST) by interaring with client and he make it as a document
+this dument is called business reqirement specification(BRS),user reuirement specification(URS)or system requirement specification(SRS).
+BRS describes ,purpose of application,no of users of application,required services of application.
+Once BRS is completed company conduct some feasibility study whether the project is acceptable or not.
+based on budjet,time,client expectations they will decide.
+Then BA will intimate to the client with request for proposal(RFP) If it is fine customer will provide servic level agreement(SLA)
+between client and company.
+Then BRS wil be given to the system analyst(SA) then SA will make a document called Functional requirement specification(FRS).
+this face is called analysis face.
+Once FRS is completed ,BRS and FRS will be given to the to the Design Architect(DA) for the desigining purpuse.
+DA will make 3 types of documents namely GUI(graphical user inerfce),DB(data base document)and application designing document.
+In the the application designing again there are two documents they are high level designing and low levevel designing.
+Once all these are completed these will be given to developers for the developing purpose.
+Developer develops the application and handed over quality analyst(QA).

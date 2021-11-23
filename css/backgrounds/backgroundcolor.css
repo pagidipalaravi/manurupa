@@ -1,0 +1,18 @@
+*{
+	margin:0px;
+}
+body{
+	background-color: lightblue;
+	background-image: url("background.jpg");
+	background-position: left-side;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1{
+	background-color:green;
+		opacity:0.8;
+}
+div,p{
+	background-image: url("background.jpg");
+	
+}
