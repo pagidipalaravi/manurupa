@@ -1,0 +1,2 @@
+CSS Z-Index:
+	The z-index property specifies the stack order of an element.

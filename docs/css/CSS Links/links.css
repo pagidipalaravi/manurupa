@@ -1,10 +1,12 @@
 a.a:link {color:#ff0000;}
-a.a:visited {color:#0000ff;}
-a.a:hover {color:#ffcc00;}
+a.a:visited {color:hotpink;}
+a.a:hover {color:blue;}
+a.a:active {color:green;}
 
 a.b:link {color:#ff0000;}
-a.b:visited {color:#0000ff;}
-a.b:hover {font-size:150%;}
+a.b:visited {color:hotpink;}
+a.b:hover {font-size:150%;color:blue;}
+a.b:active {color:green;}
 
 a.c:link {color:#ff0000;}
 a.c:visited {color:#0000ff;}
@@ -17,3 +19,18 @@ a.d:hover {font-family:monospace;}
 a.e:link {color:#ff0000;text-decoration:none;}
 a.e:visited {color:#0000ff;text-decoration:none;}
 a.e:hover {text-decoration:underline;}
+
+div a:link , div a:visited {
+	background-color:red;
+	color:white;
+	padding: 10px;
+	text-align:center;
+	text-decoration:none;
+}
+div a:hover {
+	background-color:blue;
+	border: 1px solid red;
+}
+div a:active {
+	background-color:green;
+}

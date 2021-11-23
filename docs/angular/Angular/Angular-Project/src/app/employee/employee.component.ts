@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EmployeeService } from '../service/employee.service';
 
 @Component({
   selector: 'app-employee',
@@ -7,18 +8,19 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class EmployeeComponent implements OnInit {
 
-  constructor() {
+  constructor(private employee:EmployeeService) {
     console.log("constructor");
    }
 ngOnChanges(): void{
   console.log("changes")
 }
   ngOnInit(): void {
-    console.log("ngOnInit")
+    console.log("ngOnInit");;
+    this.viewEmployee();
   }
  
   @Input() item: any;
-  
+  viewEmployees:any;
   firstName:String = "Harika";
   lastName:String = "Valikala";
   gender:String = "F";
@@ -36,5 +38,11 @@ ngOnChanges(): void{
     {id: 3, name:'Robin'},
     {id: 4, name:'Flash'}
 ];
-
+// Service Funtion
+  viewEmployee(){
+    this.employee.getEmployee().subscribe(data => {
+      this.viewEmployees =data;
+      console.log(this.viewEmployees);
+    })
+  }
 }
