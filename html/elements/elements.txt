@@ -1,8 +1,9 @@
-html elements
+What is html elements?
+	HTML elements are basic build blocks of html page.
 	An html element is defined by start tag, some content and end tag
 	The html element is everything from start tag to end tag.
 	Syntax
-		<tagname> content goes here..</tagname>
+		<tagname>content goes here..</tagname>
 	Example
 		<h1>This is a heading</h1>
 		<p>This is a para.</p>
@@ -55,5 +56,5 @@ HTML is not case sensitive
 	but always use lowercase tag names.
 --
 FAQs
-	What is the difference b/w tag and element?
+	What is the difference b/w ce and element?
 	What are the nested elements?

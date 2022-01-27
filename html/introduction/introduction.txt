@@ -5,7 +5,7 @@ What is HTML?
 	It consist of many elements (approx 100).
 	Elements tell the browser how to display the content.
 --
-What is <!doctype html>?
+What is <!DOCTYPE html>?
 	It defines that this document is an HTML5 document.
 	It must be written in the top of the page.
 	We are giving information to the browser that this document is an html5 document.
@@ -18,6 +18,7 @@ what is <head>?
 what is <title>?
 	It specifies a title for the HTML page.
 	It is shown in the browser's title bar or in the page's tab.
+	If you don't provide title tag in the head tag, then what will be the page title?
 what is <body>?
 	It defines the document's body.
 	It is a container for all the visible contents.
@@ -26,6 +27,7 @@ what is <h1>?
 	It defines a large heading ,here in this we are having from <h1> to <h6>.
 what is <p>?
 	This element defines a paragraph.
+	
 What is an HTML Element?
  	HTML elements tell the browser how to display the content.
 	HTML element is defined by start tag, some content, and end tag.
@@ -43,14 +45,14 @@ What is Empty Elemnts?
 What are the tags that doesn't have end tag?
 	br, img, etc...
 ==
-What is Web Browsers?
+What is WebBrowsers?
 	The purpose of a web browser is to read HTML documents and display them correctly.
 	Browser does not display the HTML tags, but uses them to determine how to display the document.
 	Example
 	Chrome, Edge, Firefox, Safari.
 --
 What is Webserver?
-// TODO?
+// TODO
 What is difference between element and tag?
 What is the difference between web browser and web server?
 	web browser
@@ -62,7 +64,7 @@ What is the difference between web browser and web server?
 		Example:
 			Tomcat, Jboss, weblogic
 ==
-HTML History
+Tell me About HTML History?
 Since the early days of the World Wide Web, there have been many versions of HTML:
 Year	Version
 1989	Tim Berners-Lee invented www

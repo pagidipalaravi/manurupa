@@ -12,7 +12,7 @@ HTML Formating Elements
 	<sup>-Superscripted text
 	
 HTML <b> and <strong> Elements
-	The HTML <b> elements defines the bold text, without any extra importance.
+	The HTML <b> elements defines the hold text, without any extra importance.
 	Example
 				<p><b>This is a bold text.</b></p>
 	The HTML <strong> elements defines text with strong importance. The content inside is typically displayed in bold.

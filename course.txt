@@ -1,28 +1,42 @@
-Skill :Web Applcation Developer // Java Fullstack Developer
+Skill :	Java Fullstack Developer // Web Applcation Developer
 ----
-	Frontend	:	User Interface Developer / UI Developer 2 months
+	Frontend	:	User Interface Developer // UI Developer // Forntend Developer
 	Middleware	:	Java Developer							
-	Backend		:	Database Developer						
+	Backend		:	Database Developer
 ======================================
-Frontend : UI Developers
+User: Browser	
+======================================
+Frontend : Frontend Developer
 Languages
-	HTML		Angular / ReactJs and React Native
+	HTML		Angular
 	CSS			Bootstrap
 	Javascript	Typescript
 	--
-	HTML : Body
+	HTML : Rawdata - Body
 	CSS  : Beautification
-	Javascript : Intellegence
-========================================
+	Javascript : Intelligence
+======================================
 Middleware : Middleware Developer
 Languages
 	Java
 		J2SE
 		J2EE
-		SpringBoot
-		Hibernate
-========================================
+	SpringBoot
+	Hibernate
+======================================
 Backend : Database Developer
+	Relational Database
+		SQL Based Databases
+			Open Source
+				MySQL, Oracle XE, PostgreSQL
+			Licenced	
+				Oracle EE, DB2, MS SQLServer
+	Non Relational Database
+		Non SQL Databases
+			Open Source
+				MongoDB, Cassendra
+			Licenced
+				XXX, XXX
 Language
 	SQL
 	PL/SQL
@@ -33,3 +47,7 @@ Methodologies : Agile
 ========================================
 SDLC
 JIRA
+GITHUB
+SCRUM
+SPRINT
+

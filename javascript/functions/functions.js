@@ -1,26 +1,30 @@
-function add(){
-	//some functions May have upto 200 lines of code
+function sub() { //function with on org
+//Block of code
+	let result = 100-50;
+	console.log("static sub ="+result);
 }
 
-function mul2(p1, p2) {
-    return p1 * p2;
+
+function sub(n1, n2) { //function with orguments
+//Block of code
+	let result = n1-n2;
+	console.log("dynamic sub = "+result);
 }
-
-function mul3(p1, p2, p3) {
-    return p1 * p2 * p3;
+function addition(){
+	let res = add(a,b);
+	console.log(res);
 }
-
-function add2() {
-    return 12 * 13;
+function add(a,b) {
+	let sum = a + b;
+	return sum;
 }
-
-function add2(p1, p2) {
-    return p1 * p2;
+function toCelsius() {
+	let fString = document.getElementById("f").value;
+	let fnum = parseInt(fString);
+	console.log(typeof fnum);
+	let c = toCelsiusConversion(fnum);
+	console.log(c);
 }
-document.getElementById("demo").innerHTML = mul3(17,18,19);
-
-
-
-When an event occurs (when a user clicks a button)
-When it is invoked (called) from JavaScript code
-Automatically (self invoked)
+function toCelsiusConversion(f) {
+  return (5/9) * (f-32);
+}

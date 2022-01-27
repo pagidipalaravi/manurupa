@@ -43,24 +43,50 @@ What is the difference between javascript and typescript?
 ==
 How to install angular?
 	Install nodejs
+		set nodeJs Path
 	Install npm
 	Install typescript
 		npm install -g typescript
 	Install angular
 		npm install -g @angular/cli
+--
+How to check the angular version?
+	ng -v
+How to create an angular project?
+	ng new  hrmsapp
+What is routing in angular?
+--
+What is difference between css scss?
+//TODO ask Harika mam
+How to build a angular project?
+	>ng build
+How to run a angular project?
+	>ng serve
+What is package.json file contains?
+	What are the libraries that we are using into our angular project those are registred into package.son with version information.
+	package.json contains libraries versioning information but not libraries.
+What is difference between build and serve?
+How to install bootstrap into angular?
+In how many ways we can add bootsrap to angular project?
+ 3 ways
+--
+How an angular app gets started and loaded?
+
 ==
 What is interceptors?
 	this is a unique type angular service.
 	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.
 What is Dependency Injection?
-	By using angular Di to increase the flexibility and modularity in your application.
+	By using angular DI to increase the flexibility and modularity in your application.
 what is difference between JIT and AOT?
 	jit and AOT both are same compilers 
 	JIT-just in time
-	jit compiles your application in the browser at run time. it is suitable for local development. and each file compiled seperatly.
+	jit compiles your application in the browser at run time. it is suitable for local development. 
+	and each file compiled seperatly.
 	AOT- Ahead-of- time
 	 it compiled by the machine itself using cli
 	 all code compiled together.suitable for production builds.
+==
 What is pipes?
 	it takes data as input transform into output.
 What is lazy loading?

@@ -2,7 +2,10 @@ HTML attributes
 	Attributes provide additional information about HTML element.
 	All html elements can have attributes.
 	Attributes are always specified in the start tag only.
-	Attributes usually come in name/value pairs like: name="value".
+	Attributes usually come in name/value pairs like: attribute-name="attribute-value".
+	Example
+	<human name="" dob="" fn =""></human>
+	
 href attributes
 	The <a> tag defines a hyperlink. The href attribute specifies the URL of the page.
 	Example:
@@ -11,7 +14,7 @@ href attributes
 src attribute
 	The <img> tag is used to embed an image in html page. The src attribute specifies the path to the image to be displayed.
 	Example:
-		<img src="img_girl.jpg"> width="500" height="600">
+		<img src="img_girl.jpg" width="500" height="600">
 --
 alt attribute
 	The alt attribute of an <img> tag specifies an alterante text for an image, if the image for some reason cannot displayed.
@@ -20,7 +23,7 @@ alt attribute
 		<img src="img_girl.jpg" alt="Girl with a jacket">
 --
 style attribute
-	The style attribute is used to add style to an element, such as colour, font, size and more.
+	The style attribute is used to add style to an element, such as color, font, size and more.
 	Example:
 		<p style="color:green;">This is a pink para.</p>
 --

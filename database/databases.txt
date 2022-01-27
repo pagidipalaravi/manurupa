@@ -1,19 +1,20 @@
 Databases
-	No SQL Based-	Non_Relational_DataBase_Management_Systems
-		Mongo-DB, Cassandra,
-	NoSQL	Oracle
+	No SQL Based	Non_Relational_DataBase_Management_Systems
+		Ex
+			Mongo-DB,Cassandra, Oracle-NoSQL
 ----
-	SQL Based	-	Relational_DataBase_Management_Systems	: RDBMS
-	Oracle		Oracle
-		Xpress Edition	:	Open Source
-		Enterprise Edition	:	Licencing
-	MySql		Oracle	:	Open Source
-	DB2			IBM
-	SQL-Server 	Microsoft
-	Postgre		PostgreSQL
-----------------------------------------
+	SQL Based		Relational_DataBase_Management_Systems	: RDBMS
+		Oracle						Oracle
+			Xpress Edition		:	Open Source
+			Enterprise Edition	:	Licencing
+		MySql			Oracle		:Open Source
+		DB2				IBM			:Licencing
+		SQL-Server 		Microsoft	:Licencing
+		PostgreSQL		Postgre		:Open Source
+----
 Database Languages
 	SQL, PL/SQL.
+	
 Operation on Table Employee
 	Create		Insert ***	
 	Read		Select ***
