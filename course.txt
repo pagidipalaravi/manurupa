@@ -1,10 +1,10 @@
-Skill :	Java Fullstack Developer // Web Applcation Developer
+Skill : Web Applcation Developer // Java Fullstack Developer
 ----
-	Frontend	:	User Interface Developer // UI Developer // Forntend Developer
-	Middleware	:	Java Developer							
-	Backend		:	Database Developer
+	Frontend	View		:	User Interface Developer // UI Developer // Forntend Developer
+	Middleware	Controller	:	Java Developer							
+	Backend		Model		:	Database Developer
 ======================================
-User: Browser	
+User: Browser
 ======================================
 Frontend : Frontend Developer
 Languages

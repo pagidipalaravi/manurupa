@@ -1,24 +1,25 @@
 /*Elememt selector*/
-p {
-	text-align : center;
-	color : red;
+ p {
+     text-align : center;
+     color : red;
 }
-/*Id selector*/	
-#para1 {
-	text-align : left;
-	color : blue;
+/*Id selector*/
+ #para1 {
+     text-align : left;
+     color : blue;
 }
 /*class selector*/
-.center {
-	text-align : center large;
-	color : green;
+ .center {
+     text-align : center large;
+     color : green;
 }
 /*Universal selector*/
-* {
-	text-align : center;
-	color : orange;
+ * {
+     text-align : center;
+     color : orange;
 }
-h1,h2,h3{
-	text-align: center;
-	color:yellow;
+/*Grouping Selectors*/
+ h1, h2, h3{
+     text-align: center;
+     color:yellow;
 }

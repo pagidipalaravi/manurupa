@@ -1,6 +1,20 @@
-What is language?
+What is Hyper Text Markup Language?
+
+What is Language?
+	A language is a structured system of communication used by humans.
+	Languages can be based on speech and gesture (spoken language), sign, or writing.
+	The structure of language is its grammar and the free components are its vocabulary.
+	
 What is Markup Language?
-What is Hyper text?
+	A markup language is a set of rules governing what markup information may be included in a document.
+	how it is combined with the content of the document in a way to facilitate use by humans and computer programs.
+
+What is Hyper Text?
+	Hypertext is text displayed on a computer display or other electronic devices with references 
+	(hyperlinks) to other text that the reader can immediately access.[1] 
+	Hypertext documents are interconnected by hyperlinks, which are typically activated by 
+	a mouse click, keypress set, or screen touch
+
 What is HTML?
 	HTML stands for Hyper Text Markup Language.
 	It is the only language to create a webpage.

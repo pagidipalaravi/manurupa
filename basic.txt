@@ -1,0 +1,34 @@
+URL - 	Uniform Resource Locator
+URI -	Uniform Resource Identifier
+https://www.flipkart.com/
+
+https tcp/ip
+
+internet
+
+internet protocal
+
+tranmission control protocal
+
+network provider
+
+Local Area Network
+
+Wide Area Network
+
+HTTP
+
+Hyper Text Transfer Protocal
+
+Protocal
+	Rules and Regulation
+Text
+	English
+Hypertext
+	English + Something
+	English + HyperLinks
+
+www
+flipkart.com domain
+
+https:\\www.flipkart.com\
