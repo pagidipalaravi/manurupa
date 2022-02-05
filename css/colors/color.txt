@@ -1,4 +1,4 @@
-In how many ways we can specify colors in css?
+How many ways we can apply colors to html elements in CSS?
 	color-names
 	HEX
 	RGB, RGBA
@@ -11,7 +11,7 @@ How to apply background color to an element?
 How to apply border color to an element?
 	We can apply the color for borders by using border property.
 --
-How to apply color in HEX format to element?
+How to apply color in HEX format to an element?
 	A color can be specified using a hexadecimal form like (#rrggbb), which indicates red, green and blue.
 	The hexadecimal values are specified between 00 and ff.
 	Sometimes we can write as a three digit code in css like (#f3c).

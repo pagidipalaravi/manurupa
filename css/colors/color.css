@@ -1,16 +1,18 @@
-h1
-{
+h1 {
 	color : Tomato;
 	border : solid green;
 }
+
 h2 {
 	background-color : #ffddee;
 	color : #994477;
 }
+/*The below s the rgb and rgba formats*/
 h3 {
-	background-color : rgba(10,50,30,0.2);
 	color : rgb(255,255,255);
+	background-color : rgba(10,50,30,0.2);
 }
+/*
 h4 {
 	background-color : hsl(230,50%,60%);
 	color : hsla(350,40%,20%,0.6);
@@ -18,4 +20,8 @@ h4 {
 p {
 	background-color : pink;
 	color : Blue;
+}
+*/
+body {
+	background-color: yellow;
 }
