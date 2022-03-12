@@ -1,5 +1,5 @@
 35,000	Teaching and Project 8 hours 10 hours
-
-10,000 + 25,000 	Experience documents 35,000 k
-
-12,0000
+--
+35,000	10,000 + 25,000		Experience documents 35,000 k
+--
+1,20,000

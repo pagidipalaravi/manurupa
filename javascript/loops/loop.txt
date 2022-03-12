@@ -1,0 +1,8 @@
+Syntax:
+for (initialization;condition;increment/decrement){
+	// write your code it may be single line or 100 lines
+}
+Example:
+for (let i=0;i<=10;i++;) {
+	console.log("This is my logic i wnat to execute 10 times");
+}

@@ -21,4 +21,7 @@ function addition() {
 	let num4 = 60; // redeclartion is not possible // Error: 'num3' has already been declared
 	let res2 = num3 + num4;
 	document.getElementById("demo").innerHTML ="" + res2;
+	var name = "Ravi";
+	var name;// the value is not undefined, because it is pointing to name only
+	console.log(name);
 }

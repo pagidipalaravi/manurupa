@@ -65,3 +65,14 @@ Relative URL
 	Example:
 		src="/image/img_girl.jpg".
 --
+HTML attributes
+href attributes
+src attribute
+alt attribute
+style attribute
+lang Attribute
+title attribute
+Single or Double Quotes
+What is difference between Absolute URL and Relative URL?
+Absolute URL
+Relative URL

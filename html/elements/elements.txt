@@ -58,5 +58,7 @@ HTML is not case sensitive
 	but always use lowercase tag names.
 --
 FAQs
+	What are the html elements?
+	What are Nested elements?
 	What is the difference b/w tag and element?
-	What are the nested elements?
+	What are empty HTML elements?

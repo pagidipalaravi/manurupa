@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<!--By using innerHTML-->
+		<h3>innerHTML</h3>
+		<p id="innerhthml"></p>
+		<script>
+			document.getElementById(id="innerhthml").innerHTML= "This text is from innerHTML";
+		</script>
+		<!--By using console.log()-->
+		<h3>console.log() Please look into the console window</h3>
+		<script>
+			console.log("This text is from console.log");
+		</script>
+		<!--By using document.write()-->
+		<h3>document.write()</h3>
+		<p>Using document.write() after an HTML document is loaded, it will delete all exixting element.</p>
+		<script>
+			document.write("This text is from document.write");
+		</script>
+		<!--By using window.alert()-->
+		<script>
+			window.alert("This text is from window.alert");
+		</script>
+			<button type="button" onclick="document.write('This text is from document.write override')">Override</button>
+		<!--By using window.print()-->
+		<script>
+			<button onclick="window.print()">Print this page</button>
+		</script>
+	</body>
+</html>

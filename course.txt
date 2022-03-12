@@ -1,8 +1,14 @@
-Skill : Web Applcation Developer // Java Fullstack Developer
+Professional:	Software Enginner || IT Employee
+Skill		:	Web Applcation Developer || Fullstack Developer
+Other Skills:	100 + Skill are present
+--
+Primary Skill	: 	Frontend
+Secondary Skill	:	Middleware
+Tertiary  Skill	:	Backend
 ----
-	Frontend	View		:	User Interface Developer // UI Developer // Forntend Developer
-	Middleware	Controller	:	Java Developer							
-	Backend		Model		:	Database Developer
+	Frontend	:	View		:	Forntend Developer || User Interface Developer || UI Developer
+	Middleware	:	Controller	:	Middleware Developer ||	Java Developer							
+	Backend		:	Model		:	Database Developer	|| 
 ======================================
 User: Browser
 ======================================
@@ -12,7 +18,7 @@ Languages
 	CSS			Bootstrap
 	Javascript	Typescript
 	--
-	HTML : Rawdata - Body
+	HTML : Rawdata - Baby
 	CSS  : Beautification
 	Javascript : Intelligence
 ======================================
@@ -50,4 +56,7 @@ JIRA
 GITHUB
 SCRUM
 SPRINT
+serviceNow
+--
+Difference between web site and web app?
 

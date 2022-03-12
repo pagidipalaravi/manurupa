@@ -74,7 +74,7 @@ What is browser?
 	Example
 	Chrome, Edge, Firefox, Safari.
 --
-What is Webserver?
+  
 // TODO
 What is difference between element and tag?
 What is the difference between web browser and web server?
