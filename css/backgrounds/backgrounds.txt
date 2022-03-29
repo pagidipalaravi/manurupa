@@ -1,0 +1,34 @@
+What are CSS background properties?
+	background properties are used to add background effects for elements. 
+	There are five backgrounds properties
+	1.background-color
+	2.background-image
+	3.background-repeat
+	4.background-position
+	5.background-attachment
+	6.background
+--
+What is the use of background-color in CSS?
+	It changes the color of the background of any element.
+--
+What is opacity/transparency and what is its use?
+	The opacity property specifies the opacity/transprancy of an element. 
+	It can take a value from 0.0 to 1.0 The lower value, the more transprant.
+--
+What is the use of CSS background-image?
+	The background-image property specifies an image to use as the background of an element.
+	background-image must not disturb the text above it.
+--
+What is background-repeat in CSS?
+	By default, the background-image property repeats an image both horzonally and vertically.
+	some images should be repeated only horizontally or vertically, or they will look strange.
+--
+What is the use of background-position in CSS?
+	It help set a possition of image like left, right, center, and top-right etc.
+--
+What is the use of background-attachment in CSS?
+	The background-attachment property specifies wether the background image should scroll or be fixed.
+--
+What is the background shorthand?
+	To shorten the code, it is posible to specify all the background properties in one single property.
+	This is called a shorthand property.

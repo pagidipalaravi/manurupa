@@ -27,7 +27,7 @@ What is difference between angularJs and angular?
 	Angular framework was introduced in 2016, it uses typescript as programming language.
 	It is completly rewritten framework, it is not related with angularjs. we are calling it as Angular2.
 		Angular2
-		Angular3 xx
+		Angular3 xxx
 		Angular4
 		...
 		...
@@ -55,6 +55,7 @@ How to check the angular version?
 How to create an angular project?
 	ng new  hrmsapp
 What is routing in angular?
+//TODO
 --
 What is difference between css scss?
 //TODO ask Harika mam
@@ -62,17 +63,31 @@ How to build a angular project?
 	>ng build
 How to run a angular project?
 	>ng serve
+What is the difference between build and serve?
+//
 What is package.json file contains?
-	What are the libraries that we are using into our angular project those are registred into package.son with version information.
+	What are the libraries that we are using into our angular project those are registred into package.json 
+	with version information.
 	package.json contains libraries versioning information but not libraries.
-What is difference between build and serve?
+--
 How to install bootstrap into angular?
 In how many ways we can add bootsrap to angular project?
  3 ways
+ //TODO
 --
 How an angular app gets started and loaded?
 
 ==
+25 data binding
+	String Interpolation
+		HTML Template	<--		Typescript
+		Exmaple
+		
+	Property Binding
+	Event Binding
+	
+	Tow-Way-Binding
+		([(ngmodel)]="data")
 What is interceptors?
 	this is a unique type angular service.
 	we can implement interseptors allow us intercept incoming or outgoing HTTP requests using the HTTPClient.

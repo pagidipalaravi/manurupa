@@ -3,9 +3,9 @@ HTML attributes
 	All html elements can have attributes.
 	Attributes are always specified in the start tag only.
 	Attributes usually come in name/value pairs like: attribute-name="attribute-value".
-	Example
-	<human name="" dob="" fn =""></human>
-	
+	Example:
+	<human name="" dob="" fn="" ln=""></human>
+--
 href attributes
 	The <a> tag defines a hyperlink. The href attribute specifies the URL of the page.
 	Example:
@@ -74,5 +74,5 @@ lang Attribute
 title attribute
 Single or Double Quotes
 What is difference between Absolute URL and Relative URL?
-Absolute URL
 Relative URL
+Absolute URL

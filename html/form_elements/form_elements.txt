@@ -1,0 +1,12 @@
+Whar are the different types of form elements
+	<input>
+	<label>
+	<select>
+	<textarea>
+	<button>
+	<fieldset>
+	<legend>
+	<datalist>
+	<output>
+	<option>
+	<optgroup>

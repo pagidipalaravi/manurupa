@@ -1,2 +1,9 @@
-Global Protect VPN
-Cisco VPN
+What is VPN?
+	Cisco
+	Citrix
+	FortiClient
+	Global Protect
+	What is RDP?
+		It is a Windows OS application.
+Company VPN
+Client VPN

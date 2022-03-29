@@ -1,5 +1,29 @@
-What is Javascript Data Types?
-	Javascript variables can hold different datatypes such as numbers, strings , objects and many more.
+What are Data Types?
+	Javascript variables can hold different datatypes such as 
+	number
+	bigint
+	string 
+	boolean 
+	objects 
+	and many more.
+number
+	Range
+		[+(253-1) to (-253-1)]
+		9007199254740991 to -9007199254740991
+	syntax:
+		varaiable_type variable_vaule = number;
+	Exapmple:
+		let n1 = 123456789;
+bigint
+	Range
+		[]
+	syntax:
+		varaiable_type variable_vaule = number+n;
+	Exapmple:
+		let n1 = 1234567890123456789012345678901234567890n;
+String
+	
+
 What is the concept of Data Types?
 	In programming, datatypes are importantt concept.
 	To be able to operate on variables, it is important to know something about the type.

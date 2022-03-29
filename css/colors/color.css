@@ -1,27 +1,34 @@
-h1 {
-	color : Tomato;
-	border : solid green;
+#color {
+	color : tomato;
+	border : 1px solid green;
 }
 
-h2 {
-	background-color : #ffddee;
+#hex {
 	color : #994477;
+	/*color : #947;*/
+	background-color : #ffddee;
+	/*background-color : #fde;*/
 }
 /*The below s the rgb and rgba formats*/
-h3 {
+#rgb {
 	color : rgb(255,255,255);
-	background-color : rgba(10,50,30,0.2);
+	background-color : rgba(0,0,0);
 }
-/*
-h4 {
+#rgba {
+	color : rgb(255,255,255,0.3);
+	background-color : rgba(0,0,0,0.5);
+}
+
+#hsl {
 	background-color : hsl(230,50%,60%);
-	color : hsla(350,40%,20%,0.6);
+	color : hsla(350,40%,20%);
+}
+#hsla {
+	background-color : hsl(230,50%,60%,0.3);
+	color : hsla(350,40%,20%,0.7);
 }
 p {
 	background-color : pink;
 	color : Blue;
 }
 */
-body {
-	background-color: yellow;
-}

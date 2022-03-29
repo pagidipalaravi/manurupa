@@ -1,0 +1,6 @@
+What is action Attribute?
+What is target Attribute?
+What is method Attribute?
+What is GET Method?
+What is POST Method?
+What is autocomplete Attribute?

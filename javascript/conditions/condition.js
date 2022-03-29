@@ -1,12 +1,12 @@
 function main(){
-	ifTrue();
-	ifFalse();
-	ifElseTrue();
-	ifElseFalse();
+	//ifTrue();
+	//ifFalse();
+	//ifElseTrue();
+	//ifElseFalse();
 	//ifCondition();
 	//ifElseCondition();
 	//elseIfLadder();
-	//switchCaseBreakCondtion();
+	switchCaseBreakCondtion();
 }
 //
 function ifTrue(){
@@ -37,14 +37,13 @@ function ifElseFalse(){
 }
 
 function ifCondition() {
-	var age = "17";
+	var age = 17;
 	if (age>=18) {
 		console.log("you are eligible to apply for Driving Licence");
 	}
 }
-//
 function ifElseCondition() {
-	var age = "13";
+	var age = 19;
 	if (age>=18) {
 		console.log("you are eligible to apply for Driving Licence");
 		}
@@ -52,21 +51,28 @@ function ifElseCondition() {
 		console.log("you are not eligible to apply for Driving Licence, please apply after"+" "+(18-age)+" "+"years");
 	}
 }
-//
 function elseIfLadder() {
 	const time = new Date().getHours();
 	let greeting;
 	if (time<10) {
 		greeting = "Good Morning";
 	}
+	else if (time < 12) {
+		greeting = "Good Afternoon";
+	}
+	else if (time < 16) {
+		greeting = "Good Evening";
+	}
 	else if (time < 20) {
 		greeting = "Good Day";
 	}
 	else {
-		greeting = "Good Evening";
+		greeting = "Good Noon";
 	}
-	document.getElementById("demo1").innerHTML= greeting;
+	console.log(greeting);
 }
+
+//
 function switchCaseBreakCondtion(){
 	let day;
 	console.log(new Date().getDay());
@@ -92,4 +98,5 @@ function switchCaseBreakCondtion(){
 	  case  6:
 		day = "Saturday";
 	}
+	console.log(day);
 }

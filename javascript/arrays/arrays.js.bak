@@ -1,0 +1,7 @@
+function arrays() {
+	
+}
+
+function employeeArray() {
+	let employeesArray = ["Sai","Raja","Bharath"];
+}

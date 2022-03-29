@@ -27,6 +27,9 @@ What is <!DOCTYPE html>?
 	We are giving information to the browser that this document is an html5 document.
 	Browser also compiles the html document by following html5 standards.
 --
+What is tag?
+	<start-tag-name>
+	</end-tag-name>
 what is <html>?
 	This is the root element in html page.
 --
@@ -51,7 +54,6 @@ what is <p>?
 	This element defines a paragraph.
 --
 What is an HTML Element?
- 	HTML elements tell the browser how to display the content.
 	HTML element is defined by start tag, some content, and end tag.
 	--
 	Syntax:
@@ -61,12 +63,12 @@ What is an HTML Element?
 		<h1>Content here One</h1>
 		<h6>Content here six</h6>
 	--
-What is Empty Elemnts?
+What are Empty Elemnts?
 	Some elements have no content.
 	These elements are called as empty elements.
 	Empty elements have no end tag.
 What are the tags that doesn't have end tag?
-	br, img, etc...
+	<br>, <img>, <link> etc...
 --
 What is browser?
 	The purpose of a browser is to read HTML documents and display them correctly.
@@ -74,14 +76,14 @@ What is browser?
 	Example
 	Chrome, Edge, Firefox, Safari.
 --
-  
-// TODO
-What is difference between element and tag?
+What is the Server?
+	Server is a machine, where we host our web application.
+--
 What is the difference between web browser and web server?
 	web browser
 		It will be installed in client machine.
 		Example:
-			chrome, firefox, edge
+			Chrome, Edge, Firefox, Safari.
 	Web Server
 		It will be installed in server machine.
 		Example:
@@ -104,5 +106,7 @@ Year	Version
 2017	W3C Recommendation: HTML5.1 2nd Edition
 2017	W3C Recommendation: HTML5.2
 ==
+FAQs
+What is difference between element and tag?
 What is the difference between html4 and html5?
-//TODO
+What is the difference between web browser and web server?

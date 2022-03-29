@@ -1,6 +1,6 @@
 What are the html elements?
 	HTML elements are basic build blocks of html page.
-	Element is defined by start tag, some content and end tag
+	Element is defined by start tag, some content and end tag.
 	Element is everything from start tag to end tag.
 	Syntax:
 		<tagname>content goes here..</tagname>
@@ -15,12 +15,20 @@ What are Nested elements?
 		<!DOCTYPE html>
 		<html>
 			<head>
-				<title>Elements</title>
+				<title>
+					Elements
+				</title>
 			</head>
 			<body>
-				<h1>This is a heading</h1>
-				<p>This is a para.</p>
+				<h1>
+					This is a heading
+				</h1>
+				<p>
+					This is a para
+				</p>
 			</body>
+			<footer>
+			</footer>
 		</html>
 	Example explained
 		The <html> element is the root element and it defines the whole HTML document.
@@ -32,7 +40,9 @@ What are Nested elements?
 		The <h1> element defines a heading.
 		It has a start tag <h1> and an end tag </h1>.
 		The <p> element defines a paragraph.
-		It has a start tag <p> and an end tag </p>.
+		It has a start tag <p> and an end tag </p>
+		The <footer> element defines the document's footer.
+		It has a start tag <foter> and an end tag </footer>.
 --
 Never skip the End Tag
 	Some HTML elements will display correctly, even if you forget the end tag.
@@ -58,7 +68,7 @@ HTML is not case sensitive
 	but always use lowercase tag names.
 --
 FAQs
-	What are the html elements?
-	What are Nested elements?
-	What is the difference b/w tag and element?
-	What are empty HTML elements?
+What are the html elements?
+What are Nested elements?
+What is the difference b/w tag and element?
+What are empty HTML elements?

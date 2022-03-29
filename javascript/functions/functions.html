@@ -6,11 +6,13 @@
 	<body>
 		<label for="n1">First Number:</label><br>
 		<input type="number" name="n1" id="n1"><br>
-		<label for="n2">Seond Number:</label><br>
+		<label for="n2">Second Number:</label><br>
 		<input type="number" name="n2" id="n2"><br>
-		<button type="button" onclick="addition();">+</button>
-		<button type="button" onclick="substraction();">-</button>
-		<button type="button" onclick="multiplication();">*</button>
-		<button type="button" onclick="division();">/</button>
+		<label for="res">Result = </label>
+		<span id="res"></span><br>
+		<button type="button" onclick="calculate('+');">+</button>
+		<button type="button" onclick="calculate('-');">-</button>
+		<button type="button" onclick="calculate('*');">*</button>
+		<button type="button" onclick="calculate('/');">/</button>
 	</body>
 </html>

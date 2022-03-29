@@ -3,12 +3,11 @@ Editors
 	notepad++
 ==
 IDEs	Integrated Development Environments
-	Visual Studio Code	Microsoft
+	Visual-Studio-Code	Microsoft
 	Eclipse				Eclipse
 	Webstrome			jetbrains
 ==	
 Online Editors
-	https://www.w3schools.com/
 	https://stackblitz.com/
 	https://codepen.io/
 	https://jsfiddle.net/

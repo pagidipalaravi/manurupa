@@ -5,16 +5,14 @@
 input{
 	border-radius: 5px;
 }
-body{
-	background-color: aliceblue;
-}
+
 h1{
 	text-align:center;
 	background-color: rgb(255, 0, 200); 
 	color: white;
 }
 .employeeForm {
-		margin-left:200px;
+		margin-left:2px;
 }
 p{
 	color: red;
@@ -30,11 +28,11 @@ p{
 	clear: both;
 	margin-bottom: 10px;
 }
+
 @media screen and (max-width: 767px) and (min-width: 320px)  {
 	.column {
 		float: left;
-		width: 100%;
-		border: 1px solid blue;
+		width: 99%;
 		border-collapse: collapse;
 	}
 }
@@ -43,17 +41,13 @@ p{
 	.column {
 		float: left;
 		width: 49%;
-		border: 1px solid green;
-		border-collapse: collapse;
 	}
 }
 @media screen and (min-width: 1023px) {
 	.column {
 		float: left;
 		width: 33%;
-        text-align: left;
-		border-collapse: collapse;
-        border: hidden;		
+        text-align: left;	
 	}
 }
 .hide-msg{

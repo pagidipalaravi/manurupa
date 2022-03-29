@@ -1,8 +1,8 @@
 Why we have to use Conditional Statements?
 	While we are writing a code, we want to perform actions for different conditions.
 	So, conditional statements are used to perform different actions based on different conditions.
-What are the conditional statements we have in Javascript?
-	We have the following Conditional Statements
+--
+What are the conditional statements?
 		if
 		else
 		else if
@@ -11,14 +11,33 @@ What is if statement?
 	if statement is used to specify a block of code will executed, if a specified condition is true.
 	if should be in lowercase, Uppercase letters (IF) will generate a Javascript error.
 	Syntax:
+		if(condition) {
+		// true condition block of code
+		}
 	Example:
 What is else Statement?
 	else statement is used to specify a block of code to be executed, if a specified condition is false.
 	Syntax:
+		if(condition) {
+		// condition true block of code
+		}
+		else {
+			//condition not true block of code
+		}
 	Example:
 What is else if statement?
 	else if statement is used to specify a new condition , if the condition if false.
 	Syntax:
+		if(condition1) {
+		// condition true block of code
+		}
+		else if (condition2) {
+			//else if condition true block of code
+		}
+		else {
+			//if all condition not true block of code 
+		}
 	Example:
-		
-	 
+==
+Difference between else if and switch?
+

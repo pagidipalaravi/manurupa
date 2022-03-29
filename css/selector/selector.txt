@@ -15,7 +15,6 @@ How many types of simple selectors are there?
 	Class
 --
 What is element selector? 
-	Similar elements
 	The element selector select the html element based on the element name.
 	Syntax:
 		element {
@@ -23,7 +22,6 @@ What is element selector?
 			property:value;
 			etc...,
 		}
-		
 	Example:
 	p {
 		text-align:center;
@@ -32,7 +30,6 @@ What is element selector?
 	Here all <p> elements on the page will be centerd aligned, with a blue text color.
 ==
 What is id selector? 
-	Unique element
 	The id selector is uses the id attribute of the html element to select the specific element.
 	The id of an element is unique with in a page, so thst the id selector is used to select one unique element.
 	To select an element with a specific id , write a hash(#) character ,followed by the id of the element.
@@ -53,7 +50,6 @@ What is id selector?
 	An id name cannot start with a number
 ===	
 What is class selector?
-
 	The class selector select html element by using class attribute.
 	to select elements with a specific class write period(.) character, followed by the class name
 --

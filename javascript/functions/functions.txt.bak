@@ -1,0 +1,57 @@
+What is function?
+	function is a block of code designed to perform a particular task.
+	function is executed when "something" invokes it(calls it).
+	syntax:
+	function function_name(parameter1, parameter2, parameter3) {
+		//block of code [sometime we will write 100 lines of code] designed to perform a particular task
+	}
+	Exmaple:
+	createEmployee(id, fn ,ln){
+		//block of code [sometime we will write 100 lines of code] designed to perform a particular task
+	}
+	parameters are listed inside the paranthesis() in the function definition.
+	arguements are the values received by the function when it is invoked.
+	Inside the function, the arguments (the parameters) behave as local variables.
+====
+what is function invokation?
+	The code inside the function will execute when "something" invokes(calls) the function.
+====	
+what is function return?
+	When function reaches "return" statement, the function will stop executing.
+	If the function was invoked from a statement, javascript will "return" to execute the code after invoking statement.
+	Functions often compute a return value. The return value is "returned" back to the "caller"
+	Syntax
+	function functionName () {
+		//block of code
+		return somthing;
+	}
+	Example
+	function addition(n1, n2) {
+		let res = n1 + n2;
+		return res;
+	}
+====
+Why Functions?
+	You can reuse code: Define the code once, and use it many times.
+	You can use the same code many times with different arguments, to produce different results.
+--
+The () Operator Invokes the Function
+Accessing a function with () will return the function result.
+Accessing a function without () will return the function object instead of the function result.
+	Syntax
+	functionName();
+	Example
+	addition(10, 20);
+--
+Functions Used as Variable Values
+	syntax
+	let variableName = functionName();
+	Example
+	let varaibleValue = addition(10, 20);
+--
+Local Variables
+	Variables declared within a JavaScript function, become LOCAL to the function.
+	Local variables can only be accessed from within the function.
+	Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+	Local variables are created when a function starts, and deleted when the function is completed.
+--

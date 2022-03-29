@@ -1,10 +1,18 @@
+			Google 		V8 JavaScript engine
+			Google 		Chrome			
+			Microsoft	Edge
+			--
+			Node		NodeJS
+--
 What is NodeJs?
 	Node.js is a JavaScript runtime, Which is built on Chrome's V8 JavaScript engine (JS Compiler)].
+--
 What is the use of nodeJS?
 	We can run javascript files from the the CLI by using nodejs, without having any web browser.
 	It acts like as a server, it will compile and runs the js files.
-	nodejs itself acts as a server,   means we can run our application without servers.
+	nodejs itself acts as a server, means we can run our application without servers.
 	serverless
+--
 What is the difference between interpreter and compiler?
 What is design time
 What is compilation time

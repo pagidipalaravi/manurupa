@@ -16,9 +16,9 @@ Frontend : Frontend Developer
 Languages
 	HTML		Angular
 	CSS			Bootstrap
-	Javascript	Typescript
+	Javascript	NodeJS	-	Typescript
 	--
-	HTML : Rawdata - Baby
+	HTML : Rawdata
 	CSS  : Beautification
 	Javascript : Intelligence
 ======================================
@@ -29,15 +29,17 @@ Languages
 		J2EE
 	SpringBoot
 	Hibernate
+	--
+	NodeJS
 ======================================
 Backend : Database Developer
-	Relational Database
+	Relational Database Management Systems
 		SQL Based Databases
 			Open Source
 				MySQL, Oracle XE, PostgreSQL
 			Licenced	
-				Oracle EE, DB2, MS SQLServer
-	Non Relational Database
+				Oracle EE, IBM DB2, MS SQLServer
+	Non Relational Databases
 		Non SQL Databases
 			Open Source
 				MongoDB, Cassendra
@@ -59,4 +61,13 @@ SPRINT
 serviceNow
 --
 Difference between web site and web app?
+
+Web Applcation Developer
+
+	MVC Architecture
+		View		Frontend	Angular
+		Conroller	Middleware	Java
+		Model		Backend		Oracle Database
+
+
 

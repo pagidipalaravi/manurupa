@@ -1,0 +1,22 @@
+.margin {
+	width : 300px;
+	border : 10px solid red;
+	margin-top : 10px;
+	margin-right : 20px;
+	margin-bottom : 30px;
+	margin-left : 40px;
+}
+.ex1 {
+	border : 10px solid blue;
+	margin : 10px 20px 30px 40px;
+	
+}
+.ex2 {
+	border : 10px solid blue;
+	margin : 40px 30px 20px 10px;
+}
+.ex3 {
+	width : 150px;
+	margin : 10px 20px 30px 40px;
+	border : 10px solid blue;
+}

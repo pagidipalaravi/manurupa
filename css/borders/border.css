@@ -1,0 +1,26 @@
+.style {
+	border-style : dotted;
+	}
+.width {
+	border-style : solid;
+	/*border-width : 5px;*/
+	/*border-width : 10px 20px;*/
+	border-width : 10px 15px 20px 25px;
+	}
+.color {
+	border-style : solid;
+	border-width : 10px 15px 20px 25px;
+	/*border-color : #ff0000;*/
+	/*border-color: red green;*/
+	border-color: red green blue yellow;
+}
+.shorthand {
+	/*border-style : solid;
+	border-width : 5px;
+	border-color : #ff0000;*/
+	border: 5px  solid #ff0000;
+}
+.radius {
+	border : 5px solid green;
+	border-radius: 10px;
+	}

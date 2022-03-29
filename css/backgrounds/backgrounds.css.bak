@@ -1,0 +1,48 @@
+#div1{
+	height:200px;
+	background-image: url("paper.gif");
+	/*background-repeat: no-repeat;
+	background-position: left;
+	background-color: lightblue;
+	background-attachment: fixed;*/
+}
+#div2{
+	height:200px;
+	background-image: url("paper.gif");
+	background-repeat: no-repeat;
+	/*background-position: left;
+	background-color: lightblue;
+	background-attachment: fixed;*/
+}
+#div3{
+	height:800px;
+	background-image: url("gradient_bg.png");
+	/*background-repeat: repeat-x;
+	background-position: left;
+	background-color: lightblue;
+	background-attachment: fixed;*/
+}
+#div4{
+	height:800px;
+	background-image: url("gradient_bg.png");
+	background-repeat: repeat-x;
+	/*background-position: left;
+	background-color: lightblue;
+	background-attachment: fixed;*/
+}
+#div5{
+	height:800px;
+	background-image: url("img_tree.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	/*background-attachment: fixed;
+	background-color: lightblue;*/
+}
+#div6{
+	height:800px;
+	/*background-image: url("img_tree.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-attachment: fixed;*/
+	background-color: lightblue;
+}

@@ -1,27 +1,53 @@
-function addition() {
-	//All JavaScript variables must be identified with unique names. These unique names are called identifiers.
-	/*
-	Names can contain letters, digits, underscores, and dollar signs.
-	Names must begin with a letter
-	Names can also begin with $ and _ (but we will not use it in this tutorial)
-	Names are case sensitive (y and Y are different variables)
-	Reserved words (like JavaScript keywords) cannot be used as names
-	*/
-	//var !num1 = 15; // declaration // Error : Unexpected token '!'
-	var num1 = 15; // declaration // 
-	var num2 = 15; // declaration // 
-	
-	var num2 = 16; // redeclartion is possible
-	var res1 = num1 + num2;
-	document.getElementById("demo").innerHTML ="" + res1;
-	let num = 16; // redeclartion is possible
-	let NUM = 16; // redeclartion is possible
-	//let if = 16; // redeclartion is possible //Error : Unexpected token 'if'
-	let num3 = 50; // declaration
-	let num4 = 60; // redeclartion is not possible // Error: 'num3' has already been declared
-	let res2 = num3 + num4;
-	document.getElementById("demo").innerHTML ="" + res2;
-	var name = "Ravi";
-	var name;// the value is not undefined, because it is pointing to name only
-	console.log(name);
+function variables() {
+	identifiers();
+	nothing ();
+	vars();
+}
+function identifiers () {
+	console.log("identifiers");
+	num1 = 123;
+	num2 = 321;
+	num$ = 123;
+	num_ = 321;
+	$num = 123;
+	_num = 321;
+	num3 = 123; // case sensitive
+	NUM3 = 321; // case sensitive
+	//1num; // can't start variable name with digit.
+	//2num; // can't start variable name with digit.
+	//for = 123; //reserved words are not allowed.
+	//if = 321; //reserved words are not allowed.
+	res = num1 +num2;
+	console.log(res);
+}
+function nothing () {
+	console.log("nothing");
+	num1 = 123;
+	num2 = 234;
+	res = num1 + num2;
+	console.log(res);
+}
+
+function vars() {
+	console.log("vars");
+	var num1; //variable declaration
+	var num2;
+	var res1 = num1+num2;
+	console.log(res1);
+	num1 = 123; //variable defination
+	num2 = 321;
+	var res2 = num1+num2;
+	console.log(res2);
+	//re-declaration is possible
+	var numred;
+	var numred;
+	// usage before declaration
+	var res3 = num3 + num4; // variable usage
+	var num3; // variable declaration
+	var num4;
+	var res3 = num1 + num2;
+	console.log(res3);
+	num3 = 123; //variable defination
+	num4 = 321;
+	console.log(res3);
 }
