@@ -68,7 +68,7 @@ What are Empty Elemnts?
 	These elements are called as empty elements.
 	Empty elements have no end tag.
 What are the tags that doesn't have end tag?
-	<br>, <img>, <link> etc...
+	<br>, <img> and <link> etc...
 --
 What is browser?
 	The purpose of a browser is to read HTML documents and display them correctly.
