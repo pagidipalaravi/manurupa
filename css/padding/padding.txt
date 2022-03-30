@@ -1,16 +1,25 @@
-What is the use of padding in CSS?
-	In CSS, padding is used to create a space around an elements, inside of any border.
-Im how many ways we can specify padding?
-	CSS can be specifies the padding for each side of an element:
+When to use padding?
+	If we want to create a space around an elements, inside of border.
+--
+How can we specify padding in shorthand?
+	By using padding property.
+	Syntax:
+	padding : top right bottom left;
+	Example:
+	padding : 10px 20px 30px 40px;
+--
+How can we specify padding for individual sides?
+	We can specify the padding for each side of an element by following below properties.
 		padding-top
 		padding-right
 		padding-bottom
 		padding-left
-What are the property values we have for padding?
-	All the padding properties can have the following values:
-		length - It specifies the padding in px, pt, cm,etc
-		% - It specifies a padding in % of width of an element.
-		inherit - It specifies that the padding should be inherited from the parent element.
+--
+What are the different values for padding property?
+	length  -It specifies a padding in px, pt, cm etc.
+	% 		-It specifies the padding in % of the width of an element.
+	inherit -It specifies that the padding is inherited from the parent element.
+	Tip: Negative values are allowed.
 Define Padding and Width Element?
 	The CSS width property specifies the width of an element content area.
 	The content area is the portion inside the padding, border and margin, nothing but an box model.

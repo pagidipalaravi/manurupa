@@ -1,22 +1,30 @@
-.margin {
+.margin1 {
 	width : 300px;
 	border : 10px solid red;
+	margin : 10px;
+}
+.margin2 {
+	width :  300px;
+	border : 10px solid green;
 	margin-top : 10px;
 	margin-right : 20px;
 	margin-bottom : 30px;
 	margin-left : 40px;
+
 }
-.ex1 {
+.margin3 {
+	width :  300px;
+	border : 10px solid green;
+	margin : 10px 20px 30px 40px;
+
+}
+.margin4 {
 	border : 10px solid blue;
 	margin : 10px 20px 30px 40px;
 	
 }
-.ex2 {
+.margin5 {
 	border : 10px solid blue;
 	margin : 40px 30px 20px 10px;
 }
-.ex3 {
-	width : 150px;
-	margin : 10px 20px 30px 40px;
-	border : 10px solid blue;
-}
+
