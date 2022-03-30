@@ -16,10 +16,11 @@ How can we specify padding for individual sides?
 		padding-left
 --
 What are the different values for padding property?
-	length  -It specifies a padding in px, pt, cm etc.
-	% 		-It specifies the padding in % of the width of an element.
-	inherit -It specifies that the padding is inherited from the parent element.
+	length  -specifies a padding in px, pt, cm etc.
+	% 		-specifies the padding in % of the width of an element.
+	inherit -specifies that the padding is inherited from the parent element.
 	Tip: Negative values are allowed.
+--
 Define Padding and Width Element?
 	The CSS width property specifies the width of an element content area.
 	The content area is the portion inside the padding, border and margin, nothing but an box model.
