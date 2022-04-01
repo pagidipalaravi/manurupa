@@ -42,3 +42,4 @@ Full width = element height + top and bottom padding + top and bottom border + t
 		+(20+20)-left and right border
 		+(30+30)-left and right margin
 		=320
+--
