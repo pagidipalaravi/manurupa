@@ -5,14 +5,14 @@ What is Language?
 	The structure of language is its grammar and the free components are its vocabulary.
 --
 What is Markup Language?
-	A markup language is a set of rules governing what markup information may be included in a document.
-	how it is combined with the content of the document in a way to facilitate use by humans and computer programs.
+	Marking up the text within the tags is called markup langauge.
+	Example
+		HTML, XML, XSLT, PHP, etc...
 --
 What is Hyper Text?
-	Hypertext is text displayed on a computer display or other electronic devices with references 
-	(hyperlinks) to other text that the reader can immediately access.[1] 
+	Hypertext is a text with hyperlinks, when you click on hyperlinks, it will navigates to other page.
 	Hypertext documents are interconnected by hyperlinks, which are typically activated by 
-	a mouse click, keypress set, or screen touch
+	a mouse click, keypress, or screen touch
 --
 What is HTML?
 	HTML stands for Hyper Text Markup Language.
@@ -87,7 +87,7 @@ What is the difference between web browser and web server?
 	Web Server
 		It will be installed in server machine.
 		Example:
-			Tomcat, Jboss, weblogic
+			Tomcat, Jboss, weblogic 
 ==
 Tell me About HTML History?
 Since the early days of the World Wide Web, there have been many versions of HTML:
@@ -107,6 +107,6 @@ Year	Version
 2017	W3C Recommendation: HTML5.2
 ==
 FAQs
-What is difference between element and tag?
+What is difference between tag and element?
 What is the difference between html4 and html5?
 What is the difference between web browser and web server?

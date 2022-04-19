@@ -1,5 +1,7 @@
 URL - 	Uniform Resource Locator
 URI -	Uniform Resource Identifier
+
+https://www.bigbasket.com/
 https://www.flipkart.com/
 
 https tcp/ip
@@ -16,7 +18,7 @@ Local Area Network
 
 Wide Area Network
 
-HTTP
+http tcp/ip
 
 Hyper Text Transfer Protocal
 
@@ -27,8 +29,3 @@ Text
 Hypertext
 	English + Something
 	English + HyperLinks
-
-www
-flipkart.com domain
-
-https:\\www.flipkart.com\

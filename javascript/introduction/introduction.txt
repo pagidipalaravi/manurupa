@@ -1,7 +1,7 @@
 Can JavaScript change HTML content?
 	Yes, we can change HTML content by using the method getelementById().
 	What is getElementById()?
-		By giving an id="demo", we can get an element from the html page.
+		By giving an id="myImage", we can get an element from the html page.
 	What is innerHTML?
 		It defines the content between start tag and end tag of an element
 	Example
@@ -35,6 +35,9 @@ Define External JavaScript?
 	JavaScript files have the extension of .js.
 	You can place an external script reference in <head> or <body> as you like.
 What are the Advantages of External JavaScript?
-	It separates HTML and code.
+	It separates HTML and JS code.
 	It makes HTML and JavaScript easier to read and maintain.
 	Cached JavaScript files can speed up page loads.
+	
+FAQS
+	What is diffrence between display:none and visibility:hidden?

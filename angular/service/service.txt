@@ -1,0 +1,17 @@
+How did you call rest services in your project?
+	Create a service package and service classes and add the service classes in the provider section of app.module.ts
+	Use the HttpClient angular library and methods.
+--
+What are the advantages of writing service classes?
+	There is a clear separation between data binding layer and data layer
+	You can reuse the service class code into many component classes
+--
+What are the services that you developed in your project?
+	Login Service
+	User Service
+	Roles Service
+	Group Service
+	Logging Service
+--
+How can we make a typescript class as a service class?
+ By using @Injectable()

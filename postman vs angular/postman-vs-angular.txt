@@ -1,0 +1,11 @@
+
+postman		angular
+
+postman		HttpClient
+get			get
+baseURL		baseURL
+wait		rxjs
+Response	Observer	
+
+Javascript	Java
+won't Wait	Wait

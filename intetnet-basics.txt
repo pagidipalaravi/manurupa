@@ -1,0 +1,8 @@
+localhost	
+Local IP 	: 192.168.31.58
+Dynamic IP	: 10.147.106.188
+Static IP 	: 10.20.23.234 	Act Fibernet	:	1000 rs
+domain Name	: aktrix.com	godaddy			:	1000 rs
+
+
+https://www.153.53.76.86

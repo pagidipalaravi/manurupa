@@ -1,0 +1,104 @@
+<div class="container">
+    <h2>Registration Form</h2>
+    <p [ngClass]="[error !=true ? 'success-message': 'error-message'] ">{{message}}</p>
+    <form name="form" (ngSubmit)="createEmployeeForm.valid && onSubmit()" #createEmployeeForm="ngForm">
+        <div class="form-group" ngModelGroup="createEmployeeGroup" #createEmployeeGroup="ngModelGroup">
+            <p class="help-block" *ngIf="!createEmployeeGroup.valid && createEmployeeGroup.touched ">please enter a valid
+                create employee Form Data </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <label>First name<sup class="red">*</sup></label>
+                    <input id="firstName" type="text" class="form-control" placeholder="Enter Firstname" 
+                        name="firstName" minlength="5" maxlength="20" required
+                        [ngModel]="{'is-invalid': createEmployeeForm.submitted && firstName.invalid }"
+                        ngModel #firstName="ngModel">
+                    <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="alert alert-danger">
+                        <div *ngIf="firstName.errors?.required">Firstname is required</div>
+                        <div *ngIf="firstName.errors?.maxlength">
+                            firstName cannot be more than 20 characters long.
+                        </div>
+                        <div *ngIf="firstName.errors?.minlength">
+                            firstName must be at least 5 characters long.
+                        </div>
+                    </div>
+                    <div *ngIf="createEmployeeForm.submitted && firstName.invalid" class="invalid-feedback">
+                        <div *ngIf="firstName.errors?.required">Firstname is required</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label>Last name<sup class="red"></sup>*</label>
+                    <input id="lastName" type="text" class="form-control" placeholder="Enter Lastname" ngModel
+                        name="lastName" required [ngModel]="lastName">
+                </div>
+                <div class="col-md-6">
+                    <label>Email Id<sub class="red">*</sub> <span class="alert alert-warning"
+                            *ngIf="!email.valid && email.touched">Please enter valid email</span></label>
+                    <input id="email" type="email" class="form-control" placeholder="Enter email" name="email" ngModel
+                        name="email" required email #email="ngModel">
+
+                </div>
+                <div class="col-md-6">
+                    <label>Phone Number<sup class="red">*</sup></label>
+                    <input id="phoneNumber" type="text" class="form-control" placeholder=" Enter Phone Number"
+                        maxlength="15" name="phoneNumber" minlength="10" maxlength="12" #phoneNumber="ngModel" required
+                        [ngModel]="{ 'is-invalid': createEmployeeForm.submitted && phoneNumber.invalid }">
+                    <div *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)"
+                        class="alert alert-danger">
+                        <div *ngIf="phoneNumber.errors?.required">
+                            PhoneNumber is required.
+                        </div>
+                        <div *ngIf="phoneNumber.errors?.maxlength">
+                            PhoneNumber cannot be more than 12 characters long.
+                        </div>
+                        <div *ngIf="phoneNumber.errors?.minlength">
+                            PhoneNumber must be at least 10 characters long.
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-md-4">
+                    <div class="radio" *ngFor="let gender of genders">
+                        <label>
+                            <input type="radio" name="gender" ngModel [value] ="gender" required >
+                        {{gender}}</label>
+                    </div>
+                </div-->
+                <div class="col-md-6">
+                    <label>Hire Date<sup class="red">*</sup></label><br>
+                    <input id="hireDate" type="date" class="form-conrol" placeholder=" Select date of" name="hireDate"
+                        [ngModel]="hireDate">
+                </div>
+                <div class="col-md-6">
+                    <label>Salary<sup class="red">*</sup></label>
+                    <input id="salary" type="number" class="form-control" placeholder=" Enter Salary" name="salary"
+                        [ngModel]="salary">
+                </div>
+                <div class="col-md-6">
+                    <label>Job Name<sup class="red">*</sup></label>
+                    <select id="jobId" class="form-control" name="jobId" [ngModel]="jobId">
+                        <option *ngFor="let job of jobs; let i=index" [value]="job.jobId">{{job.jobTitle}}</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label>Department Name<sup class="red">*</sup></label>
+                    <select id="departmentId" class="form-control" name="departmentId" [ngModel]="departmentId">
+                        <option *ngFor="let department of departments; let i=index" [value]="department.departmentId">
+                            {{department.departmentName}}</option>
+
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label>Manager Name<sup class="red">*</sup></label>
+                    <select type="text" class="form-control" id="managerId" placeholder="select managerid"
+                        name="managerId" [ngModel]="managerId">
+                        <option *ngFor="let manager of managers; let i=index" [value]="manager.managerId">
+                            {{manager.managerName}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary" (click)="onSubmit()"
+                    [disabled]="!createEmployeeForm.valid">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

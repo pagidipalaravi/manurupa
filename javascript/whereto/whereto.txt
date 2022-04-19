@@ -4,12 +4,12 @@ How many ways we can include javascript with html?
 		Internal
 		External
 --
-Inline JavaScript
+Inline JavaScript?
 	Writing the javascript with in the start tag.
 	Example:
 	<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
 ==
-Internal JavaScript
+Internal JavaScript?
 The <script> Tag
 	In HTML, JavaScript code is inserted between <script> and </script> tags.
 	You can place any number of scripts in an HTML document.
@@ -36,6 +36,7 @@ Example:
 What are the advantages of writing javascript in External files? 
 	It separates HTML and javascript code
 	It makes HTML and JavaScript easier to read and maintain
+	We can reuse the javascript into different html files
 	Cached JavaScript files can speed up page loads // i need to ask ravi sir after 1 month
 --
 How many javascript i can include in html file?

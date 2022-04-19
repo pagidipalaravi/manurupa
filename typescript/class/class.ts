@@ -14,8 +14,8 @@ class Employee {
     this.firstName = fn;
     this.lastName = ln;
   }
-  readEmployee() {
-    console.log(this.employeeId + ' ' + this.firstName + ' ' + this.lastName);
+	getEmployee() {
+		console.log(this.employeeId + ' ' + this.firstName + ' ' + this.lastName);
   }
 }
 let bharath = new Employee(101, 'bharath', 'kumar');
@@ -26,13 +26,10 @@ let sampath = new Employee(105, 'ravi', 'kumar');
 let chakradhar = new Employee(106, 'bharath', 'kumar');
 let brahmmam = new Employee(107, 'ravi', 'kumar');
 let ravi = new Employee(108, 'bharath', 'kumar');
-
 let arrayOfEmployees = new Array();
 arrayOfEmployees.push(bharath);
-
-
-object1.readEmployee();
-object2.readEmployee();
+object1.getEmployee();
+object2.getEmployee();
 /* 
   updateEmployee(employeeId: number) {
   }

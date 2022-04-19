@@ -1,4 +1,4 @@
-what are the Display Possibilities in javascript?
+What are the display possibilities in javascript?
 --
 	innerHTML
 		To access an HTML element, javascript can use the document.getElementById(id) method.
@@ -22,3 +22,5 @@ what are the Display Possibilities in javascript?
 		You have to call window.print() method in the browser to print the current page.
 		you cannot access output devices from javascript.
 --
+HTML <-- Javascript
+What is difference between window and document object?

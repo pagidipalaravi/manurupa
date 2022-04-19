@@ -1,0 +1,90 @@
+What is Dependency Injection?
+	Dependency Injection [DI] is a design pattern in which a class requests dependencies from 
+	external sources rather than creating them.
+	Dependencies are services or objects that a class needs to perform its function.
+	Angular's DI framework provides dependencies to a class upon instantiation.
+--
+What are advantages of Dependency Injection?
+	We no need to create an object of the service-class, we just have to pass service-classname to the 
+	constructor of component-class.
+	angular framework creates an object of service-class at the time of component-class instantiation.
+	To increase flexibility, reusability and modularity in your applications.
+--
+Example
+	Independent Classes
+		CreateEmployeeComponent.ts
+		ViewEmployeeComponent.ts
+		UpdateEmployeeComponent.ts
+		SearchEmployeeComponent.ts
+	Dependent Class
+		EmployeeService.ts
+--
+How to create an injectable service?
+	Create a typescript class and decorate with @Injectable()
+	Syntax
+		@Injectable({})
+		export class ClassName {
+			//list of methods
+		}
+	--
+	Example
+		@Injectable({})
+		export class EmployeeService{
+			createEmployee(){}
+			viewEmployees(){}
+			updateEmployee(){}
+			searchEmpoyee(){}
+			getEmployee(){}
+			getEmployeeByEmail(){}
+			getEmployeeById(){}
+		}
+--
+What is the meaning of @Injectable?
+	The @Injectable() is a decorator which specifies that Angular can use this class in the DI System.
+--
+How to inject service classes into component classes?
+	register the service class in providers array of class.component.ts
+			or
+	register the service class in providers array of app.module.ts
+	//import the service-class into component-class.
+	pass the service-class-name as an argument to the component-class constructor.
+--
+Syntax
+	app.module.ts
+		providers: [Service1,Service2],
+	class.component.ts
+		import { Service1 } from '../../service/Service1';
+		providers: [Service1],
+		@Component
+		export class ClassComponent{
+		
+			constructor(classService: ClassService){ 
+			//object creation with DI at the time of class instantiation  
+			}
+			//const classService = new ClassService();
+			//object creation with new keyword when required
+		}
+--
+Example
+	app.module.ts
+		providers: [EmployeeService, DepartmentService],
+	class.component.ts
+		import { EmployeeService } from '../../service/EmployeeService';
+		@Component
+		export class ViewEmployee{
+			constructor(employeeService: EmployeeService)
+		}
+--
+What are the services that you developed in your project?
+	Logging Service
+	Login Service
+	Users Service
+	Group Service
+	Roles Service
+--
+How many Instances of services should it be?
+It depends where we are registering the service class
+How to inject Services into Services?
+//TODO
+How to use Services for Cross-Component Communication?
+//TODO

@@ -1,6 +1,5 @@
-HOW TO CONNECT ORACLE DATA BASE In WINDOWS 10 ?
-
-	Press windows + S , then it will opens the search bar
+HOW TO CONNECT ORACLE DATABASE In WINDOWS 10 ?
+	Press Window + S, then it will opens the search bar
 	Type sql in the search bar then it will show SQL command line application.
 	Click on SQL command line application
 	Then it will open sql command line application in the command prompt
@@ -8,34 +7,60 @@ HOW TO CONNECT ORACLE DATA BASE In WINDOWS 10 ?
 	sql> conn sys as sysdba 
 	it will ask you provide the password so please provide the sys password (Oracle123) and press enter.
 	If password is correct it will shows as connected
-	
-What is User?
-What is Schema?
+--
+What is Schema? Class Teacher
+	Schema is the logical representation of a database objects.
+	It include tables, views, packages, functions, procedures, primary key, foreign key and etc...
+What is User? Teachers
+	User is  owner of the schema objects
+	we will crete users and will give permissions to access schema objects.
 What is the difference between user and schema?
-
-How to connect HR Schema in Oracle data base?
-
-	Connect Oracle data base with sys user
+--
+How to connect HR Schema in Oracle database?
+	Connect Oracle database with sys user
 	Connect hr schema by typing the below command
 	sql> conn hr;
 	it will ask you provide the password so please provide the sys password (hr) and press enter.
 	If password is correct it will shows as connected
-
-How to check the sys date in oracle data base?
+--
+How to check the sysdate in oracle database?
 	sql> select sysdate from dual;
-
-How to check the sys time in oracle data base?
+--
+How to check the systime in oracle database?
 	Sql> select systimestamp from dual;
-
-How to check all the tables and views in the oracle schema?
+--
+What is DUAL in SQL?
+It is a table that is automatically created by Oracle Database.
+DUAL is a table available in SYS schema but is accessible by the name DUAL to all users.
+It has one column, DUMMY, defined to be VARCHAR2(1), and contains one row with a value X.
+--
+How to check all the tables and views from the schema?
 Sql> select * from tab;
-What is schema?
-How to check all tables and views from the schema?
-sql>select * from tab;
-How to see the table description in oracle data base?
+--
+How to find number of rows in a table;
+Syntax
+	select count(*) from table_name;
+Example
+	select count(*) from tab;
+--
+How to see the table description in oracle database?
+Syntax
 	Sql> desc <table name>
-Ex:
+Example
  Sql> desc employees;
-
+--
 How to see all records from the table?
-Sql> select * from <table-name>;
+	Syntax
+		select * from <table-name>;
+	Example
+		select * from employees;
+--
+How to create an schema in sql?
+	syntax:
+	create user schema identified by password;
+--
+//TODO
+What is RDBMS?
+What is Table?
+How to create a table?
+What is Normalization?

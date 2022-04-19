@@ -1,0 +1,49 @@
+Class
+	Properties
+	--
+	access modifiers
+		public
+		protected
+		private
+	--
+	constructor
+		constructor()
+		this keyword
+	--
+	Super
+		super()
+		super keyword
+	--
+Methods
+	methodName(arguments): return-type{
+		//code here
+	}
+	createEmployee(employeeId:number): void {
+		//code here
+	}
+Getters / Setters
+	//TODO
+Index Signatures
+interface
+	implements
+inheritence
+	extends
+Static Members
+	common for all objects
+	not for perticular to any object
+	static members can be accessed by using classname and object
+static Blocks
+	if you want to initialize the static members we will initialize in the static block
+-
+Generic Classes
+Type Parameters in Static Members
+this at Runtime in Classes
+Arrow Functions
+this parameters
+this Types
+this-based type guards
+Parameter Properties
+Class Expressions
+abstract Classes and Members
+Abstract Construct Signatures
+Relationships Between Classes

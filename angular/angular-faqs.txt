@@ -5,8 +5,9 @@ What is SPA?
 	SPA is basically a web application where all functionalities are framed on a single page.
 	SPA has only one HTML file and bunch of  html templates, javascript and CSS files.
 	In SPA, all the html templates, css and java script files are rendered on the same page dynamically.
-	User can navigate different sections of the page by clicking on links or buttons without navigating to different pages.
-	IT looks like as a mobile application, they give better user experience.
+	User can navigate different sections of the page by clicking on links or buttons without navigating 
+	to different pages.
+	It looks like as a mobile application, they give better user experience.
 ==
 What is difference between angularJs and angular?
 	Architecture
@@ -23,22 +24,22 @@ What is difference between angularJs and angular?
 		AngularJS does not provide mobile support.
 		Angular is supported by all popular mobile browsers.
 	Version
-	Angularjs was introduced in 2010. it written in javascript, It is also called as Angular1
-	Angular framework was introduced in 2016, it uses typescript as programming language.
-	It is completly rewritten framework, it is not related with angularjs. we are calling it as Angular2.
-		Angular2
-		Angular3 xxx
-		Angular4
-		...
-		...
-		Angular11
-		Angular12		
+		Angularjs was introduced in 2010. it is written in javascript, It is also called as Angular1
+		Angular framework was introduced in 2016, it uses typescript as programming language.
+			It is completly rewritten framework, it is not related with angularjs. we are calling it as Angular2.
+			Angular2
+			Angular3 xxx
+			Angular4
+			...
+			...
+			Angular11
+			Angular12		
 ==
 What is the difference between javascript and typescript?
 	typescript superset of JavaScript
 	javascript runs in the broswer directly, compilation phase is not required.
-	typescript won't run in the broser directly, it requires compilation phase.
-	the compiler will takes ts file as input and generates the js file as output.
+	typescript won't run in the browser directly, it requires compilation phase.
+	the compiler will takes .ts file as input and generates the .js file as output.
 	Angular uses the Ahead-of-time (AOT) compiler.
 ==
 How to install angular?
@@ -72,9 +73,16 @@ What is package.json file contains?
 --
 How to install bootstrap into angular?
 In how many ways we can add bootsrap to angular project?
- 3 ways
+	1.install bootstrap using npm locally and register in styles array of angular.json file
+		install
+			install --save bootstrap@version_number
+		register
+			node_modules/bootstrap/dist/css/bootstrap.min.js
+	2. cdn
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ 3 ways 
  //TODO
---
+==
 How an angular app gets started and loaded?
 
 ==

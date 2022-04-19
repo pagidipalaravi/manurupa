@@ -1,0 +1,42 @@
+What are directives?
+	Directives are instructions in the DOM
+--
+What are the different types of directives?
+	attribute directives
+	structural directives
+	custom directives
+--
+attribute directives
+	ngStyle
+	ngClass
+--
+structural directives
+	ngif
+	ngSwitch
+	ngFor
+--
+custom directives
+ng generate directive directive_name
+==
+What is ngIf?
+	*ngIf
+	ngIf with an Else?
+--
+Example
+if employees are present show the table and Total Number of Employees = number else show the "No Data Found" Message.
+==
+What is ngFor?
+--
+Example
+Iterate the arrayOfEmployees using ngFor and shw it as a table
+==
+ngStyle
+What is ngStyle?
+Example
+	If sevice is throwing an error show the error message in red color
+	If serive is not throwing an error  then show the success message in blue color?
+==
+What is ngClass?
+Example
+if employees are present show the success message in green color else show the error message in red color;
+==

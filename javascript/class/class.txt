@@ -1,38 +1,50 @@
 What is a class?
 	Class is a blueprint of an Object.
-	Class is a logical entity, Object is a physical entity.
 	Class is a combination of properties and methods.
-	Proprties defines the state of object and Methods defines the behaviour
-	In Realworld everything is an objects and classes.
+	Proprties defines the state of the object and Methods defines the behaviour of the object
+	Class is a logical entity, where as Object is a physical entity.
 --
 Example
 	Class							Object
-	Blueprint		Construct		Home1, Home2, NavyaHome
-	Prescription	Medical			Medicines1, Medicines2, Medicines3
-	Booklet			Buy				Ford1, Ford2
-	Employee		Consruct		Bharath, Sampath
+	Blueprint		Constructor		Home1, Home2, Home3
+	Prescription	Medicalshop		Medicines1, Medicines2, Medicines3
+	Employee		Consructor		Bharath, Sampath
+	Account			Consructor		RaviAccount, RajaAccount			
 --
 Syntax
-class ClassName{
-
-}
+	class ClassName{
+	//properties
+	//methods
+	}
+Example
 class Employee {
-
+	//properties
 	let employeeId;
 	let firstName;
 	let lastName;
+	//methods
 	
 	createEmployee(){
 	// approx 100 lines of code
 	}
+	
 	viewEmployee(){
 	// approx 100 lines of code
 	}
+	
 	updateEmployee(){
 	// approx 100 lines of code
 	}
+	
 	deleteEmployee(){
 	// approx 100 lines of code
 	}
 	
 }
+==
+What is object?
+Object is an instance of a class. Object is a physical entity.
+Wihtout class we can't create object.
+==
+What is difference between instance and Object?
+//TODO

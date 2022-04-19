@@ -1,0 +1,67 @@
+How to create a schema in database?
+	Syntax:
+	create user user_name identified by password;
+	connect to oracle database as sys user. issue the CREATE USER command to generate a new account.
+	Example:
+	CREATE USER finance IDENTIFIED BY finance;
+--
+What is use of grant privilege to user or schema?
+	GRANT is a very powerful statement with many possible options, but the core functionality is to 
+	manage the privileges of both users and roles throughout the database.
+--
+How grant privilege to schema?
+	Typically, you’ll first want to assign privileges to the user through attaching the account to various roles, 
+	starting with the CONNECT role:
+	syntax:
+	GRANT CONNECT TO finance;
+	GRANT CONNECT, RESOURCE, DBA TO finance;
+--
+how to Assign Privileges  to schema?	
+	We also need to ensure our new user has disk space allocated in the system to actually create or 
+	modify tables and data, so we’ll GRANT TABLESPACE like so:
+	synatax:
+	GRANT UNLIMITED TABLESPACE TO finance;
+--
+How to create new connection in sql developer?
+	clik on the add new connection then give the user name and the passward.
+	example:
+	username:hr
+	passward:hr 
+	select the role in select.
+	if you given correct user and passward test will show success or else it will show some error.
+	if it is success then connect to schema.
+--
+How to create a table?
+	Syntax:
+		CREATE TABLE table_name (
+		column1 datatype,
+		column2 datatype,
+		column3 datatype,
+			....
+		);
+	Example:
+		CREATE TABLE Persons (
+		PersonID int,
+		LastName varchar2(255),
+		FirstName varchar2(255),
+		Address varchar2(255),
+		City varchar2(255)
+		);
+--
+How to insert data into table?
+	synatax:
+		INSERT INTO table_name
+		VALUES (value1, value2, value3, ...);
+	example:
+		insert into persons VALUES (101, 'Nethra', 'Bellamkonda', 'Manuguru', 'Hyderabad');
+--
+How update the data in table?
+	syntax:
+		update table_name set 'columnName' = 'value or character' where 'column'='value';
+	example:
+		update persons SET city='Khammam' where personid=101;
+--
+alter session set "_ORACLE_SCRIPT"=true;
+create user HR identified by HR;
+ALTER USER HR IDENTIFIED BY HR ACCOUNT UNLOCK;
+ALTER SESSION SET current_schema = HR;
