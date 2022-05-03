@@ -1,5 +1,5 @@
 What is use of comments in CSS?
-	CSS comments are not displyed in the browser, but they can help document your source code.
+	CSS comments are not displyed in the console window, but they can help document your source code.
 	Comments are ignored by the browsers.
 	A CSS comments is placed inside the element, and starts with /* and end with */.
 How many types of comments are in CSS?

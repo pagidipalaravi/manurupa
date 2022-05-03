@@ -1,0 +1,16 @@
+What are different methods are available in HTTP Method?
+	get
+	post
+	put
+	patch
+	update
+	delete
+What is the difference between get and post?
+What is the difference between post and put?
+What is the difference between patch and put?
+
+What are HTTP status codes?
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Reference
+https://www.w3schools.com/tags/ref_httpmethods.asp

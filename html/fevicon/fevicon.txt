@@ -1,3 +1,4 @@
 FAQs
-
-which attribute i have to use for favicon src of href or both?
+which tag we will use to show fevicon icon in the broeser?
+link
+which attribute we have to use for favicon src or href or both?

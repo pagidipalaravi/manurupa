@@ -1,7 +1,8 @@
 Can JavaScript change HTML content?
-	Yes, we can change HTML content by using the method getelementById().
+	Yes, we can change HTML content by using the function/method getElementById().
 	What is getElementById()?
-		By giving an id="myImage", we can get an element from the html page.
+		It is a pre-defined function available in javascript
+		By giving an id="value", we can get an element from the html page.
 	What is innerHTML?
 		It defines the content between start tag and end tag of an element
 	Example

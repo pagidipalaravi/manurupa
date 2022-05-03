@@ -11,8 +11,7 @@ What is Markup Language?
 --
 What is Hyper Text?
 	Hypertext is a text with hyperlinks, when you click on hyperlinks, it will navigates to other page.
-	Hypertext documents are interconnected by hyperlinks, which are typically activated by 
-	a mouse click, keypress, or screen touch
+	Hypertext documents are interconnected by hyperlinks, which are typically activated by a mouse click, keypress, or screen touch
 --
 What is HTML?
 	HTML stands for Hyper Text Markup Language.
@@ -25,7 +24,7 @@ What is <!DOCTYPE html>?
 	It defines that this document is an HTML5 document.
 	It must be written in the top of the page.
 	We are giving information to the browser that this document is an html5 document.
-	Browser also compiles the html document by following html5 standards.
+	Browser will interpret and execute the html document by following html5 standards.
 --
 What is tag?
 	<start-tag-name>
@@ -68,9 +67,9 @@ What are Empty Elemnts?
 	These elements are called as empty elements.
 	Empty elements have no end tag.
 What are the tags that doesn't have end tag?
-	<br>, <img> and <link> etc...
+	<br>, <img>, <link>, <input> etc...
 --
-What is browser?
+What is the browser?
 	The purpose of a browser is to read HTML documents and display them correctly.
 	Browser does not display the HTML tags, but uses them to determine how to display the document.
 	Example
@@ -107,6 +106,20 @@ Year	Version
 2017	W3C Recommendation: HTML5.2
 ==
 FAQs
-What is difference between tag and element?
 What is the difference between html4 and html5?
+	Doctype
+		HTML4	<!DOCTYPE HTML PUBLIC "-  W3C  DTD HTML 4.01  EN" "http://www.w3.org/TR/html4/strict.dtd">
+		HTML5	<!DOCTYPE html>
+	New elements
+		 <header>, <footer>, <nav>, <Audio>, <video>, <main> etc.
+	New form controls
+		date and time, email, number, category, title, Url, search, etc.
+	Multimedia support
+		HTML4	No Support
+		HTML5	Audio and Video
+	storage
+		HTML4	cache and cookies
+		HTML5	local storage and session storage
+--
 What is the difference between web browser and web server?
+What is difference between tag and element?

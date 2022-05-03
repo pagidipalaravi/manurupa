@@ -3,7 +3,7 @@ How did you call rest services in your project?
 	Use the HttpClient angular library and methods.
 --
 What are the advantages of writing service classes?
-	There is a clear separation between data binding layer and data layer
+	There is a clear separation between data binding layer and data source layer
 	You can reuse the service class code into many component classes
 --
 What are the services that you developed in your project?

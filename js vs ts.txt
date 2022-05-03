@@ -1,0 +1,5 @@
+Javascript								Typescript
+Types are Dynamic						Types are static
+We need interpreter						We need Compiler
+Browser able to understand javascript	Browser unable to understand typescript
+nodeJS	

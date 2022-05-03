@@ -1,8 +1,9 @@
 what is an observable?
-	An Observable basically can be thought of as a data source 
+	An Observable basically can be thought of as a data source. 
 	Observable basically just is an object we import from a RxJS package.
 	The observable object is implemented in a way that it follows the observable pattern.
-	The Service class behaves like a Observable and the Component class behaves likes subscriber/observer. 
+	The Service class behaves like a Observable and the Component class behaves likes subscriber/observer.
+	--
 	In between, we have a stream, a timeline and on this timeline, we can have multiple events emitted by the observable or data packages
 	observable can be connected with the button click and observable can be connected to a HTTP request.
 --
@@ -20,9 +21,7 @@ What are the ways of handling data packages?
 	Exmaple: 
 	HTTP request will have a clear end and will complete eventually
 ==
-171
 observables are that stream of data and whenever a new
 data piece is emitted, our subscription will know about it.
 ==
-172
 

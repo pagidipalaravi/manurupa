@@ -1,23 +1,36 @@
 What are the different input types you can use in HTML:
-	<input type="button">
-	<input type="checkbox">
-	<input type="color">
-	<input type="date">
-	<input type="datetime-local">
-	<input type="email">
-	<input type="file">
-	<input type="hidden">
-	<input type="image">
-	<input type="month">
+
+	<input type="text">
 	<input type="number">
 	<input type="password">
-	<input type="radio">
-	<input type="range">
-	<input type="reset">
-	<input type="search">
-	<input type="submit">
+	
+	<input type="email">
 	<input type="tel">
-	<input type="text">
-	<input type="time">
 	<input type="url">
+	
+	<input type="radio">
+	<input type="checkbox">
+	
+	<input type="search">
+	
+	<input type="date">
+	<input type="time">
+	<input type="datetime-local">
 	<input type="week">
+	<input type="month">
+	
+	<input type="file">
+	<input type="image">
+	
+	<input type="submit">
+	<input type="button">
+	<input type="reset">
+
+	<input type="color">
+	<input type="hidden">
+	<input type="range">
+
+
+
+What is the difference between input type="submit", button" and "reset"?
+What is the difference between input type="radio" and "checkbox"?

@@ -1,0 +1,201 @@
+182 What is the module, we have to use if we want to work with forms
+	FormsModule
+--
+183 Why do we need Angular Forms
+	HTML-Forms
+		AJAX
+		We have to write lot of code for submitting and validating the 	forms
+	--
+	Angular-Forms
+		HttpClient	
+			Lot of inbuilt features are present in AngularForms
+--
+184 What are the ways to create angular forms?
+	Template Driven	code html static form
+	Reactive Forms	code typescript dynamic forms
+==
+185 Create a form with two way data binding?
+	//TODO
+--
+186 Creating the Form and Registering the Controls
+	FormsModule
+		app.module.ts
+			Import FormsModule from @angular/forms
+			Add the FormsModule in imports array
+		html
+			Add the form element in html
+			It will create ngForm object [javascript representation of the form] in the DOM.
+--
+ngModel 
+	element will be recognized as a form-control in your ngForm.
+	<input id="firstName" type="text" ngModel>
+--
+name
+	element will be registered in the ngForm.
+	So that, you can access the element value by using the name of the element.
+	<input id="firstName" type="text" ngModel name="firstName">	
+==
+187 Submitting the from
+	write onSubmit method in component
+		onSubmit(){
+			console.log("This is onSubmit method");
+		}
+	--
+	add ngSubmit directive, (ngSubmit) event binding on form element
+	<form name="form" (ngSubmit)="onSubmit()">
+	--
+	add the button element within the form element
+		<button type="submit">Submit</button>
+	--
+==
+Passing the form-object from template to component
+	add LocalReference to form element
+		<form name="formName" #LocalReference (ngSubmit)="onSubmit()">
+	--
+	pass ngFormLocalReference to onSubmit method
+		<form name="formName" #LocalReference (ngSubmit)="onSubmit(LocalReference)">
+	--
+	add the HTMLFormElement argument to the onSubmit() menthod
+		onSubmit(htmlFormElement:HTMLFormElement) {
+			console.log("This is HTMLFormElement");
+			console.log(htmlFormElement);
+		}
+	--
+==
+Accessing the form-object and form-controls into component
+	add ngForm value to LocalReference to form element
+		<form name="formName" #ngFormLocalReference="ngForm" (ngSubmit)="onSubmit()">
+	--
+	pass ngFormLocalReference to onSubmit method
+		<form name="formName" #ngFormLocalReference="ngForm" (ngSubmit)="onSubmit(ngFormLocalReference)">
+	--
+	add the NgForm argument to the onSubmit() menthod
+	onSubmit((ngForm:NgForm)){
+			console.log("This is ngForm");
+			console.log(ngForm);
+		}
+	--
+==
+188 What is difference between valid, touched, dirty, disabled, enabled, errors?
+	valid 	required on input element
+	touched click on input element
+	dirty	entering some value in input element
+--
+189 Accessing the Form with @ViewChild
+	//TODO
+--
+190-191 Adding Validation to check User Input
+	html required
+	html email
+	html minlength
+	html maxlength
+	ng-valid, ng-tuched, ng-dirty css classes are added by angular framework
+--
+192 Using the Form State Disable the form submit button
+	Add the disabled attribute of the button element 
+	<button class="btn" type="submit" [disabled]= "#!lr.valid">Submit</button>
+	--
+	css
+	input.ng-invalid.ng-touched {
+		border: 1px solid red;
+	}
+==
+193 Outputting the Validation Error Messages
+	ngModel directive localreference
+		#email="ngModel"
+	--
+	<span *ngIf="!email.valid"> Please enter a valid Email</span>
+	<span *ngIf=" !email.valid&& email.touched"> Please enter a valid Email</span>
+--
+194 Set Default Values with ngModel Property Binding
+		hardcoded
+			html
+			[ngModel]="firstName.lastName@yourdomain.com" 
+		--
+		dynamic
+			html
+			[ngModel]="defaultMail"
+			ts
+			defaultMail='firstName.lastName@yourdomain.com';
+		--
+--
+195 Using ngModel with Two-Way-Binding
+	.html
+		[(ngModel)]="email"
+	.ts
+		email='email';
+Example
+	Check the email id is available or not?
+--
+196 Grouping Form Controls
+	ngModelGroup
+	ngModelGroup localreference
+--
+197 handling radio button
+	ts
+		genders =['male','female'];
+	html
+	<div class=""radio" *ngFor=let gender of genders">
+		<label>
+			<input type="radio" name="gender" ngModel [value]="gender" required></input>
+		</label>
+	</div>
+--
+198 setting and patching form values
+	setValue({
+		// to set the whole form with default values
+	}) 
+	patchValue({
+		// to set the individual value with default value
+	}) 
+--
+199 using form data
+	ts
+	employee = {
+	firstName ="";
+	lastName = "";
+	email = "";
+	}
+	submitted = false;
+	omsubmit(){
+		this.employee.fistName = this.form.value.formgroup.firstName;
+		this.employee.lastName = this.form.value.formgroup.lastName;
+		this.employee.email = this.form.value.formgroup.email;
+		submitted = true;
+	}
+	html
+	<did id="output">
+		<p>firstName : {{employee.firstName}}<p>
+		<p>lastName : {{employee.lastName}}<p>
+		<p>email : {{employee.email}}<p>
+	</div>
+--
+200 resetting
+	ts
+	this.form.reset(); inital values
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

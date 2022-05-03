@@ -1,6 +1,7 @@
 What is JavaScript?
-	JavaScript is the world's most popular language.
-	JavaScript is the programming language of the web.
+	JavaScript is the one of the world's most popular language.
+	Initaially JavaScript is the programming language of the web.
+	But now you can use any where, middleware and backend.
 	Using javascript we can apply intelligence to web application.
 --
 Why we need to study javaScript?

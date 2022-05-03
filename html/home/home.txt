@@ -1,4 +1,4 @@
 What is HTML?
-	The language for building web pages.
+	HTML is the language for building web pages.
 	HTML is the standard markup language for Web pages.
 	With HTML you can create your own Website.

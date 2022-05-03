@@ -12,3 +12,7 @@ function bulbOff() {
 	document.getElementById('p2').style.display = 'none';
 	document.getElementById('p3').style.visibility = 'hidden';
 }
+
+function openDoor() {
+	// Write a logic to open the door
+}

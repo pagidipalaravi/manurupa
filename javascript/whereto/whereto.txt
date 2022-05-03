@@ -16,7 +16,7 @@ The <script> Tag
 ==
 External JavaScript
 	If we want to use the same javascript code in many different web pages.
-	The extension of JavaScript file is .js.
+	The extension of JavaScript file is .js
 ==
 script tag in <head> or <body> ?
 	Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.

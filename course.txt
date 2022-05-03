@@ -1,5 +1,5 @@
 Profession	:	Software Enginner || IT Employee
-Skill		:	Web Applcation Developer || Fullstack Developer
+Skill		:	Web Applcation Developer || Java Fullstack Developer
 Other Skills:	100 + Skill are present
 --
 Primary Skill	: 	Frontend
@@ -7,20 +7,22 @@ Secondary Skill	:	Middleware
 Tertiary  Skill	:	Backend
 ----
 	Frontend	:	View		:	Forntend Developer || User Interface Developer || UI Developer
-	Middleware	:	Controller	:	Middleware Developer ||	Java, Python dotNET Developer						
+	Middleware	:	Controller	:	Middleware Developer ||	Java, Python C# Developer						
 	Backend		:	Model		:	Database Developer	|| 
 ======================================
 User: Browser
 ======================================
 Frontend : Frontend Developer
 Languages
-	HTML		Angular
-	CSS			Bootstrap
-	Javascript	NodeJS	-	Typescript
+	HTML		Angular Framework -- AngularJs Framework
+	CSS			Bootstrap Framework
+	Javascript	NodeJS Framework	-	Typescript
 	--
 	HTML : RawContent
 	CSS  : Beautification
 	Javascript : Intelligence
+	==
+	IDE	Notepad++, Visual Studio Code
 ======================================
 Middleware : Middleware Developer
 Languages
@@ -31,6 +33,8 @@ Languages
 	Hibernate
 	--
 	NodeJS
+	==
+	IDE	Eclipse
 ======================================
 Backend : Database Developer
 	Relational Database Management System
@@ -46,6 +50,7 @@ Backend : Database Developer
 				MongoDB, Cassendra
 			Licenced
 				XXX, XXX
+	IDE	SQLDeveloper
 Language
 	SQL
 	PL/SQL

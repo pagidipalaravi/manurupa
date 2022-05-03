@@ -1,0 +1,463 @@
+182 What is the module, we have to use if we want to work with forms
+	FormsModule
+--
+183 Why do we need Angular Forms
+	HTML-Forms
+		AJAX
+		We have to write lot of code for submitting and validating the 	forms
+	--
+	Angular-Forms
+		HttpClient	
+			Lot of inbuilt features are present in AngularForms
+--
+184 What are the ways to create angular forms?
+	Template Driven	code html static form
+	Reactive Forms	code typescript dynamic forms
+==
+185 Create a form with two way data binding?
+	//TODO
+--
+186 Creating the Form and Registering the Controls
+	FormsModule
+		app.module.ts
+			Import FormsModule from @angular/forms
+			Add the FormsModule in imports array
+		html
+			Add the form element in html
+			It will create ngForm object [javascript representation of the form] in the DOM.
+--
+ngModel 
+	element will be recognized as a form-control in your ngForm.
+	<input id="firstName" type="text" ngModel>
+--
+name
+	element will be registered in the ngForm.
+	So that, you can access the element value by using the name of the element.
+	<input id="firstName" type="text" ngModel name="firstName">	
+==
+187 Submitting the from
+	write onSubmit method in component
+		onSubmit(){
+			console.log("This is onSubmit method");
+		}
+	--
+	add ngSubmit directive, (ngSubmit) event binding on form element
+	<form name="form" (ngSubmit)="onSubmit()">
+	--
+	add the button element within the form element
+		<button type="submit">Submit</button>
+	--
+==
+Passing the form-object from template to component
+	add LocalReference to form element
+		<form name="formName" #LocalReference (ngSubmit)="onSubmit()">
+	--
+	pass ngFormLocalReference to onSubmit method
+		<form name="formName" #LocalReference (ngSubmit)="onSubmit(LocalReference)">
+	--
+	add the HTMLFormElement argument to the onSubmit() menthod
+		onSubmit(htmlFormElement:HTMLFormElement) {
+			console.log("This is HTMLFormElement");
+			console.log(htmlFormElement);
+		}
+	--
+==
+Accessing the form-object and form-controls into component
+	add ngForm value to LocalReference to form element
+		<form name="formName" #ngFormLocalReference="ngForm" (ngSubmit)="onSubmit()">
+	--
+	pass ngFormLocalReference to onSubmit method
+		<form name="formName" #ngFormLocalReference="ngForm" (ngSubmit)="onSubmit(ngFormLocalReference)">
+	--
+	add the NgForm argument to the onSubmit() menthod
+	onSubmit((ngForm:NgForm)){
+			console.log("This is ngForm");
+			console.log(ngForm);
+		}
+	--
+==
+188 What is difference between valid, touched, dirty, disabled, enabled, errors?
+	valid 	required on input element
+	touched click on input element
+	dirty	entering some value in input element
+--
+189 Accessing the Form with @ViewChild
+	//TODO
+--
+190-191 Adding Validation to check User Input
+	html required
+	html email
+	html minlength
+	html maxlength
+	ng-valid, ng-tuched, ng-dirty css classes are added by angular framework
+--
+192 Using the Form State Disable the form submit button
+	Add the disabled attribute of the button element 
+	<button class="btn" type="submit" [disabled]= "#!lr.valid">Submit</button>
+	--
+	css
+	input.ng-invalid.ng-touched {
+		border: 1px solid red;
+	}
+==
+193 Outputting the Validation Error Messages
+	ngModel directive localreference
+		#email="ngModel"
+	--
+	<span *ngIf="!email.valid"> Please enter a valid Email</span>
+	<span *ngIf=" !email.valid&& email.touched"> Please enter a valid Email</span>
+--
+194 Set Default Values with ngModel Property Binding
+		hardcoded
+			html
+			[ngModel]="firstName.lastName@yourdomain.com" 
+		--
+		dynamic
+			html
+			[ngModel]="defaultMail"
+			ts
+			defaultMail='firstName.lastName@yourdomain.com';
+		--
+--
+195 Using ngModel with Two-Way-Binding
+	.html
+		[(ngModel)]="email"
+	.ts
+		email='email';
+Example
+	Check the email id is available or not?
+--
+196 Grouping Form Controls
+	ngModelGroup
+	ngModelGroup localreference
+--
+197 handling radio button
+	ts
+		genders =['male','female'];
+	html
+	<div class=""radio" *ngFor=let gender of genders">
+		<label>
+			<input type="radio" name="gender" ngModel [value]="gender" required></input>
+		</label>
+	</div>
+--
+198 setting and patching form values
+	setValue({
+		// to set the whole form with default values
+	}) 
+	patchValue({
+		// to set the individual value with default value
+	}) 
+--
+199 using form data
+	ts
+	employee = {
+	firstName ="";
+	lastName = "";
+	email = "";
+	}
+	submitted = false;
+	omsubmit(){
+		this.employee.fistName = this.form.value.formgroup.firstName;
+		this.employee.lastName = this.form.value.formgroup.lastName;
+		this.employee.email = this.form.value.formgroup.email;
+		submitted = true;
+	}
+	html
+	<did id="output">
+		<p>firstName : {{employee.firstName}}<p>
+		<p>lastName : {{employee.lastName}}<p>
+		<p>email : {{employee.email}}<p>
+	</div>
+--
+200 resetting
+	ts
+	this.form.reset(); inital values
+--
+183
+So let's take a closer look at how Angular works together with forms.
+Consider this form, this is the HTML code of a form which you might use and there is nothing Angular specific about this code, it's normal HTML code which you would place your HTML documents to maybe display a form like this, with an input for the username and an input for the e-mail address.
+Angular's job now is to allow you to retrieve the values the user entered in forms and also to check some other things, like is the form valid, did the user enter valid information?
+And all that of course will happen in Javascript, in TypeScript, so on the Angular 2 side of your app.
+So you somehow need to be able to parse the values the user enters and you somehow need some Javascript object representation of your form in your TypeScript code to work with, so this object could look something like this.
+It is more complex in reality but these would be the key features we need for example, we need to have the value of the form and there, it would be convenient if we would have key-value pairs where the key refers to the name of an input, like for example name or e-mail as specified in the HTML code and then it holds the values the user entered, this would make it super simple for you to work with these values in your TypeScript code and to do something
+with the values the user entered.
+It might also be helpful if some metadata was stored, like for example if the form is valid and this would be changed to false for example if the e-mail address wouldn't be a valid e-mail address. 
+This is what Angular does for you, it allows you or it gives you actually such a Javascript object representation of your form, making it simple for you to retrieve user values and to see the state of the form and to work with it.
+==184
+Before diving in the actual code, it's super important to understand that Angular actually offers two approaches when it comes to handling forms.
+It offers the template driven approach, which is called like this because there, you simply set up your form in the template, in HTML code and Angular will automatically infer the structure of your form, will infer which controls your forms has, which inputs and makes it easy for you to get started quickly.
+--
+It also has a more complex approach, the reactive approach. There, you actually define the structure of the form in TypeScript code, you also set up the HTML code and then you manually connect it which might sound more complicated than it is in the end and therefore, it gives you greater control over it, you can fine tune every little piece about your form.
+--
+Now in this module, we're going to have a look at both approaches, in the next videos,
+I'm going to start with the template driven approach which is fine for a lot of use cases
+==185
+So here I am on a simple example form just to get started,
+the code responsible for it is this HTML code in the template of my app component here
+and you can find this code attached to this lecture here.
+Now it's a simple form, we're going to expand it or enhance it with some features throughout this module, to get started, this is just fine.
+--
+Now if we have a look at this HTML code, you will quickly realize that on the form tag here, I don't have the action attribute pointing to some route, I'm also not specifying the method attribute which typically would be post.
+--
+The reason for this is that this form should not get submitted to a server,
+I don't want a HTTP request to be the result of me clicking the submit button, instead
+as mentioned earlier, Angular should handle this form and therefore, I don't have an action on it.
+This of course means that right now if I hit the submit button, nothing happens,
+if you have a look at the refresh icon up there, you see it's not spinning, nothing happens because we're not actually sending a request.
+--
+Well we will work on this but first, let's understand what actually happens behind the scenes and how Angular infers such forms, create such a Javascript object for us as it does when using the template driven approach. Let's understand how we get Angular to create this form object for us.
+==186
+now let's understand how angular creates such a Javascript object representing our form in the template driven approach. The great thing is you don't have to do anything, well almost anything, make sure that in your app module, you actually import the FormsModule, add it here to your imports array and have the import at the top of this file. As the name implies,
+this built-in module shipping with Angular includes a lot of forms related functionalities and it's actually needed to get this template driven approach to work, to get this form creation by Angular to work. Now by default in a CLI project, this should already be imported so it should work fine but again, I'm just highlighting it because it's super important that you have this import, otherwise the following steps will not work.
+--
+With this imported, Angular will actually automatically create a form for you, so a Javascript representations of the form when it detects a form element in HTML code, like it does here.
+--
+So you can think of that form element serving as a selector for some Angular directive, which then creates such a Javascript representation of the form for you.
+--
+Of course, you can't see that form representation as of now and it would be very empty because one thing does not happen automatically, Angular will not automatically detect your inputs in this form and the simple reason for this is that, you could argue that it should be able to scan your HTML code and detect that you have an input here and here and that you have a select dropdown here, you still might not want to add all these elements as controls to your form, so with control I'm referring to what is in the Javascript object and again not every input in your HTML code might be a control you want to have in your Javascript form.
+--
+Maybe you have a dropdown which values only changes something you view on the UI but the input
+should not actually be part of what gets submitted,
+maybe you use some third-party package which adds some custom form controls which are not labeled input, which don't use input as a selector and then Angular would have no chance of detecting that this is a control of your form.
+--
+So you still need to register controls manually,
+you need to tell Angular hey within that form element, what should be an actual control of my form? And this is what we're going to do now, tell Angular how does our form look like,
+which controls do we want to have? In the template driven approach, this is super simple.
+You simply pick the input which you want to add as a control, like this input here
+and I'm just going to structure it a bit different to split it up over multiple lines to make it easier to read and then you add ngModel, like this.
+Now you might already know ngModel from the two-way binding, two-way data binding and it actually is the same directive. In two-way data binding though, you saw that we use that with square brackets and parentheses wrapped in ngModel. Now we will have a look at this later again
+but for now, let's add it without any parentheses, without any square brackets just like this.
+This will be enough to tell Angular, hey this input is actually a control of my form, so ngModel in the end is a directive made available in the forms module, something I mentioned earlier in the course when we had a look at two-way data binding. This is key to understand, you can use it to get two-way data binding but it actually is part of a bigger module with more features
+giving you full control over forms.
+--
+Now for this to work, for this to be recognized as a control in your form, we need to give Angular one other piece of information, the name of this control. Right now, it would see OK this input should be part of the Javascript object representation of this form,
+so whatever the user enters here as a value should be the value of this control, of what's
+the name of that control. We need to give that information to Angular and we do this by adding the normal HTML attribute, name. So name is nothing Angular 2 specific, name is the default attribute you can add to any HTML control.
+--
+Now here, the name might be username because that is what we can enter in this input
+and with this, this control will be registered in this Javascript representation of the form.
+--
+Now I'll do the same for the email, restructure it so that it's easier to read, add ngModel and add a name, like for example email here.
+--
+Well and the same is true for the select here which is just another type of HTML input.
+Here we can also add ngModel and we can add a name, like secret because I'm asking for a secret question here and with that, we registered all the controls, of course we can't see that much though.
+--
+Well that is something we're going to have a look at in the next lecture when we see how we can submit such a form and therefore, how we can see these key-value pairs representing what the user entered into which input.
+==187
+In the last lecture, we configured our form here, we added some control by placing ngModel on the
+inputs, now let's make this form submittable so that we can actually see what the user entered.
+For this, I'll go to my app component, I already do have a method here which you will use later,
+let's ignore it for now and I'll add a new method, onSubmit maybe, this should be triggered whenever this form is submitted by the user. In onSubmit, I want to output whatever the user entered, well first of all we need to call this method, so back in the template, how can we call onSubmit?
+--
+Now you might think that a good place would be on a click listener on this button here at the bottom right, because this is a button we click when we want to submit the form, however this is not the best place to do it. Keep in mind that this button here is type submit,
+so if we click it as it is placed inside of an HTML form element, something else will happen,
+The default behavior of HTML will be triggered to call it like this.
+If you have a button in a form element, this button will submit the form, will send a request normally but besides that, it will also trigger a Javascript event, the submit event that's built into Javascript, built into HTML you could say.
+--
+Angular takes advantage of this and gives a directive, we can place on this form element as a whole, it is called ngSubmit and it actually only gives us one event we can listen to, so let's wrap it in parentheses. This event made available by the ngSubmit directive will be fired whenever this form is submitted, so whenever this default behavior is triggered and here, we can call onSubmit like this and to show you that this works, I will simply go into onSubmit and log submitted here, just like that.
+--
+Now if we save this and let it recompile, let's go back and let's open up the developer tools and if I now hit the submit button, you see submitted here on the right, because indeed, the form gets submitted.
+--
+Now it would be nice to see the actual values of the form though, to see that form object and to see it, we have to go back to our template because we're in the template driven approach,
+so as a rule of thumb, everything you do you do it in the template, everything you want to change about this form, you want to add as functionality, you do it in a template.
+-- 
+On this form object, we want to get access to the form created by Angular. Now you learned about local references you can place on HTML elements to get access to them, so we could place #f on the form element and now we could access this form element on the f reference in our template and we could pass f as an argument to the onSubmit method and print it there.
+--
+So now we know that we get the form and actually, this will be of type element ref as we learned.
+So if we import element ref and make this of type element ref here and we output the form here,
+so this element, if we now go back to this and hit submit,
+
+yes we did see the form object, we see some strange classes here, I will come back to them but that still is not what
+
+we want,
+
+it's not a Javascript object created by Angular but this object is there, we just need to know how to
+
+get to it and there actually is a trick you could call it but it's no trick, it's the default way to
+get access to this automatically created object,
+you set this local reference equal to something.
+Now we haven't done that yet but we can set it equal to something exposed by this
+form here,
+
+keep in mind the form element is kind of a selector for a directive built into Angular which will create
+this Javascript object automatically and then it will expose some data we can fetch here on this form element.
+We can get access to it by writing ngForm here between the quotation marks.
+
+So this might look super strange but what this in the end does is
+
+it tells Angular hey please give me access to this form you created automatically.
+
+That's just something you have to keep in mind,
+
+this is how you get access to the form, to this Javascript object created by Angular automatically.
+
+So therefore here where we get this form, we now still pass it,
+
+now this will no longer be an element ref, so let's remove this type here, instead
+
+
+this will now be of ngForm.
+
+
+So let's import ngForm from @angular/forms and kind of makes sense that it is of type ngForm
+
+
+because that is what we're accessing here,
+
+
+this automatically created form.
+
+Now let's print it to the console one more time and let's actually enter something into these fields to
+
+see that it worked.
+
+If I now type submit here, you see that now we get an ngForm object, an object which we certainly didn't
+
+create
+
+
+and there, we have a lot of properties,
+
+
+we'll have a close look at those later.
+
+We also do have a value property
+
+and if we expand this, we indeed see a couple of key-value pairs here where we have the names of the
+
+controls, so the names we set up here and the name attribute like username and email,
+
+we find them here
+
+and then the values the user entered.
+
+And this is how we can submit such a form and how we can also get access to the form object created by
+
+Angular,
+
+we also see that our setup of controls also work.
+188
+In the last lecture, we learned how we can submit a form-object created by Angular and how we can access to this form-object Angular created for us. Now we had a look at the value property which stores the input of the user in key-value pairs, we see that we also have a lot of other properties and that's pretty cool about this Javascript object, about the form handling by Angular, it allows us to really understand the state of our form.
+We can see which controls we registered here on the controls object, e-mail, secret and username and each control is of type FormControl, of course a type made available by Angular where each control then has a couple of properties, mostly the same properties we have on the overall form though and therefore let's go back to that overall form, for example properties like dirty, disabled, enabled, errors and most of the properties should be pretty self-explanatory. Dirty for example is true because we changed something about that form.
+If I reload the page and submit it now, you will see that dirty is false because I didn't type into any input, so therefore of course dirty is false.
+Disabled would be true if the form was disabled for some reason, invalid is false because we haven't added any validators, so it isn't invalid, it is indeed valid. You do have the valid property down here too, so the form is valid right now, we will later learn how to add validators to make sure that a valid e-mail address has to be entered for example.
+And we also have touched for example to see did we click into some of the fields, the difference to dirty would be that for dirty, we have to change the field, have to change the value of a field, for touch we simply have to click into it and now it would be touched and you will later learn how these properties can be helpful in changing the user experience, for example disabling the submit button if the form is not valid, I will come back to this later.
+It's important to understand that you have all these properties and definitely feel free to dive into the output we logged here and understand which properties you have, how they change, which properties the individual controls have and so on.
+189
+we submit the form by passing the form which we get via ngForm here to the onSubmit method, this is absolutely fine and probably the approach you will use in many use cases. I just want to bring some other approach to your attention. You don't have to submit it here.
+--
+Remember the components section where we learned about @ViewChild which allowed us to access a
+local reference, an element controlled or which holds a local reference in our TypeScript code.
+--
+Well in the end, we do just have such a local reference here and whilst that might not point to an element ref but to the ngForm object, it still is a local reference in our template so we can also use @ViewChild here. So I will simply comment out this onSubmit method here so that we have it in the code you can find attached to this module and show you an alternative approach.
+--
+In this alternative approach, I will use @ViewChild, this decorator you learned about in the component section, so make sure to import it from @angular/core and I want to get access to the element which has the local reference f on it. So I pass f as a string, as an argument to @ViewChild and then I could simply store this in a variable named signupForm, any name you like, which will be of type ngForm of course. Now in onSubmit, I could output this signupForm, like this
+and you should see that if I now submit this again, we still have this form and I can also enter something so that we can see that this works too if we have a look at the value.
+--
+So this gives us access to the very same form without passing it to onSubmit, this is especially useful if you need to access the form, not just at the point of time when you submit it
+but also earlier and I will show a use case for this in a later lecture.
+For now, let's keep in mind that this is another way of getting access to the form in our TypeScript code, a perfectly valid way of getting access and before diving deeper into why this might be useful or when we could use that, let's actually understand how we can control the validity of the form. 
+--
+So to determine whether the form is valid, if we entered a valid e-mail address here or not because right now I can submit anything, no matter if this is invalid, if this is empty, it would be nice if we could add such validation and take advantage of the tools Angular gives us there to possibly also enhance the user experience by placing a red border around invalid elements or something like this. We'll have a look at validation in the next lectures.
+190
+So as mentioned at the end of the last lecture, it would be nice if we could validate the user input, something very important in any app you build. Whilst you should still validate input on the server as the front-end can always be tricked, you can greatly enhance user experience by also validating the input here.
+for example we want to make sure that none of the fields here is empty and that the e-mail address
+actually is a valid e-mail address. So let's go back to our app component, to the HTML file, to the template and see how we can add such validators. Now since we use the template driven approach, we can only add them in the template and here we can for example add required to our username input. Now required is a default HTML attribute you can add to an input, here however Angular will detect it, so it acts as a selector for a built-in directive shipping with Angular and it will automatically configure your form you could say, to take this into account, to make sure that now this will be treated as invalid if it is empty. And on the e-mail, we can for example therefore also add required and there also is an e-mail directive you can add.
+--
+Now e-mail is not a built-in HTML attribute, it still is a directive and keep in mind required is only treated as a selector for an Angular directive here. An e-mail is simply another directive made available by Angular which makes sure that this is actually a valid e-mail address.
+So now if we save this and we have a look at our form here and I submit it, I can still submit it because we haven't set up anything which would prevent us from doing so but if we have a look at it and check the valid attributes, you see it is false. And if I enter something here and I enter something here, so it's filled but the e-mail address is still not valid,
+you see that still valid is false. Only if I turn this into a valid e-mail address here, only in this case, now if we submit it, now you see valid is true. So now Angular tracks the state of this form and correctly informs us or gives us a chance of querying it whether this form is valid or not and actually this does not only work on form level, if we dive into the actual controls, you'll see that on the e-mail control, we also have a valid attribute which is true.
+So it tracks this on a per control level and then also on a form level, now there also is another place where it tracks this and helps us. If we inspect this e-mail element here in the HTML code, you'll see that it adds a couple of classes because the form-control class here is by us, it's a Bootstrap class to give it some styling but ng-dirty, ng-touched and ng-valid,
+these are not classes added by us and the ng at the beginning makes it pretty clear who is responsible for adding these classes. Now watch these classes if I remove the @ sign here,
+you saw that ng-invalid was added and ng-valid was removed. So Angular dynamically add some classes, giving us information, some CSS classes, giving us information about the state of the individual control here whether it is dirty or not, so whether we did change the initial value, whether it touched or not so whether we clicked into it or not and whether it is valid or not.
+Now with that information, we can style these inputs conditionally.
+So let's in the next lecture take advantage of the fact that Angular tracks the state of the validity and of the form overall and change the styling and the behavior the user experience with that form.
+191
+192
+In the last lecture we found out that Angular tracks the state of each control of the form, whether it's valid and so on and conditionally also adds these CSS classes.
+Now with that information, we can go back to our form and you take advantage of it. Before diving into the CSS classes, the easiest way of taking advantage is down here on the submit button, let's disable the button if the form is not valid.
+So I'll just split this over multiple lines and add some property binding, I want to bind to the disabled property which will add the or which will set the disable state of this button to true or false depending on some condition and I will specify the condition here.
+Now I could set it true here to always disable it, that of course is not super useful, instead here I want to check whether the form, remember we do have access to it on this f local reference here, so if this form is valid, which would be precise if it is not valid. So if this form is not valid, the button should be disabled and we can actually see this once this reloads and now the button is disabled and only if I enter some valid values here, I can hit the submit button again. so this is the first improvement in place, the second improvement is to take advantage of these CSS classes. We do get these classes added automatically, so we can now go to the stylesheet of this app component and we could say that on ng-invalid, we want to give it a red border, so one pixel solid red. Sounds like a solid idea, doesn't it?
+Well if we do this, you see everything is red now, the two controls but also the overall form.
+The reason for this is that our overall form is also invalid and that Angular also adds the ng-invalid class, CSS class to the form element. So a better approach would be to make sure that is not added to the form. Now there are a couple ways of doing this and it's all just pure CSS logic, one idea would be that we want to be inside of the form element but then it would still place these red borders around grouping divs, we will have a look at what I mean with this later.
+So the best way is to simply be explicit that we want to add it on inputs for example
+and of course you could also add select here, so input with ng-invalid or select with ng-invalid and which other elements you have. Just be creative here, there are different ways of achieving this goal, in the end you just want to make sure that the border is applied to the right controls.
+Now with this in place, we see that now we only have a red border around the invalid controls but we do have the border right from the start which is also not great because I at least want to give the user the chance of changing it before showing a warning, showing that it's wrong.
+So a better approach might be to make sure that we only add a red border to an input which has the CSS class, ng-invalid and also the CSS class ng-touched, so that the user has to at least click into it. Now by default, we don't see anything red even though the form is invalid but if we click in there and decide yeah I'm done this is my value, well now you see we have a red border because now we had a chance of changing it, we didn't change it, it is invalid and we want to show this and with that, we're taking advantage of this form state handled by Angular.
+We disable the button and we show a visual feedback to the user.
+Now you could of course go much further, you could also add a warning message below this input here for example and output please enter a valid value or be more precise than that of course
+and add ngIf to conditionally show this if the input value is wrong.
+Well this gives us one additional problem though, how do we determine whether this input here or this control here does hold a wrong value. We'll take a closer look in the next lecture.
+193
+In the last lecture, we improve the user experience by taking advantage of the form state handled by Angular. Now let's improve this even more and let's say we want to output some help text below this input to assist if there is an invalid value in there.
+Now we can use a Bootstrap class here, help-block, to make sure that this has the appropriate styling and then we could say please enter a valid e-mail. We only want to show this if an invalid value has been entered into the control associated with this input though.
+--
+Well, a quick and easy way of getting access to the control created by Angular automatically as we added ngModel to the input is by adding a local reference to this input element here,
+for example e-mail, any name you like and associating this now not with ngForm as we did for the overallform but with ngModel. So just like the form directive automatically added by Angular when it detects a form element, the ngModel directive here also kind of exposes some additional information about the control it creates for us on the overarching form by accessing ngModel.
+--
+So with this, we could simply check or say that we want to attach this span here if e-mail is not valid, so add an exclamation mark at the beginning. Now with this if this reloads, you'll see that help text and of course you can improve this by also chaining another condition
+that e-mail should have been touched to give the user a chance of changing it.
+So now you don't see the warning but if you click in there and click out of there and it is invalid, you see that warning and if you now enter a valid data, it disappears.
+--
+So this is another way of taking advantage of the state managed by Angular
+but this also shows you how you can get a quick and easy access to control added by Angular.
+And with that, you should have tools to really provide a pleasant user experience showing the right errors, the right warnings and styling the form correctly depending on the state of the form.
+194
+we learned a lot about the template driven approach and how we can create great forms with it.
+Now let's move on, let's leave the world of validating the user input here and let's say we want to define some default values which should be displayed, for example on the dropdown here.
+Right now, it's empty by default, well would be nice if
+one of the two questions would be selected, right? For this, we can change the way we add ngModel.
+Right now, we add it like this, without property or event binding nor two-way data binding,
+well we can use it together with property binding, so let's add some square brackets around it, no
+parentheses so we're not using two-way by binding as of now and now we can bind it to a value and remember with it, I mean the control, this input here which is turned into a control by Angular in the background.
+So this select here can now be bound to a default value and you could either hardcode a string
+into there, don't forget the single quotation marks in this case or you set up a property, like let's say default question which would be pet. Pet  because that is one of the two valid values, the other one being teacher for this question here.
+--
+So now we can bind this to default question and if we now save this and let it reload, you'll see that now pet is selected and of course if we switch this to teacher, well it shouldn't be a surprise that the other value is selected. So now all of a sudden, we're using a default value
+and of course this does not only work for the dropdown, it would also work for the username,
+could point to a default string there, pre-populating this field with a default username.
+Very useful and something you should definitely keep in mind, that you are not limited to using
+ngModel without any bindings, you can use one-way binding, property binding to set a default value. Of course this value can still be overwritten,  you can still pick a different option here.
+--
+195
+Sometimes you not only want to pre-populate a default the user entered but you also want to instantly react to any changes. Right now, everything about this form here only updates once I click submit, then I get this form object where I can retrieve the value. We don't use two-way binding, ngModel is either used without any binding or with one-way binding, but sometimes you instantly want to check something or simply repeat whatever the user entered, let's show an example.
+For this question here, I'm going to add a new form-group, Bootstrap style here below the dropdown, I want to have a text area let's say to also introduce a new input, let's name it
+questionAnswer. I don't need the ID here, don't need columns, I want to have three rows let's say
+and I'll also distribute this over multiple lines and now we could add ngModel to get access to whatever the user entered as a reply but maybe for some reason, we instantly want to repeat this reply. So below this we could say your reply and now we want to output the answer to the question.
+--
+Well for this, we could still use two-way binding on ngModel here and bind it to the answer property here, of course we need to introduce this answer property then there and answer could be an empty string by default. With this in place, let me also add a CSS class to the text area, form-control to give it some nice styling. If this reloads, we see our text area here and if I enter valid data here, for my first pet let's say, a rabbit named Nelly, you instantly see that here. So you can still use two-way binding and actually if I submit the whole form and open up the developer tools, you'll see in the value object, this is still part of this value object,
+it just is updated with every keystroke, but of course if we submit it, we will get a snapshot of the value at a point of time we hit submit. So two-way binding is still possible,
+you can still use ngModel with two-way binding and with that, you saw all three forms. No binding
+to just tell Angular that an input is a control, one-way binding to give that control a default value and two-way binding to instantly output it or do whatever you want to do with that value.
+--
+196
+Now let's say that on the value object we get when we submit the form, we want to group some things, for example we want to group the secret and the questionAnswer and the username and e-mail to just have some structure in our object because for a very big form, we might want to have such a structure. This would also be nice if we could then validate the validity,the status of our individual groups of inputs, turns out that's easy to do with the template driven approach.
+--
+Here on our first group, the username and e-mail, I already have a wrapping div with the ID userData here. Now you can simply place another directive on it, the ngModelGroup directive like this and this will now group this into, well you guessed it, a group of inputs,
+however ngModelGroup needs to be set equal to a string. So for example, the userData, this will be the key name for this group. So now if I save this with ngModelGroup added, If I enter value here and here and hit submit and we have a look at the value of the form, you'll now see that we have a userData field here which holds another object where we now have e-mail and username.
+Now not only did we add this extra field in our value, we also now have a different set up here in controls, here we also now have a userData control with all the properties you know on those controls, like valid and so on.
+So if we now simply inspect our HTML code and this div with the ID userData, you'll see that there also we got the ng-dirty, touched and valid classes added.
+So you can now also check the validity of this overall control here for example
+which might be a nice feature in your form.
+You can also get access to the Javascript representation by again adding a local reference to
+the element which holds the ngModelGroup directive,
+here for example userData would be a fitting name and then setting this equal to ngModelGroup.
+So just like we did before with e-mail which was equal to ngModel, I'm now setting this reference
+equal to ngModel group to get access to this Javascript object and this would allow us to for example output a message if this whole group is not valid. So we could simply output a paragraph here, userData is invalid which we add if userData, this is the local reference created here, if userData is not valid and let's say it has been touched, so userData touched is true. With that if this reloads, you see that we don't see any message but as soon as I click into one of the fields and then leave it, you'll see userData is invalid was shown. So now you really got a very finegrained control over your form with all these tools.
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

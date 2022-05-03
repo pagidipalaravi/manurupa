@@ -5,10 +5,11 @@
 		<h2>Inline JavaScript</h2>
 		<p id="inline">Inline JS</p>
 		<button type="button" onclick='document.getElementById("inline").innerHTML = "This text is from inlne javascript"'>Inline JS</button>
+		<!-- action -> event will be triggered -> subsequent javascript code will be executed-->
 		<!--Internal-->
 		<h2>Internal JavaScript</h2>
 		<p id="internal">Internal JavaScript</p>
-		<button type="button" onclick="internalJavaScript();">Internal JS</button>
+		<button type="button" onclick="internalJavaScript()">Internal JS</button>
 		<script>
 			function internalJavaScript(){
 				document.getElementById("internal").innerHTML = "This text is from internal javascript";

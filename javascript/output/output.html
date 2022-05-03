@@ -11,6 +11,8 @@
 		<h3>console.log() Please look into the console window</h3>
 		<script>
 			console.log("This text is from console.log");
+			console.warn("This text is from console.log");
+			console.error("This text is from console.log");
 		</script>
 		<!--By using document.write()-->
 		<h3>document.write()</h3>
@@ -20,10 +22,15 @@
 			document.write("This text is from document.write");
 		</script>
 		<!--By using window.alert()-->
+		<h3>window.alert()</h3>
+		<p>This is window.alert()</p>
+		<button onclick="deleteAlert()">delete</button>
 		<script>
-			window.alert("This text is from window.alert");
+			function deleteAlert() {
+				window.alert("Are you wnat to delete the record");
+			}
 		</script>
-			<button type="button" onclick="document.write('This text is from document.write override')">Override</button>
+		<br>
 		<!--By using window.print()-->
 		<br>
 		<button onclick="window.print()">Print this page</button>

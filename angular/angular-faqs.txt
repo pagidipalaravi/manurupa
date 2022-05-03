@@ -86,6 +86,7 @@ In how many ways we can add bootsrap to angular project?
 How an angular app gets started and loaded?
 
 ==
+How to create 
 25 data binding
 	String Interpolation
 		HTML Template	<--		Typescript

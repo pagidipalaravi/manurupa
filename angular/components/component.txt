@@ -1,0 +1,7 @@
+What is component?
+What is the default/root component?
+Can We change the root component?
+How to create a component?
+How to create a component in a specific folder?
+
+	ng g c hrms/employee/create-employee

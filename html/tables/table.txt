@@ -1,15 +1,19 @@
 HTML Tables
-	The HTML table allow web developers to arrange data intlo rows and coloumns.
+	The HTML table allow web developers to arrange data into rows and coloumns.
 	A table in HTML consists of table cells inside rows and coloumns.
+--
 What is Table Cells?
 	Each table cell is defined by <td> and </td> tag, td stands for table data.
 	Everything between <td> and </td> are the content of the table cell.
+--
 What is Table Rows?
 	Each table row starts with <tr> and ends with </tr> tag, tr stands for table row.
 	We can make many rows, just make sure that the number of cells are the same in each row.
+--
 What is Table Headers?
 	If we want to make cells to be headers, in those cases <th> tag has been used instead of <td>.
 	By default, the text in <th> tag are centered and bold, but we can change by using CSS.
+--
 	Example:
 		<table>
 			<tr>
@@ -43,11 +47,11 @@ How to add a Border for Tables?
 			}
 --
 What is Collapsed Table Borders?
-	To avoid having double borders, then use the border-collapsed property.
+	To avoid having double borders, then use the border-collapse property.
 	This will make the borders collapsed into single.
 	Example
 		table, td, th {
-						background-collapse: collapse;
+						border-collapse: collapse;
 					}
 What is style Table property?
 	If you set a background color of each cell, then give a border a color which is attractive of an invisible border.
@@ -106,6 +110,7 @@ Header for Multiple Coloumns
 	To do this, use colspan attribute on <th> tag.
 	Example
 		<th colspan="2">Name</th>
+--
 Table Caption
 	You can add a table caption that serves as a heading for entire table.
 	To add a caption to a table, use caption tag.

@@ -30,6 +30,7 @@ let arrayOfEmployees = new Array();
 arrayOfEmployees.push(bharath);
 object1.getEmployee();
 object2.getEmployee();
+
 /* 
   updateEmployee(employeeId: number) {
   }

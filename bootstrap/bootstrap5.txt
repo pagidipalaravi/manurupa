@@ -1,0 +1,30 @@
+What is bootstrap?
+	Bootstrap is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.
+	What is Bootstrap?
+	Bootstrap is a free front-end framework for faster and easier web development.
+	Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and etc..
+	Bootstrap also gives you the ability to easily create responsive designs.
+==
+How to include bootstrap with html?
+	1. CDN and External reference
+	2. Download and local reference
+--
+What is Adaptive Web Design?
+	//TO
+What is Responsive Web Design?
+	Creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+--
+What is Mobile First Approch?
+	Creating web sites by giving the priority to mobile phones first, tabs and laptops later.
+--
+Why de we need bootstrap, we already have css and media queries?
+	if you want save your developemnt time, reduce the development cost we have to use.
+	
+
+Containers
+Grid Basic
+Dropdowns
+Collapse
+Navs
+Navbars
+Carousel

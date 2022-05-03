@@ -1,0 +1,79 @@
+124 :`Module Introduction
+	Routing Module
+		/#
+		/signin
+		/signout
+		/search-employee
+		/create-employee
+		/view-employee
+		/update-employee
+		/delete-employee
+125 : Why do we need a Router
+	If we want to implement application navigation.
+127 : Setting up and Loading Routes
+
+	Import Routes, RouterMoudle from @angular/routes
+	--
+	Create Routes array in app.module.ts
+	routes: Routes = [
+		{path: '#', component: /},
+		{path: 'signin', component: login},
+		{path: 'signout', component: logout},  
+		{path: 'search-employee', component: SearchEmployee}, 
+		{path: 'create-employee', component: CreateEmployee},
+		{path: 'view-employee', component: ViewEmployee},
+		{path: 'update-employee', component: UpdateEmployee},
+		{path: 'delete-employee', component: DeleteEmployee},
+	]
+	--
+	Add RouterModule in imports array of app.module.ts
+	imports: [
+	RouterModule.forRoot(routes)
+	]
+	--
+	Add router-outlet directive in app.component.html
+	<router-outlet></router-outlet>
+	
+128	Navigating with Router Links
+	create a navigation component
+	href
+		<a class="dropdown-item" href="/searh-employees">View Employees</a>
+		<a class="dropdown-item" href="/view-employee">Edit Employee</a>
+		<a class="dropdown-item" href="/create-employee">Create Employee</a>
+	Note: problem with href is, it will refresh entire page
+	routerLink
+		<a class="dropdown-item" routerLink="/searh-employees">View Employees</a>
+		<a class="dropdown-item" routerLink="/view-employee">Edit Employee</a>
+		<a class="dropdown-item" routerLink="/create-employee">Create Employee</a>
+	
+129 : Understanding Navigation Paths
+130 : Styling Active Router Links
+131 : Navigating Programmatically
+132 : Using Relative Paths in Programmatic Navigation
+133 : Passing Parameters to Routes
+134 : Fetching Route Parameters
+135 : Fetching Route Parameters Reactively
+136 : An Important Note about Route Observables
+137 : assing Query Parameters and Fragments
+138 : Retrieving Query Parameters and Fragments
+139 : Practicing and some Common Gotchas
+140 : Setting up Child (Nested) Routes
+141 : Using Query Parameters - Practice
+142 : Configuring the Handling of Query Parameters
+143 : Redirecting and Wildcard Routes
+145 : Outsourcing the Route Configuration
+146 : An Introduction to Guards
+147 : Protecting Routes with canActivate
+148 : Protecting Child (Nested) Routes with canActivateChild
+149 : Using a Fake Auth Service
+150 : Controlling Navigation with canDeactivate
+151 : Passing Static Data to a Route
+152 : Resolving Dynamic Data with the resolve Guard
+153 : Understanding Location Strategies
+154 : Wrap Up
+How you implenented navigation in your application?
+Using Angular RouterModule
+	
+	
+	
+	
