@@ -5,6 +5,11 @@ HTML attributes
 	Attributes usually come in name/value pairs like: attribute-name="attribute-value".
 	Example:
 	<human name="" dob="" fn="" ln=""></human>
+	Attributes are two types
+		Global attributes
+			id, class, sytle and etc...
+		Local attributes
+			src, href, alt and etc...
 --
 href attributes
 	The <a> tag defines a hyperlink. The href attribute specifies the URL of the page.
@@ -53,11 +58,11 @@ Single or Double Quotes
 --
 What is difference between Absolute URL and Relative URL?
 Absolute URL
-	Links to an external image that is hosted on the another website.
+	Links to an external resource that is hosted on the another web application.
 	Example:
-		src="https://www.W3Schools.com/images/img_girl.jpg".
+		src="https://www.W3Schools.com/images/img_girl.jpg"
 Relative URL
-	Links to an image that is hosted within the website. Here the URL does not include the domain name.
+	Links to a resource that is available in our application. Here the URL does not include the domain name.
 	If the URL begins without a slash, it will be relative to the current page.
 	Example:
 		src="img_girl.jpg"

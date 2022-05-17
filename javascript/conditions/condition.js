@@ -8,42 +8,42 @@ function main(){
 	//elseIfLadder();
 	switchCaseBreakCondtion();
 }
-//
+
 function ifTrue(){
-	if (true) {
-		console.log("true condition");
+	if (1==1) {
+		console.log("ifTrue() true Condition");
 	}
 }
 function ifFalse(){
-	if (false) {
-		console.log("true condition");
+	if (1==2) {
+		console.log("ifFalse() false condition");
 	}
 }
 function ifElseTrue(){
-	if (true) {
-		console.log("true condition");
+	if (1==1) {
+		console.log("ifElseTrue true condition");
 	}
 	else {
-		console.log("false condition");
+		console.log("ifElseTrue false condition");
 	}
 }
 function ifElseFalse(){
-	if (false) {
-		console.log("true condition");
+	if (1==2) {
+		console.log("ifElseFalse true condition");
 	}
 	else {
-		console.log("false condition");
+		console.log("ifElseFalse false condition");
 	}
 }
 
 function ifCondition() {
-	var age = 17;
+	let age = 17;
 	if (age>=18) {
 		console.log("you are eligible to apply for Driving Licence");
 	}
 }
 function ifElseCondition() {
-	var age = 19;
+	var age = 16;
 	if (age>=18) {
 		console.log("you are eligible to apply for Driving Licence");
 		}
@@ -53,6 +53,7 @@ function ifElseCondition() {
 }
 function elseIfLadder() {
 	const time = new Date().getHours();
+	//const time = 23;
 	let greeting;
 	if (time<10) {
 		greeting = "Good Morning";

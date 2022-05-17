@@ -1,6 +1,6 @@
 The HTML Style Attribute
-	Setting the style of an html element can be done by using style Attribute
-	The HTML style Attribute has the following syntax:
+	Setting the style of an html element can be done by using style attribute
+	The HTML style attribute has the following syntax
 		<tagname style="property:value;">
 --
 Background color

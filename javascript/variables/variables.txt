@@ -1,17 +1,22 @@
 What are identifiers?
-	All javascript varable-names are must be identified with unique-names, these unique-names are called identifiers.
+	All javascript varable-names are must be identified with unique-names, 
+	these unique-names are called identifiers.
 --
 What are the rules for declaring identifiers?
-	contain digits (0-9), letters (a-z,A-Z), underscores (_) and dollar ($) signs.
-	can't start with digits.
-	can start with letters, _ , $.
-	case sensitive.
+	Contain digits (0-9), letters (a-z,A-Z), underscores(_) and dollar($) signs.
+	Can't start with digits.
+	Can start with letters _, $.
+	Case sensitive.
 	reserved words are not allowed.
 --
 What are Variables?
-	Variables are containers or storage-location for storing the values
+	Variables are containers or storage-location for storing the values.
+	Example:
+		x = 123;
+		y = 124;
+		z = x + y;
 --
-In how many ways we can declare Javascript Variables?
+In how many ways we can declare variables in javascript?
 	4 Ways
 		nothing
 		var
@@ -35,15 +40,16 @@ var
 		var firstName;
 --
 What is undefined?
-	A variable declared without a value will have the value undefined.
+	A variable declared without a value will have the value is undefined.
+	A variable declared without a value will have the type is undefined.
 --
 What is NaN?
 	NaN is short for "Not-a-Number".
 	NaN is a number that is not a legal number.
 --
 What are disadvantages of using var?
-	re-declaration is possible
-	usage before declaration is possible
+	varaible re-declaration is possible
+	variable usage before variable declaration is possible
 When to use var?
 	We should not use var, use let and const.
 	If you want run your code in older browser, you must use var.

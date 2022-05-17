@@ -1,10 +1,10 @@
 "use strict"
 function constVariable(){
-	constInitialization();
+	//constInitialization();
 	constAssignment();
-	constHoisting();
-	constBlockScope();
-	constRedeclarationAndBlockScope();
+	//constHoisting();
+	//constBlockScope();
+	//constRedeclarationAndBlockScope();
 }
 function constRedeclaration(){
 	var a = 1;
@@ -20,10 +20,10 @@ function constInitialization(){
 	const NUM1 = 2; // declaration + initialization
 }
 function constAssignment(){
-	let num1; // declare
-	num1 = 1; // define
+	let num1 = 1; // declaration + initialization
 	const NUM1 = 2; // declaration + initialization
-	//NUM1 = 3; // TypeError: Assignment to constant variable.
+	num1 = 3; // re-assignment is possible
+	NUM1 = 4; // TypeError: Assignment to constant variable.
 }
 function constHoisting(){
 	c = a + b;

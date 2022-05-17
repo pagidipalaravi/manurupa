@@ -1,0 +1,8 @@
+ngOnit()				Called once the component is initialized.
+ngOnChanges() 			Called after a bound input property changes.
+ngDoCheck()				Called during every change detection.
+ngAfterContentInit		Called after content (ng-content) has projected into.
+ngafterContentChecked	Called every time the projected content has been checked.
+ngAfterViewInit			Called after component’s view and child views has been initialized.
+ngAfterViewChecked		Called every time the view and child view has been checked.
+ngOnDestroy()			Called once the component is about to be destroyed.

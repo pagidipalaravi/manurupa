@@ -1,15 +1,17 @@
 function loops() {
 	console.log("main method");
-	forLoop1();
+	//forLoop1();
 	//forLoop2();
 	//forLoop3();
 	//forLoop4();
 	//forLoop5();
+	infiniteForLoop();
 }
 
 function forLoop1() {
-	for (let i=1;i<=10;i++) {
-		console.log("This is my logic i want to execute 10 times"+i);
+	for (let i = 0; i <= 10; i++) {
+		console.log("This is my logic i want to execute 10 times "+i);
+		//i= i+2;
 	}
 }
 function forLoop2() {
@@ -17,7 +19,7 @@ function forLoop2() {
 	let carsString="";
 	for ( let i = 0; i < cars.length; i++ ) {
 		console.log(cars[i]);
-		carsString = carsString+cars[i];
+		carsString = carsString+ " " +cars[i];
 	}
 	console.log(carsString);
 }
@@ -35,23 +37,24 @@ function forLoop4() { // use 'for in' to get properties of  objects;
 	const employee = {employeeId:"101", firstName:"Ravi", lastName:"Pagidipala"};
 	let text = "";
 	let property;
-	for (property in employee ) {
+	for (property in employee) {
 		text += employee[property] + "<br>";
 	}
+	
 	document.getElementById("cars").innerHTML = text;
 }
 
 function forLoop5() {//  use 'for of' to iterate arrays
 	const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 	let text = "";
-	let car; 
-	for (car of cars ) {
+	let car;
+	for (car of cars) {
 		text += car + "<br>";
 	}
 	document.getElementById("cars").innerHTML = text;
 }
 
-/*
+
 function infiniteForLoop() {
 	const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 	let text = "";
@@ -59,12 +62,11 @@ function infiniteForLoop() {
 	for (let i = 0;  i < cars.length;  i--) {
 		text += "Hello" + "<br>";
 		console.log("Hello");
-		document.getElementById("demo").innerHTML = text;
+		document.getElementById("cars").innerHTML = text;
 	}
 }
 
-
-function forLoop( ; ; ) {
+function forLoop() {
 	const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 	let text = "";
 	console.log(cars.length);
@@ -80,5 +82,3 @@ function forLoop( ; ; ) {
 	}
 	document.getElementById("demo").innerHTML = text;
 }
-
-*/

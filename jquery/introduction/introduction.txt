@@ -1,0 +1,44 @@
+Can JavaScript change HTML content?
+	Yes, we can change HTML content by using the function/method getElementById().
+	What is getElementById()?
+		It is a pre-defined function available in javascript
+		By giving an id="value", we can get an element from the html page.
+	What is innerHTML?
+		It defines the content between start tag and end tag of an element
+	Example
+	document.getElementById('fname').innerHTML = 'kumar';
+--
+Can JavaScript Change HTML Attribute Values?
+	Yes,it can change the attribute values.
+	Example
+	document.getElementById('myImage').src='pic_bulboff.gif';
+--
+Can JavaScript Change CSS Styles?
+	Yes,it can change the  HTML Styles.
+	Example
+	document.getElementById('demo').style.fontSize = '35px';
+--
+Can JavaScript Hide HTML Elements?
+	Yes, it can hide elements by changing the display style as none.
+	It can show hidden elements by changing the display style as "block".
+	Example
+	document.getElementById("demo").style.display = "none";
+	Example
+	document.getElementById("demo").style.display = "block";
+--
+What is the use of <script> Tag?
+	In HTML, JavaScript code is inserted between <script> and </script> tags.
+	You can place any number of scripts in an HTML document.
+	Scripts can be placed in the <body> or in the <head> section or in both.
+Define External JavaScript?
+	Scripts can also be placed in external files
+	To use an external script, put the name of the script file in the src attribute of a <script> tag.
+	JavaScript files have the extension of .js.
+	You can place an external script reference in <head> or <body> as you like.
+What are the Advantages of External JavaScript?
+	It separates HTML and JS code.
+	It makes HTML and JavaScript easier to read and maintain.
+	Cached JavaScript files can speed up page loads.
+	
+FAQS
+	What is diffrence between display:none and visibility:hidden?

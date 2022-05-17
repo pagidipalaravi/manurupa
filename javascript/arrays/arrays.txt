@@ -1,20 +1,20 @@
 What is an array?
-	An array is a special variable, which can hold more than one value
+	An array is a special variable, which can hold more than one value.
 Syntax:
 	varType arrayName = [];
-	varType arrayName = ["value1","value2","value3"];
+	varType arrayName = ["value1", "value2", "value3"];
 Example:
 	let employeesArray = [];
 	let employeesArray = ["Sai","Raja","Bharath"];
 --
 Why Use Arrays?
-If you want to group list of similar items we use arrays.
+If you want to group similar items we use arrays.
 	Example:
-	let employeesArrat = ["Sai","Raja","Bharath"];
+	let employeesArray = ["Sai", "Raja", "Bharath"];
 --
 How to create Array with empty value?
-	const employees = [];
-	const employees = new Array();
+	let employees = [];
+	let employees = new Array();
 The two examples above do exactly the same, There is no need to use new Array().
 For simplicity, readability and execution speed, use the array literal method.
 --
@@ -29,9 +29,9 @@ How to create an array with new Keyword?
 How to get the values from array?
 	By using the index
 	let employeesArray = ["Sai","Raja","Bharath"];
-	Syntax
+	Syntax:
 		varType varName = arrayName[index];
-	Example
+	Example:
 		let emp1 = employeesArray[0];
 		let emp2 = employeesArray[1];
 --
@@ -78,10 +78,9 @@ How to add elements
 	employeesArray.push("Bharath");// recommended
 	arrayName[index] = "Bharath"; // not recomended
 --
-What is the Difference Between Arrays and Objects
-	arrays use numbered indexes, objects use named indexes.
+What is the Difference Between Arrays and Objects?
+	arrays use numbered indexes, objects uses named indexes.
 --
-When to Use Arrays. When to use Objects.
-	use objects when you want the element names to be strings
-	use arrays when you want the element names to be numbers
+When to Use Arrays. When to use Objects?
+arrays for grouping the values, object for grouping values in the format of propery and value pair;
 --

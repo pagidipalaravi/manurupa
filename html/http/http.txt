@@ -1,0 +1,52 @@
+What is HTTP?
+	The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.
+	HTTP works as a request-response protocol between a client and server.
+Example: 
+	A client (browser) sends an HTTP request to the server;
+	then the server returns a response to the client. 
+	The response contains status information about the request and 
+	may also contain the requested content.
+--
+What are different methods are available in HTTP?
+	get
+	post
+	put
+	delete
+	Head
+	patch
+	update
+--
+What is the difference between get and post?
+
+What is GET Method?
+	Appends the form data to the URL in name and value pairs.
+	Never use GET method to send sensitive and secure data.
+	The length of a URL is limited up to 2048 characters.
+	Use get method to get the data from the server.
+--
+What is POST Method?
+	Appends the form data inside the body of the HTTP request.
+	Use POST method to send sensitive, secure and large amounts of data.
+	It has no size limitations.
+What is the PUT method?
+	POST is used to send data to a server to create/update a resource.
+	PUT requests are idempotent.
+--
+What is the difference between post and put?
+	We will use POST to create the new record.
+	We will use PUT to update the new record.
+	
+	The difference between POST and PUT is that PUT requests are idempotent.
+What is idempotent?
+	Calling PUT request multiple times will always produce the same result.
+	calling POST request multiple times have side effects of creating the same resource multiple times.
+--
+DELETE Method?
+	The DELETE method deletes the specified resource.
+--
+What are HTTP status codes?
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+Reference
+https://www.w3schools.com/tags/ref_httpmethods.asp
+What is the difference between patch and put?

@@ -1,20 +1,21 @@
-Fo Loop
+What is for loop?
+
 Syntax:
 
-for (initialization;condition;increment/decrement){
+for (initialization; condition; increment/decrement) {
 	// write your code it may be single line or 100 lines
+	//it will execute multiple time based upon the the condition
 }
 Example:
-for (let i=0;i<=10;i++;) {
-	console.log("This is my logic i wnat to execute 10 times");
+
+for (let i = 0; i < 10; i++) {
+	console.log("This is my logic i want to execute 10 times"+i);
+	
 }
+// array index = 5 length = 6;
 
-for (initialization;condition;increment/decrement) {
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
-}
-
-const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];// array
-
-for (let i = 0 ;i <= cars.length; i++) {
-
+for (let i = 1 ; i < cars.length; i++) {
+	console.log(cars[i]);
 }

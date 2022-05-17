@@ -1,46 +1,155 @@
 table, th, td {
-	border: 1px solid black;
-	border-collapse: collapse;
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-   
-  }
-  
-  .topnav {
+}
+
+.topnav {
     overflow: hidden;
     background-color: rgb(37, 26, 190);
     position: sticky;
-  }
-  #login{
-      float: right;
-      margin-right: 80px;
-  }
-  .topnav a {
+}
+#login {
+    float: right;
+    margin-right: 80px;
+}
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-   .topnav a:hover {
+}
+
+.topnav a:hover {
     background-color: rgb(189, 184, 184);
     color: black;
-  }
-  
-  .topnav a.active {
+}
+
+.topnav a.active {
     background-color: #e6b05f;
     color: rgb(77, 67, 67);
-  }
- .image{
-  background-image: url(/images/hr1.jpg);
-  background-color: #cccccc;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: inherit;
- }
+}
+.image {
+    background-image: url(../images/hr1.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: inherit;
+}
+* {
+    margin: 0px;
+}
+input {
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(255, 0, 200);
+    color: white;
+}
+.employeeForm {
+    margin-left: 2px;
+}
+p {
+    color: red;
+    text-align: center;
+}
+.column {
+    border: 1px solid black;
+    text-align: center;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .column {
+        float: left;
+        width: 99%;
+        border-collapse: collapse;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    .column {
+        float: left;
+        width: 49%;
+    }
+}
+@media screen and (min-width: 1023px) {
+    .column {
+        float: left;
+        width: 33%;
+        text-align: left;
+    }
+}
+.hide-msg {
+    visibility: hidden;
+}
+.error-msg {
+    visibility: visible;
+    color: red;
+}
+.success-msg {
+    visibility: visible;
+}
+
+.center {
+    text-align: center;
+}
+.btn {
+    background-color: rgb(14, 226, 29);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* Remove default arrow */
+    background-image: url(...); /* Add custom arrow */
+    border-radius: 3px;
+    background-color: white;
+}
+form {
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid white;
+    justify-content: center;
+}
+.log-div {
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    background-color: #f1f0eb;
+    text-align: center;
+}
+.hide-msg {
+    visibility: hidden;
+}
+.error-msg {
+    visibility: visible;
+    color: red;
+}
+.success-msg {
+    visibility: visible;
+    color: green;
+}

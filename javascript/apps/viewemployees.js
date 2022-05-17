@@ -17,17 +17,12 @@ function viewEmployees(){
 	{"employeeId":110,"firstName":"John","lastName":"Chen","email":"JCHEN","phoneNumber":"515.124.4269","hireDate":"2005-09-28","salary":8200.0,"jobId":"FI_ACCOUNT","commisionPct":null,"managerId":108,"departmentId":100}
 	]
 	// insert table into div
-	var table = "";
-	var header = "";
-	var rows = ""; 
+	var table = "";var header = "";var rows = ""; 
 	// create header and insert heading into it.
 	var header = "<tr><th>Employee Id</th> <th> First Name</th> <th>lastName</th> <th> Email</th> <th>Phone Number</th> <th>Hire Date</th> <th>Salary</th> <th>Job Id</th> <th>Commision Pct</th> <th>Manager Id</th> <th>Departement Id</th></tr>";
 	// created loop to retrive the data from the arrayOfEmployeesObject.It also create the row
 	for(var i = 0; i < arrayOfEmployeesObject.length; i++){
-		var employeeId = arrayOfEmployeesObject[i].employeeId;
-		var firstName = arrayOfEmployeesObject[i].firstName; 
-		var lastName = arrayOfEmployeesObject[i].lastName;
-		var email = arrayOfEmployeesObject[i].email;
+		var employeeId = arrayOfEmployeesObject[i].employeeId;var firstName = arrayOfEmployeesObject[i].firstName; var lastName = arrayOfEmployeesObject[i].lastName; var email = arrayOfEmployeesObject[i].email;
 		var phoneNumber = arrayOfEmployeesObject[i].phoneNumber;
 		var hireDate = arrayOfEmployeesObject[i].hireDate;
 		var salary = arrayOfEmployeesObject[i].salary;

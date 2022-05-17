@@ -5,14 +5,15 @@
       <meta name="viewpoint" content="width-divice-width, intial-scale = 1.0">
       <link rel="stylesheet" href="../css/hrms.css">
    </head>
-   <body onload="viewEmployees();">
+   <body>
       <div class="topnav">
          <a class="active" href="home.html">Home</a>
          <a href="createemployee.html">Create Employee</a>
          <a href="viewemployees.html">View Employee</a>
          <a href="editemployee.html">Edit Employee</a>
       </div>
-      <div id="showData">
+	  <!--static data or hard coded data-->
+      <div id="static-table">
          <table>
             <tbody>
                <tr>
@@ -181,7 +182,12 @@
                   <td>null</td>
                   <td>108</td>
                   <td>100</td>
-                  <td><a href="editemployee.html"><input id="109" type="button" onclick="readValue()" value="Edit"></a><input type="button" value="Delete"></td>
+                  <td>
+						<a href="editemployee.html">
+							<input id="109" type="button" onclick="readValue()" value="Edit">
+						</a>
+						<input type="button" value="Delete">
+				</td>
                </tr>
                <tr>
                   <td>110</td>

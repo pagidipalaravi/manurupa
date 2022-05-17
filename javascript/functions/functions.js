@@ -1,50 +1,60 @@
 function calculate(operator){
-	let sign = operator;
+	let a3 = operator;
 	let s1 = document.getElementById("n1").value;
 	let s2 = document.getElementById("n2").value;
-	let n1 = parseInt(s1);
-	let n2 = parseInt(s2);
-	calculateNode(n1, n2, sign)
+	let a1 = parseInt(s1);
+	let a2 = parseInt(s2);
+	let r1 = calculateNode(a1, a2, a3);// function calling
+	document.getElementById("res").innerHTML = r1;
 }
 
-function calculateNode(n1, n2, sign){
-	switch(sign){
+function calculateNode(p1, p2, p3){
+	let result;
+	switch(p3){
 		case '+': {
-			addition(n1, n2)
+			 result = addition(p1, p2);
+			 return result;
 		break;	
 		}
 		case '-': {
-			substraction(n1, n2);
+			result = substraction(p1, p2);
+			return result;
 		break;	
 		}
 		case '*': {
-			multiplication(n1, n2);
+			result = multiplication(p1, p2);
+			return result;
 		break;	
 		}
 		case '/': {
-			division(n1 ,n2 );
-		break;	
+			result = division(p1 ,p2 );
+			return result;
+		break;		
 		}
-	}
+	}// break;
 }
 
-function addition(n1, n2) {
-	let res = n1 + n2;
+function addition(p1, p2) {
+	let res = p1 + p2;
 	console.log(res);
+	return res;
 }
 
-function substraction(n1, n2) {
-	let res = n1 - n2;
+function substraction(p1, p2) {
+	let res = p1 - p2;
 	console.log(res);
+	return res;
 }
 
-function multiplication(n1, n2) {
-	let res = n1 * n2;
+function multiplication(p1, p2) {
+	let res = p1 * p2;
 	console.log(res);
+	return res;
 }
 
-function division(n1, n2 ) {
-	let res = n1 / n2;
+function division(p1, p2 ) {
+	let res = p1 / p2;
 	console.log( res);
+	return res;
 }
 calculateNode(123,123,'*');

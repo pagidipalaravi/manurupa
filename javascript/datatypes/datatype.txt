@@ -1,19 +1,22 @@
 What are Data Types?
 	Javascript variables can hold different datatypes such as 
+	
 	number
 	bigint
 	string 
-	boolean 
-	objects 
-	and many more.
+	boolean
+	
+	arrays
+	objects
+	and many more
 number
 	Range
 		[+(253-1) to (-253-1)]
 		9007199254740991 to -9007199254740991
 	syntax:
-		varaiable_type variable_vaule = number;
+		varaiable_type variable_name = number;
 	Exapmple:
-		let n1 = 123456789;
+		let  number n1 = 123456789;
 bigint
 	Range
 		[]

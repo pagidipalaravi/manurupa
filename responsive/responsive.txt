@@ -1,0 +1,3 @@
+What is responsive?
+What is viewport?
+What is meta tag?

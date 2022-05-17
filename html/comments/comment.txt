@@ -14,6 +14,6 @@ HTML Comments Tags
 FAQ	
 What are usages of comments in html?
 2 usages
-	1 if you comment code that will not be executed by the browser
-	2 it will gives the addtional information to ohter developers, what is the purpose of the code.
+	If you comment code. that will not be executed by the browser
+	It will gives the addtional information to ohter developers, what is the purpose of the code.
 

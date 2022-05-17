@@ -1,0 +1,144 @@
+Array Object:
+	The Array object is used to store multiple values in a single variable.
+	syntax:
+		const array = ["value1","value2"];
+	Example:
+		const cars = ["saab","valvo","bmw"];
+		console.log(cars);	
+concat():
+		concat method concatenates two or more arrays.
+		concat method does not change the existing arrays.
+		syntax:
+			const Name = array1.concat(array2); 
+		example for concatenates two arrays:
+			const arr1 = ["Cecilie", "Lone"];
+			const arr2 = ["Emil", "Tobias", "Linus"];
+			const children = arr1.concat(arr2); 
+			console.log(children);
+		
+		example for concatenates two or more arrays:
+			const arr1 = ["Cecilie", "Lone"];
+			const arr2 = ["Emil", "Tobias", "Linus"];
+			const arr3 = ["Robin"];
+			const children = arr1.concat(arr2,arr3); 
+			console.log(children);	
+constructor:
+
+copyWithin():
+		 copyWithin method copies array elements to another position in the array.
+		 copyWithin method overwrites the existing values.
+		 copyWithin method does not add items to the array.
+		 syntax:
+			array.copyWithin(target, start, end);
+		 Example:
+			const fruits = ["Banana", "Orange", "Apple", "Mango"];
+			fruits.copyWithin(2, 0);
+			
+entries():
+		 entries method returns an Array Iterator object with key/value pairs.
+		 entries method does not change the original array.
+		 syntax:
+			array.entries();
+		Example:
+			const fruits = ["Banana", "Orange", "Apple", "Mango"];
+			const friut = fruits.entries();
+			console.log(fruit);
+			
+every():
+			 every method executes a function for each array element.
+			 every method returns true if the function returns true for all elements.
+			 every method returns false if the function returns false for one element.
+			 Example:
+				const ages = [32, 33, 16, 40];
+				document.getElementById("demo").innerHTML = ages.every(checkAge);
+				function checkAge(age) {
+				 return age > 18;
+
+fill():
+			 fill method fills specified elements in an array with a value.
+			 fill method overwrites the original array.
+			 syntax:
+				array.fill(value, start, end);
+			Example:
+				const fruits = ["Banana", "Orange", "Apple", "Mango"];
+				const f = fruits.fill("Kiwi");
+				console.log(f);
+				
+filter():
+			 filter method creates a new array filled with elements that pass a test provided by a function.
+			 filter method does not execute the function for empty elements.
+			 filter method does not change the original array.
+			 Example:
+				 const ages = [32, 33, 16, 40];
+				 const ag = ages.filter(checkAdult);
+				 console.log(ag);
+				 function checkAdult(age) {
+				 return age >= 18;
+			 
+find():
+			 find method returns the value of the first element that passes a test.
+			 find method executes a function for each array element.
+			 returns undefined if no elements are found.
+			 does not execute the function for empty elements.
+			 does not change the original array.
+			 Example:
+				 const ages = [3, 10, 18, 20];
+				 const ag = ages.find(checkAge);
+				 console.log(ag);
+				 function checkAge(age) {
+				 return age > 18;
+				 
+findIndex():
+
+
+forEach():
+			 forEach method calls a function for each element in an array.
+			 forEach method is not executed for empty elements.
+			 
+			 Example:
+				const numbers = [65, 44, 12, 4];
+				numbers.forEach(myFunction)
+				const numb = numbers;
+				console.log(numb);
+				
+				function myFunction(item, index, arr) {
+				arr[index] = item * 10;
+				}
+array.from():
+			 from method, being a static method, is called using the Array class name.
+			 This method is used to creates a new array instance from a given array.
+			 Example:
+				let text = "ABCDEFG"
+				const myArr = Array.from(text);
+				console.log(myArr);
+
+includes():
+			includes method returns true if an array contains a specified value.
+			It returns false if the value is not found.
+			It is case sensitive.
+			syntax:
+				array.includes(element, start (or) index);
+			Example:
+				const fruits = ["Banana", "Orange", "Apple", "Mango"];
+				const fruit = fruits.includes("Banana", 0);
+				console.log(fruit);
+ 				
+indexOf():
+			 indexOf method returns the first index of a specified value.
+			 This method returns -1 if the value is not found.
+			 indexOf method starts at a specified index and searches from left to right.
+			 syntax:
+				array.indexOf(item, start);
+			Example:
+				const fruits = ["Banana", "Orange", "Apple", "Mango"];
+				let index = fruits.indexOf("Apple");
+				console.log(index)
+
+
+			 
+			 
+			 
+			 
+
+
+

@@ -1,6 +1,9 @@
 What is let?
 	let keyword was introduced in ES6 (2015).
-	it must be Declared before usage.
+	it must be Declared before usages.
 	it cannot be Redeclared.
-	it has a Block Scope.
+	it has a Block Scope. 
+	
+	
 --
+What are different types of scopes available in javascript?
