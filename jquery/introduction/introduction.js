@@ -5,6 +5,7 @@ function bulbOn() {
 	document.getElementById('p2').style.display = 'block';
 	document.getElementById('p3').style.visibility = 'visible';
 }
+
 function bulbOff() {
 	document.getElementById('p1').innerHTML='This is Bulb OFF';
 	document.getElementById('myImage').src = 'pic_bulboff.gif';
@@ -19,7 +20,7 @@ function bulbOn1() {
 	$("#p1").css("color", "yellow");
 	$("#p2").show();
 	$("#p3").show();
-	$("#p1").append("This is Added text");
+	$("#p1").append("This is appended text");
 }
 function bulbOff1() {
 	$("#p1").text("This is Bulb OFF");
@@ -27,5 +28,5 @@ function bulbOff1() {
 	$("#p1").css("color", "black");
 	$("#p2").hide();
 	$("#p3").hide();
-	$("#p1").append("This is Added text");
+	$("#p1").append("This is appended text");
 }
