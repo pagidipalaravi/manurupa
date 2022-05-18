@@ -5,6 +5,9 @@ https://wordpress.com/
 
 react and angular
 
+javascript and typescript
+ java vs c++
+
 
 action --> event --> method will executed
 
