@@ -1,0 +1,66 @@
+
+DataBinding
+Inheritence
+Interface
+Polymorphisiom
+Abstraction
+
+Parent{
+	protected savings = 20000000;
+	public earnMoney(){};
+	public getSavings(string otp){
+		if(enterOTP(otp) == true) {
+			return savings;
+		}
+		else{
+		 return "error Message";
+		}	
+	}
+	public enterOTP(string otp){
+		// write logic to validate OTP
+	}
+}
+
+Child extends Parent{
+	private mysavings = 1000000;
+}
+
+Teacher{
+	public earnMoney(){};
+}
+
+
+Student implements Teacher{
+
+public earnMoney(string "job"){
+	// Do some work and earn money;
+};
+public earnMoney((string "parttimeJOB"){){
+	// Do some work and earn money;
+};
+public earnMoney(string "investing"){
+	// Do some work and earn money;
+};
+}
+
+
+Wife{
+	Husband husband= new Husband();
+	husband.mobile;
+	//husband.savings;
+	husband.getSavings(otp);
+
+}
+==
+Parent{
+	savings = 2000000;
+	abstract earnMoney(){
+	//50%
+	return savings;
+	}
+
+Child extends Parent{
+	abstract earnMoney(){
+	//80%;
+	}
+}

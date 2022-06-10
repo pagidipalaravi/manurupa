@@ -1,0 +1,12 @@
+What is an Object?
+	Object is an instance of a class, It is a is a physical entity and it is a real world entity. without having class, we can't create an object.
+--
+How to create an instance?
+	By using new keyword, constructor
+	new Employee();
+--
+How to create an object?
+	Employee ravi = new Employee();
+==
+What is difference between instance and Object?
+//TODO

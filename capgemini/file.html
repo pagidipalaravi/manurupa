@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	
+		  <meta charset="UTF-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		  <title>File Upload JavaScript with Progress Ba</title>
+		  <link rel="stylesheet" href="file.css">
+		  <script src="file1.js"></script>
+		  
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	</head>
+	<body>
+		  <div class="top"><i class="fa fa-info-circle" aria-hidden="true" >  Multi check in </i> 
+		  <div class="wrapper">
+		  
+		 
+				<select id="cardtype" name="cards">
+						<option value="selectcard">Quick check in</option>
+						<option value="mastercard">Standard Operating Procedure</option>
+						<option value="maestro">Document Cancellation</option>
+						<option value="solo">Demo Profile</option>
+						<option value="visaelectron">Doc Auto Demo</option>
+						<option value="visadebit">Image Renditions</option>
+						<option value="visadebit">Video Renditions</option>
+						<option value="visadebit">Corretive Action</option>
+						<option value="visadebit">Email Documents</option>
+						<option value="visadebit">TB</option>
+						<option value="visadebit">Marketing</option>
+				</select>	
+				<form action="#">		
+					<input class="file-input" type="file" name="file" hidden>
+					<i class="fas fa-cloud-upload-alt"></i>
+					
+					<p>Browse File to Upload</p>
+					<input id='file-input' type='file' multiple/>
+					<button onclick="success()">Submit</button>
+					<div id='file-list-display'></div>
+				</form>
+					<section class="progress-area"></section>
+					<section class="uploaded-area"></section> 
+		  </div>
+		  </div>
+	</body>
+</html>

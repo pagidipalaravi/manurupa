@@ -1,9 +1,46 @@
-What is VPN?
-	Cisco
-	Citrix
-	FortiClient
-	Global Protect
+what is VPN?
+	VPN stands for Virtual Private Network.
+	It is a secure network as it is completely isolated from rest of the internet.
+	It refers to a safe and encrypted network that allows you to use network resources in a remote manner. 
+	The government, businesses, military can use this network to use network resources securely.
+How VPN works?
+		It hides your IP address behind its own IP address that encrypts all your communication.
+		Thus, your communication passes through a secure tunnel that allows you use network resources freely and secretly.	
+		we can see some VPN networks:   Cisco
+										Citrix
+										FortiClient
+										Global Protect
+										and many more...,
+		
+What is RDP?
+	Remote Desktop Services (RDS) known as Terminal Services in Windows Server 2008 and earlier,is one of the components of Microsoft Windows that allow a user to take control of a remote computer or virtual machine over a network connection. 
+
+
+		
+Personal Laptop	Lenovo Laptop with Windows 11
+
+Office Laptop	HP Laptop with Windows 11
+	http://aktrix.Service-now.com/
+	
+	What is VPN?
+		Cisco
+		Citrix
+		FortiClient
+		Global Protect
+		and many more...,
+	--
 	What is RDP?
-		It is a Windows OS application.
+		Dev		Windows Server 2018
+					http://bigbasket.Service-now.com/
+						128 GB RAM
+						10 TB Harddisk
+						Intel Xeon Processor 24 cores
+						20 MB Cache
+					Microsoft Visual Studio Code
+					NodeJs
+					Angular
+				Designed Multiple Users
+				It is a Windows OS application.
 Company VPN
 Client VPN
+Client bigbasket

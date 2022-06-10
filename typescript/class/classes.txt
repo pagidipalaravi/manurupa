@@ -36,28 +36,6 @@ class Employee {
 	}
 }
 ==
-what is constructor?
-	The constructor method is a special method.
-	It has to have the exact name "constructor".
-	It is executed automatically when a new object is created.
-	It is used to initialize object properties.
-	syntax:
-		class Car {
-			constructor(name, year) {
-				this.name = name;
-				this.year = year;
-					}
-				}
-	Example:
-		class car{
-			constructor(name,year){
-			 this.name = name;
-			 this.year = year;
-			}
-		}
-		let car1 = new car("volvo",2022);
-		console.log(car1.name +" "+ car1.year);
-		
 What is an Object?
 	Object is an instance of a class, It is a is a physical entity and it is a real world entity. without having class, we can't create an object.
 --

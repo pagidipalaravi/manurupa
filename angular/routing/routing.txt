@@ -11,7 +11,6 @@
 125 : Why do we need a Router
 	If we want to implement application navigation.
 127 : Setting up and Loading Routes
-
 	Import Routes, RouterMoudle from @angular/routes
 	--
 	Create Routes array in app.module.ts
@@ -23,7 +22,7 @@
 		{path: 'create-employee', component: CreateEmployee},
 		{path: 'view-employee', component: ViewEmployee},
 		{path: 'update-employee', component: UpdateEmployee},
-		{path: 'delete-employee', component: DeleteEmployee},
+		{path: 'delete-employee', component: DeleteEmployee}
 	]
 	--
 	Add RouterModule in imports array of app.module.ts
@@ -34,30 +33,113 @@
 	Add router-outlet directive in app.component.html
 	<router-outlet></router-outlet>
 	
-128	Navigating with Router Links
+128 : Navigating with Router Links
 	create a navigation component
 	href
-		<a class="dropdown-item" href="/searh-employees">View Employees</a>
+		<a class="dropdown-item" href="/searh-employee">View Employee</a>
 		<a class="dropdown-item" href="/view-employee">Edit Employee</a>
 		<a class="dropdown-item" href="/create-employee">Create Employee</a>
 	Note: problem with href is, it will refresh entire page
 	routerLink
-		<a class="dropdown-item" routerLink="/searh-employees">View Employees</a>
+		<a class="dropdown-item" routerLink="/searh-employee">View Employees</a>
 		<a class="dropdown-item" routerLink="/view-employee">Edit Employee</a>
 		<a class="dropdown-item" routerLink="/create-employee">Create Employee</a>
-	
 129 : Understanding Navigation Paths
+	Absolute Path and Relative Path
+	fully qualified path including protocal, hostname, port number and page url
+	relative to page
+		/
+		../
+		../../
+		/employees/search
+		/employess/view
+		/employees/edit
+		/employyee/create
+--
 130 : Styling Active Router Links
+
 131 : Navigating Programmatically
+	view-employee.component.html
+		use it on the view employee button click editEmployee()
+	
+	view-employee.component.ts
+	import Router ActivatedRoute from @angular/router
+	inject Router into the constructor
+	
+		editEmployee(){
+			this.router.navigate(['employee/edit']);
+		}
+	
 132 : Using Relative Paths in Programmatic Navigation
+
+	view-department.component.html
+		use it on the view department button click editDepartment()
+	
+	view-department.component.ts
+	import Router, ActivatedRoute from @angular/router
+	inject Router, ActivatedRoute into the constructor
+	
+	editDepartment(){
+		this.router.navigate(['/department/edit'], {relativeTo: this.route});
+	}
+	
 133 : Passing Parameters to Routes
+	routes: Routes = [
+		{path: '#', component: /},
+		{path: 'employee/search/' component: search.employee},
+		{path: 'employee/edit/:employeeId', component: edit.employee},
+		{path: 'employee/update/:employeeId', component: UpdateEmployee},
+		{path: 'employee/delete/:employeeId', component: DeleteEmployee}
+	]
+	--
 134 : Fetching Route Parameters
+	edit-employee.component.ts 
+		import Router, ActivatedRoute from @angular/router
+		inject Router, ActivatedRoute into the constructor
+		
+		employeeId: number;
+		ngOnInit() {
+			this.employee = {
+				employeeId: this.route.snapshot.params['employeeId'];
+			}
+			this.employeeId = this.route.snapshot.params['employeeId'];
+			}
+		getEmployee(employeeId:number) {
+			// call the service class method
+			}
+		updateEmployee(){
+		//call the service class method
+		}
+			
+		}
+	edit-employee.component.html
+	<p> User with Id {{employee.employeeId}} on view employee Page</p>
+	<p> User with Id {{employee.firstName}} on view employee Page</p>
+	<button updateEmployee()>update</button>
+	
+	
+	createDepartment(){
+		this.router.navigate(['search-department'], {relativeTo: this.route});
+	}
 135 : Fetching Route Parameters Reactively
+
 136 : An Important Note about Route Observables
 137 : assing Query Parameters and Fragments
 138 : Retrieving Query Parameters and Fragments
 139 : Practicing and some Common Gotchas
 140 : Setting up Child (Nested) Routes
+	const routes: Routes = [
+		{path: '#', component: /},
+		
+		{path: 'employee/search/' component: search.employee,
+			chileren : [
+				{path: '/edit/:employeeId', component: edit.employee},
+				{path: '/update/:employeeId', component: epdate.employee},
+				{path: '/delete/:employeeId', component: delete.employee}
+			]}
+		];
+	search.employee.component.ts
+		<router-outlet></router-outlet>
 141 : Using Query Parameters - Practice
 142 : Configuring the Handling of Query Parameters
 143 : Redirecting and Wildcard Routes

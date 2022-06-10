@@ -2,7 +2,9 @@ Javascript Hoisting
 	variable can be used before it has been declared.
 	In other words, all the declarations is moving to the top is called hoisting.
 	JavaScript hoists only applicable for declarations, not initializations.
-	In geneneral two types of hoisting is there
-	They are 
-	Javascript variable hoisting.
-	Javascript function hoisting.
+	In geneneral two types of hoisting is there 
+							variable hoisting.
+							function hoisting.
+					Example:
+						var x;    // Declare x
+						x = 5;    // Assign 5 to x	

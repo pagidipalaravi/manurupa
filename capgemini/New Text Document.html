@@ -1,0 +1,232 @@
+<html>
+<!--$include std_doctype_html_decl$-->
+
+<head>
+    <!--$include std_html_head_declarations$-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>multi_checkin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../publish/css/ikea.css" />
+</head>
+
+<body>
+    <!--$include body_def$>
+        <$include std_page_begin$>
+        <$include std_header$-->
+    <script type="text/javascript">
+        // Java script for uploading.
+        var formAlreadySubmitted = 0;
+        var timerID = null;
+        var uploadApp = null;
+        var isPreview = false;
+        var checkinService = "CHECKIN_NEW";
+        var previewService;
+        previewService = "CACHE_CHECKIN_NEW";
+        var isDCPreview = false;
+        var dcPreviewService = "DC_CACHE_CHECKIN_NEW";
+
+        function postCheckInStandard(form) {
+            isPreview = false;
+            isDCPreview = false;
+            var files = document.getElementById('files').files;
+            for (var i = 0; i < files.length; i++) {
+                console.log(files[0].name);
+
+            };
+            postCheckIn(form);
+        }
+
+
+        function postCheckIn(form) {
+            var index;
+            var value;
+            var valueCheckbox;
+            var object;
+            var primaryFile;
+            var primaryFileEnabled;
+            var msg;
+            // Set the service.
+            form.IdcService.value = checkinService;
+            valueCheckbox = null;
+            value = null;
+            value = form.primaryFile.value;
+            value = document.getElementById('files').files[0];
+            primaryFile = value;
+            if (formAlreadySubmitted == 1) {
+                alert("Check-in form has already been submitted.");
+            } else {
+                try {
+                    // Fix issue where an exception is thrown if invalid looking path is
+                    // put into a filepath in latest patched version of IE 6.
+                    formAlreadySubmitted = 1;
+                    form.submit();
+                } catch (e) {
+                    alert("Please check the file path. It may be invalid.");
+                    formAlreadySubmitted = 0;
+                }
+            }
+        }
+    </script>
+    <div class="mainContent">
+        <!--checking default metadata forms - they should not have this link-->
+        <form name="Checkin" enctype="multipart/form-data" method="post" action="/cs/idcplg">
+            <table id="std_checkin_form_table" class="idcFormTable" style="align:left;" role="presentation">
+                <tbody>
+                    <tr id="dDocAuthor-174_row" class="idcRowClass-dDocAuthor idcRequiredEntry">
+                        <td class="idcFieldCaption idcCheckinUpdateCaption"><label for="dDocAuthor-174">
+                    * Author<span class="hidden">(Required:)</span></label></td>
+                        <td class="idcFieldEntry  idcCheckinUpdateEntry">			<input id="dDocAuthor-174" type="text" name="dDocAuthor" size="30" maxlength="200" value="weblogic">
+                                
+                            
+                                    
+                        <label class="hidden" for="dDocAuthor-174_select">Options for Author</label>
+                        <span id="dDocAuthor-174_select_span">
+                        <select name="dDocAuthor_Options" id="dDocAuthor-174_select" onchange="setEditFieldWithOption(this, document.Checkin.dDocAuthor, 'combo');;">
+                      
+                        
+                        <option value="jashi5">jashi5</option><option value="l-sde-u-ptpseelm">l-sde-u-ptpseelm</option><option value="sysadmin">sysadmin</option><option value="weblogic" selected="">weblogic</option></select>
+                        </span>
+                    <script type="text/javascript">
+                        
+                        // Added as a part of fix for the bug 16562998. Selected search
+                        // value for the field is stored in the binder with key
+                        // 'fieldName:searchval'. For Expanded Query form, if the
+                        // default fieldVal is not present, use the value of
+                        // 'fieldName:searchval'.
+                        setFieldOption("dDocAuthor", "currentValue", "\"\"");
+                        setFieldOption("dDocAuthor", "defaultValue", "\"\"");
+                        setFieldOption("dDocAuthor", "defaultSelection", "\"weblogic\"");
+                        
+                           
+                        idc.log.trace("defining docAuthors inline");
+                        
+                        var p = getOrCreateSchemaArray(g_schemaDefinition.views, "docAuthors", "viewName");
+                        p.schInternalColumn = "dName";
+                        p.schLabelColumn = "dName";
+                        p.schIsClientSorted = 1;
+                        p.schClientSortField="localizedDisplay";
+                        p.schClientSortOrder="ascending";
+                        var rows = p.rows = [];
+                        r = {"dName":"jashi5","dFullName":"","dEmail":"","dUserType":"","dUserAuthType":"EXTERNAL","dUserOrgPath":"jashi5","dUserSourceOrgPath":"jpsuser","dUserSourceFlags":"0","dUserArriveDate":"{ts \'2020-12-10 07:57:32.034\'}","dUserChangeDate":"{ts \'2020-12-10 07:57:32.034\'}","dUserLocale":"English-US","dUserTimeZone":"","Display.default":"jashi5"};
+                    rows[0] = r;
+                    r = {"dName":"l-sde-u-ptpseelm","dFullName":"","dEmail":"","dUserType":"","dUserAuthType":"EXTERNAL","dUserOrgPath":"l-sde-u-ptpseelm","dUserSourceOrgPath":"jpsuser","dUserSourceFlags":"0","dUserArriveDate":"{ts \'2019-04-17 08:35:47.828\'}","dUserChangeDate":"{ts \'2019-04-17 08:35:47.828\'}","dUserLocale":"English-US","dUserTimeZone":"","Display.default":"l-sde-u-ptpseelm"};
+                    rows[1] = r;
+                    r = {"dName":"sysadmin","dFullName":"System Administrator","dEmail":"","dUserType":"","dUserAuthType":"LOCAL","dUserOrgPath":"","dUserSourceOrgPath":"","dUserSourceFlags":"0","dUserArriveDate":"{ts \'2022-03-30 09:14:58.379\'}","dUserChangeDate":"{ts \'2022-03-30 09:14:58.379\'}","dUserLocale":"","dUserTimeZone":"","Display.default":"sysadmin"};
+                    rows[2] = r;
+                    r = {"dName":"weblogic","dFullName":"","dEmail":"","dUserType":"","dUserAuthType":"EXTERNAL","dUserOrgPath":"weblogic","dUserSourceOrgPath":"","dUserSourceFlags":"0","dUserArriveDate":"{ts \'2019-03-15 11:10:26.467\'}","dUserChangeDate":"{ts \'2022-05-24 10:35:06.119\'}","dUserLocale":"English-US","dUserTimeZone":"UTC","Display.default":"weblogic"};
+                    rows[3] = r;
+                    
+                    
+                        doClientViewProcessing("docAuthors", p, rows);
+                        registerDefinition("docAuthors", 0);
+                            registerView("docAuthors",
+                                "dDocAuthor-174_select",
+                                "weblogic");
+                        idc.log.trace("done defining docAuthors");
+                        idc.log.trace("js_build_option_list() done for \"docAuthors\"");
+                        addOptionFieldForReset("dDocAuthor-174_select","dDocAuthor");
+                    </script>
+                    </td>
+                    </tr>
+                    <tr id="dSecurityGroup-175_row" class="idcRowClass-dSecurityGroup idcRequiredEntry">
+                    <td class="idcFieldCaption idcCheckinUpdateCaption"><label for="dSecurityGroup-175">
+                * Security Group<span class="hidden">(Required:)</span></label></td>
+                    <td class="idcFieldEntry  idcCheckinUpdateEntry">				
+                    <span id="dSecurityGroup-175_span">
+                    <select name="dSecurityGroup" id="dSecurityGroup-175" onchange="updateDependentChoices(this.id, 'dSecurityGroup', 1);">
+                  
+                    
+                    <option value="CUST">CUST</option><option value="FIN">FIN</option><option value="Public">Public</option><option value="RSHP">RSHP</option><option value="SHP">SHP</option><option value="Secure">Secure</option></select>
+                    </span>
+                <script type="text/javascript">
+                    
+                    // Added as a part of fix for the bug 16562998. Selected search
+                    // value for the field is stored in the binder with key
+                    // 'fieldName:searchval'. For Expanded Query form, if the
+                    // default fieldVal is not present, use the value of
+                    // 'fieldName:searchval'.
+                    setFieldOption("dSecurityGroup", "currentValue", "\"\"");
+                    setFieldOption("dSecurityGroup", "defaultValue", "\"\"");
+                    setFieldOption("dSecurityGroup", "defaultSelection", "\"\"");
+                    
+                       
+                    idc.log.trace("defining SecurityGroups inline");
+                    
+                    var p = getOrCreateSchemaArray(g_schemaDefinition.views, "SecurityGroups", "viewName");
+                    p.schInternalColumn = "dGroupName";
+                    p.schLabelColumn = "dDescription";
+                    p.schIsClientSorted = 1;
+                    p.schClientSortField="localizedDisplay";
+                    p.schClientSortOrder="ascending";
+                    var rows = p.rows = [];
+                    r = {"dGroupName":"CUST","dDescription":"Customs Documents","Display.default":"CUST"};
+                rows[0] = r;
+                r = {"dGroupName":"FIN","dDescription":"Finance documents","Display.default":"FIN"};
+                rows[1] = r;
+                r = {"dGroupName":"Public","dDescription":"The public group can not be deleted from the system","Display.default":"Public"};
+                rows[2] = r;
+                r = {"dGroupName":"RSHP","dDescription":"Restricted Shipment Documents","Display.default":"RSHP"};
+                rows[3] = r;
+                r = {"dGroupName":"Secure","dDescription":"A secure group, with restricted access","Display.default":"Secure"};
+                rows[4] = r;
+                r = {"dGroupName":"SHP","dDescription":"Shipment documents","Display.default":"SHP"};
+                rows[5] = r;
+                
+                
+                    doClientViewProcessing("SecurityGroups", p, rows);
+                    registerDefinition("SecurityGroups", 0);
+                        registerView("SecurityGroups",
+                            "dSecurityGroup-175",
+                            "");
+                    idc.log.trace("done defining SecurityGroups");
+                    idc.log.trace("js_build_option_list() done for \"SecurityGroups\"");
+                    addOptionFieldForReset("dSecurityGroup-175","dSecurityGroup");
+                </script>
+                </td>
+                </tr>
+
+                    <tr>
+                        <td style="display:none;">
+                            <input type="hidden" id="IdcService-168" name="IdcService" value="CHECKIN_NEW">
+                            <script type="text/javascript">
+                                var field = getField("IdcService-168");
+                                var params = new Array();
+                                params.loadInitialValueOnly = 1;
+                                registerViewWithArgs(null, "IdcService-168", field, "CHECKIN_NEW", params);
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr id="primaryFile-177_row" class="idcRowClass-primaryFile idcRequiredEntry">
+                        <td class="idcFieldCaption idcCheckinUpdateCaption">
+                            <label for="primaryFile-177">Upload Files</span>
+                            </label>
+                        </td>
+                        <td class="idcFieldEntry  idcCheckinUpdateEntry">
+                            <input type="file" name="primaryFile" id="files" size="35" maxlength="250" value=""
+                                multiple>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="8">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;" colspan="2">
+                            <input type="button" name="javaSubmit" value="Check In"
+                                onclick="postCheckInStandard(this.form)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <!--$include std_page_end$-->
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+What is Typescript?
+	Typescript is an Object oriented programming language and it is a super set of javascript.
+--
+What is the difference between javascript and typescript?
+	Javascript is a functional oriented programming language.
+	Typescript is an Object oriented programming language.
+	If you compile the typescript, a javascript file will be generated.
+	javascript datatypes are dynamic, typescript datatypes are static.
+	typescript is a strictly typed language.
+--
+What is the difference between angularjs and angular?
+What is the difference between angular1 and angular2?
+--
+	because of ES6 after 2015
+		we can write classes and objects in javascript also
+How to install typescript gloabally?
+	install nodejs
+	install npm
+	nodejs>npm i -g typescript
+How to check the typescript compiler version from CLI?
+	tsc -version

@@ -1,0 +1,13 @@
+What is constructor?
+	Constructor is a special type of function.
+	in typescript your constructor name must me a constructor();
+	We can define constructor with no org and with org.
+What is the use of constructor?
+	If you want initialize object properties with initial values we have to use constructor.
+How many constructors we can write in a class?
+	As many as you want, based on requirement.
+What is the  difference between the constructor and function?
+	return type
+
+
+

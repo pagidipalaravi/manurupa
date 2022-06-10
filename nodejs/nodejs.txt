@@ -3,9 +3,19 @@
 			Microsoft	Edge
 			--
 			Node		NodeJS
+			javascript
+				V8 JavaScript engine
+			C C++
+			OPCODE
+			bytes and bits 0, 1
+			hardware
+			
 --
 What is NodeJs?
 	Node.js is a JavaScript runtime, Which is built on Chrome's V8 JavaScript engine (JS Compiler)].
+--
+What is V8?
+	V8 is Google’s open source high-performance JavaScript and WebAssembly engine, written in C++. It is used in Chrome and in Node.js, among others. It implements ECMAScript and WebAssembly, and runs on Windows 7 or later, macOS 10.12+, and Linux systems that use x64, IA-32, ARM, or MIPS processors. V8 can run standalone, or can be embedded into any C++ application.
 --
 What is the use of nodeJS?
 	We can run javascript files from the the CLI by using nodejs, without having any web browser.

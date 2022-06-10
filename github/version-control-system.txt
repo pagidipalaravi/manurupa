@@ -1,15 +1,19 @@
 What is version control system?
-	A version control system is a software that tracks changes to a file or set of files over time
+	A version control system is a software that tracks changes to a file or set of files over time.
 	so that you can recall specific versions later. 
 	It also allows you to work together with other programmers.
+--
 Do you know versioning softwares?
 	Yes I know, I have an experience on versioning softwares.
+--
 What are versioning softwares that you know?
-	cvs
+	CVS
 	SVN
 	VisualSVN
+	--
 	git
-	github bitbucket gerrit
+	
+	github, bitbucket, gerrit and etc...
 What are versioning softwares that you have experienced?
 	git
 	github

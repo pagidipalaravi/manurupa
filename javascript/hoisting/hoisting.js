@@ -11,7 +11,7 @@ function hoistingFunction(){
 	// this is javascript variable hoisting
     x = 5; // initilize x
     console.log(x);
-    var x;// variable declarations moveing to the top.
+    var x;// variable declarations moving to the top.
 //javascript hoist declarations only not in initilizations.
     var y = 6;//initilize y
     var z = 7;//initilize z

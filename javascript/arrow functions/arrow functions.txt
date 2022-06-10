@@ -1,0 +1,14 @@
+what is arrow functions?
+	Arrow functions are introduced in ES6.
+	Arrow functions are anonymous functions.  
+	which provides you a more accurate way to write the functions in JavaScript. 
+	They allow us to write smaller function syntax. 
+	Arrow functions make your code more readable and structured.
+	syntax:
+		hello = () => {};
+	Example:
+		let arr = () => {
+		console.log( "Hello World!");
+		}
+		arr();
+		
