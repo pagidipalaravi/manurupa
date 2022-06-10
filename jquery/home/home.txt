@@ -41,4 +41,4 @@ What are the Advantages of External JavaScript?
 	Cached JavaScript files can speed up page loads.
 	
 FAQS
-	What is diffrence between display:none and visibility:hidden?
+	What is diffrence between display:none and visibility:hidden
