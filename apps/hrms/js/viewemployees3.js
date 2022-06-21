@@ -2,7 +2,7 @@ async function viewEmployees(){
 	let status="";
 	let message="";
 	let arrayOfEmployeesObject = [];
-	// Reading the employeee data from rest service by using axios javascript library
+	// Reading the employeee data from rest service by using AJAX or axios or javascript library
 	let response = await axios.get('http://localhost:6010/employees/');
 	debugger;
 	status = response.data.status;

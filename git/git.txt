@@ -1,0 +1,39 @@
+	download git from https://gitforwindows.org/
+	install at C:\work\git
+	
+	How to clone the the repository
+		git clone https://github.com/pagidipalaravi/manurupa.git
+	--
+	How to check current branch
+		cd manurupa
+		git branch -a
+	--
+	How to create a new branch
+		git checkout -b dev
+			It will creates a new branch and swithces to new branch
+	--
+	How to push the code to newely created branch
+		git push origin dev
+	--
+	How to check current branch
+		cd Content
+		git branch -a
+	--
+	How to create a new file
+		git-faq.txt
+	--
+	How to add a new file to repository
+		git add -A
+	--
+	How to commit the local changes to local repo
+		git commit
+	--
+	How to push local repo changes to remote repo
+		git push origin dev
+	--
+	How to pull remote repo to local repo
+		git pull origin dev
+	--
+	How to fetch local repo to local directory
+		git fetch origin dev
+	--
