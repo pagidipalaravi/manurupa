@@ -2,13 +2,13 @@ Profession	:	Software Enginner || IT Employee
 Skill		:	Web Applcation Developer || Java Fullstack Developer
 Other Skills:	100 + Skill are present
 --
-Primary Skill	: 	Frontend
-Secondary Skill	:	Middleware
-Tertiary  Skill	:	Backend
+Primary Skill	: 	Frontend 80%
+Secondary Skill	:	Middleware 50%
+Tertiary  Skill	:	Backend 50%
 ----
 	Frontend	:	View		:	Forntend Developer || User Interface Developer || UI Developer
-	Middleware	:	Controller	:	Middleware Developer ||	Java, Python C# Developer						
-	Backend		:	Model		:	Database Developer	|| 
+	Middleware	:	Controller	:	Middleware Developer ||	Java, Python, C# C++, etc... Developer						
+	Backend		:	Model		:	Database Developer	|| SQL PL/SQL 
 ======================================
 User: Browser
 ======================================

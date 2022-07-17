@@ -11,12 +11,12 @@ What are advantages of Dependency Injection?
 	To increase flexibility, reusability and modularity in your applications.
 --
 Example
-	Independent Classes
+	dependent Classes
 		CreateEmployeeComponent.ts
 		ViewEmployeeComponent.ts
 		UpdateEmployeeComponent.ts
 		SearchEmployeeComponent.ts
-	Dependent Class
+	Independent Class
 		EmployeeService.ts
 --
 How to create an injectable service?
@@ -77,10 +77,10 @@ Example
 --
 What are the services that you developed in your project?
 	Logging Service
-	Login Service
-	Users Service
+	Signin Service
+	User Service
 	Group Service
-	Roles Service
+	Role Service
 --
 How many Instances of services should it be?
 It depends where we are registering the service class
