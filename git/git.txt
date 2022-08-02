@@ -1,0 +1,115 @@
+
+Problems without VCS?
+Problem 1:
+Code in Local Machine, if system got crashed, we will lose code
+Problem 2:
+If two persons working on same file at a time, very difficult to merge
+Problem 3:
+If we are creating files like versions like v1, v2, v3 etc.., it is very difficult to maintain
+What is version Control System?
+Tracking changes that happen within directories of files
+VCS Goals
+	Allow developers to work simultaneously
+Do not overwrite
+Maintain History of every
+VCS Types
+Centralized
+	Client - Server Model
+Ex: SVN, Perforce
+Distributed
+	Client - “Local Server” - “Public Server” Model
+	Ex: GIT, Mercurial
+Central VCS
+C1 -> U1, U2, U3
+	Cons:
+If there is connection issues b/w C and U, we can’t go further
+Distributed VCS
+D1 -> L1, L2, L3 -> U1, U2, U3
+Pros:
+	If there is connection issues we can work with local VCS.
+	Once connection will works, we can work on D
+What is GIT?
+Installed locally on the developer machine
+Working Directory
+Staging Area
+Git Directory
+Installation
+//TODO
+Work with GIT
+	CLI
+	GUI
+	Eclipse
+
+Working with GIT
+	Create Local Git Repository
+	Convert Local Directory as Local Git Repository 
+
+Diff b/w git and github
+Git is local repo and github is central repo
+--
+Diff b/w full and fetch
+-
+git bash here
+git init
+	to initialize the git
+	.git folder will be created in current directory
+	create the new file readme.txt file
+Working area	->	Staging Area	->	Local Repo
+git status
+	To check the untracked files
+
+git add .
+To move untrack file from WA to SA
+git commit –m “comments”
+To commit the changes from SA to GR
+git log
+Shows the logs
+git revert id
+To go previous version
+git reset id
+--
+Login into github, create repository
+git config -global user.name “user1”
+git config -global user.email user1@mail.com
+
+git remote add origin https://github.com/user1/gitdemo.git
+git push –u origin master
+	it moves readme.txt to github
+--
+Add some lines in readme.txt
+git status
+git add readme.txt
+git commit –m “comments”
+--
+Get the changes from the github
+git bash here
+git clone https://github.com/user1/gitdemo
+--
+Branches
+
+Working with GIT GUI
+	Right click on directory
+GIT GUI Here
+Rescan
+	Scans the repository, shows the modified and changed files into un-stage area
+Stage Changed
+	Move files from un-stage to stage
+Sign Off
+Commit
+	Commit to Local Repository
+Push
+	Local /GIT to Remote/Github
+Different between Directory and Repository
+Folder
+Before Convert Local Directory as Local Git Repository
+Repository
+After Convert Local Directory as Local Git Repository
+
+
+
+
+
+
+
+
+
