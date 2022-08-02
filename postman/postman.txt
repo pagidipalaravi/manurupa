@@ -1,0 +1,21 @@
+How to consume rest services in angular? 
+	By using httpClient and rxjs module.
+	But before consume rest services, we have test the services by using postman.
+What is postman?
+	postman is a google chrome extension.
+	we can download and install in to local machine.
+	by using postman we can test all the rest services.
+Is it only postman tool for testing rest services?
+	No,there are many tools but i have experince on postman.
+	there is one more tool to test rest services is soapUi.
+--
+postman		angular
+
+postman		HttpClient
+get			get
+baseURL		baseURL
+wait		rxjs
+Response	Observer	
+
+Javascript	Java
+won't Wait	Wait

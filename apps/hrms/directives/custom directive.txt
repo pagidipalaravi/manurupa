@@ -1,0 +1,36 @@
+                      //***Creating AttributeCustom Directive****//
+					 
+step1:
+	Create an colorChange.directive.ts(create your own custom directive name) file in src/app folder.
+	command:
+			ng g directive directiveName     Ex:colorChange
+			
+	//** To create custom directive in angular like this**//	
+			import { Directive } from '@angular/core';
+			@Directive({
+				selector: '[appColorChange]'
+			})
+			export class ColorChangeDirective {
+				constructor() {}
+			}
+			
+step2:
+	Now to get colorChange Directive to work,
+	we need to add our Directive to the declarations array in the app.module.ts file.
+	
+		1. import { colorChangeDirective } from './app-highlight.directive';
+		
+		2. @NgModule({
+					declarations: [AppComponent,colorChangeDirective],
+					})
+step3:
+	next import the ElementRef in colorChange Directive.
+	
+	import { Directive, ElementRef } from '@angular/core';
+	
+ste4:
+	Now we are going to use our newly created custom directive.
+	I am adding the appColorChange directive in the app.
+	component.html but you can use it anywhere in the application.
+	example:
+		<h1 appColorChange>Custom Directives in angular</h1>

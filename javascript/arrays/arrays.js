@@ -2,6 +2,15 @@ function main() {
 	emptyArray();
 	arrayWithValues();
 	employeeArray();
+	emptyArrayWithNewKeyWord();
+	arrayWithNewKeyWord();
+	updateArray();
+	arrayType();
+	arrayLength();
+	arrayFirstElement();
+	arrayLastElement();
+	iterateArray();
+	 add();
 }
 function emptyArray(){
 	const cars = [];
@@ -13,17 +22,21 @@ function arrayWithValues(){
 }
 function employeeArray() {
 	let employeesArray = ["Sai","Raja","Bharath"];
+	console.log(employeesArray);
 }
 function emptyArrayWithNewKeyWord(){
 	let array = new Array();
+	console.log(array);
 }
 function arrayWithNewKeyWord(){
 	let array = new Array("Ravi", "Raja", "Praneeth" );
+	console.log(array);
 }
 
 function updateArray(){
 	let employeesArray = ["Sai","Raja","Bharath"];
 	employeesArray[0] = "Nani";
+	console.log(employeesArray);
 }
 function arrayType(){
 	let array = [];

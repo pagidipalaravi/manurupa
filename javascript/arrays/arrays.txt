@@ -70,13 +70,15 @@ How to access/iterate all elements from array?
 	//TODO we did it in loops
 --
 How to add elements
+	By using Shift method
 	By using push method
+	By using splice method
 	Syntax
-	arrayName.Push("value");
-	arrayName[index] = value;
+	arrayName.push("value");
+	arrayName.shift("value");
 	Example
 	employeesArray.push("Bharath");// recommended
-	arrayName[index] = "Bharath"; // not recomended
+	
 --
 What is the Difference Between Arrays and Objects?
 	arrays use numbered indexes, objects uses named indexes.
@@ -84,3 +86,4 @@ What is the Difference Between Arrays and Objects?
 When to Use Arrays. When to use Objects?
 arrays for grouping the values, object for grouping values in the format of propery and value pair;
 --
+		

@@ -4,7 +4,7 @@
 	//concat();
 	//copyWithin();
 	//entries();
-	//every();
+	 every();
 	//every1();
 	//fill();
 	//fill1();
@@ -14,7 +14,7 @@
 	//forEach();
 	//arrayFrom();
 	//includes();
-	indexOf();
+	//indexOf();
 }
 function emptyArray(){
 	const cars = [];

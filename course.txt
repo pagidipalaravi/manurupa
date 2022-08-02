@@ -1,11 +1,13 @@
 Profession	:	Software Enginner || IT Employee
-Skill		:	Web Applcation Developer || Java Fullstack Developer
+Skill		:	Web Applcation Developer || Java Fullstack Developer (Java, Python C#)
 Other Skills:	100 + Skill are present
+==
+Web Applcation Developer
 --
 Primary Skill	: 	Frontend
 Secondary Skill	:	Middleware
 Tertiary  Skill	:	Backend
-----
+--
 	Frontend	:	View		:	Forntend Developer || User Interface Developer || UI Developer
 	Middleware	:	Controller	:	Middleware Developer ||	Java, Python C# Developer						
 	Backend		:	Model		:	Database Developer	|| 
@@ -15,7 +17,7 @@ User: Browser
 Frontend : Frontend Developer
 Languages
 	HTML		Angular Framework -- AngularJs Framework
-	CSS			Bootstrap Framework
+	CSS			Bootstrap Framework -- 
 	Javascript	NodeJS Framework	-	Typescript
 	--
 	HTML : RawContent

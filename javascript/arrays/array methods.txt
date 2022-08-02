@@ -1,0 +1,30 @@
+Converting to array to string?
+	The javascript method toString() converted into the string and the array values separated by the comma.
+Syntax: const fruits = ["Banana","Apple","Mango","Kiwi"];
+		document.getElementById("fruits").innerHTML=fruits.toString();
+---
+What is pop?
+	The pop() method remove the last element from an array.
+Syntax:	const employees= ["charan","ravi","chakri"];
+		let employees = employees.pop();
+---
+What is push()?
+	The push() method adds a new element to an array at the end.
+Syntax: const employees = ["Ravi", "sampath", "srinivas", "chakri"];
+				let length = employees.push("charan");
+---
+What is Arry shift?
+	The shift() method removes the first array element and "shifts" all other elements to a lower index.
+Syntax: const employees = ["bharath", "sampath", "ravi", "charan"];
+			let employees = employees.shift();	
+---
+What is Array unshift()
+	The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.
+Syntax: const employees = ["bharath", "sampath", "ravi", "charan"];
+			let employees = employees.unshift();	
+---
+What is Array length?
+	The length property provides an easy way to append a new element to an array.
+Syntax: const employees = ["Ravi", "sampath", "srinivas", "chakri"];
+				let employees[employees.length] = "sampath";	
+				console.log(employees);
