@@ -1,6 +1,0 @@
-What is arrow functions?
-	annonymous/name-less functions, we will use => symbol to write the arrow function.
-What is the use of arrow function?
-	If we want to write a function within in a function with short syntax and that function cannot be reusable,
-	then use the arrow function.
-	

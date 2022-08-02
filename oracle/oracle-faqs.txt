@@ -1,27 +1,32 @@
-HOW TO CONNECT ORACLE DATABASE In WINDOWS 10 ?
-	Press Window + S, then it will opens the search bar
-	Type sql in the search bar then it will show SQL command line application.
-	Click on SQL command line application
-	Then it will open sql command line application in the command prompt
+How to download oracle database?
+	//TODO
+How to install oracle database?
+	//TODO
+How to connect oracle database in windows?
+	Press Window + S, Then it will opens the search bar.
+	Type sql in the search bar, then it will show RUN SQL command line application.
+	Click on SQL command line application.
+	Then it will open sql command line application in the command prompt.
 	Then we have to connect sys user with the below command.
-	sql> conn sys as sysdba 
-	it will ask you provide the password so please provide the sys password (Oracle123) and press enter.
+	sql> conn sys as sysdba
+	it will ask you provide the password so please provide the sys password (oracle) and press enter.
 	If password is correct it will shows as connected
 --
 What is Schema? Class Teacher
 	Schema is the logical representation of a database objects.
 	It include tables, views, packages, functions, procedures, primary key, foreign key and etc...
 What is User? Teachers
-	User is  owner of the schema objects
-	we will crete users and will give permissions to access schema objects.
-What is the difference between user and schema?
+	User is owner of the schema objects
+	We will crete users and will give permissions to access schema objects.
+What is the difference between schmea and user?
+	If there is no users for Schema, then schema acts like a user.
 --
 How to connect HR Schema in Oracle database?
 	Connect Oracle database with sys user
 	Connect hr schema by typing the below command
 	sql> conn hr;
-	it will ask you provide the password so please provide the sys password (hr) and press enter.
-	If password is correct it will shows as connected
+	it will ask you to provide the password so please provide the sys password (hr) and press enter.
+	If password is correct it will shows as connected.
 --
 How to check the sysdate in oracle database?
 	sql> select sysdate from dual;
@@ -30,9 +35,9 @@ How to check the systime in oracle database?
 	Sql> select systimestamp from dual;
 --
 What is DUAL in SQL?
-It is a table that is automatically created by Oracle Database.
-DUAL is a table available in SYS schema but is accessible by the name DUAL to all users.
-It has one column, DUMMY, defined to be VARCHAR2(1), and contains one row with a value X.
+	It is a table that is automatically created by Oracle Database.
+	DUAL is a table available in SYS schema but is accessible by the name DUAL to all users.
+	It has one column, DUMMY, defined to be VARCHAR2(1), and contains one row with a value X.
 --
 How to check all the tables and views from the schema?
 Sql> select * from tab;
@@ -43,11 +48,23 @@ Syntax
 Example
 	select count(*) from tab;
 --
-How to see the table description in oracle database?
+How to see the table description in database?
 Syntax
-	Sql> desc <table name>
+	Sql> desc table_name
 Example
- Sql> desc employees;
+ Sql> desc tab;
+--
+How to unlock hr schema in oracle database?
+	ALETR USER hr IDENTIFIED BY hr ACCOUNT UNLOCK;
+How to connect hr schema?
+	Press Window + S, Then it will opens the search bar.
+	Type sql in the search bar, then it will show RUN SQL command line application.
+	Click on SQL command line application.
+	Then it will open sql command line application in the command prompt.
+	Then we have to connect sys user with the below command.
+	sql> conn hr;
+	it will ask you provide the password so please provide the sys password (hr) and press enter.
+	If password is correct it will shows as connected.
 --
 How to see all records from the table?
 	Syntax
@@ -57,7 +74,9 @@ How to see all records from the table?
 --
 How to create an schema in sql?
 	syntax:
-	create user schema identified by password;
+	create user schema_name identified by schema_password;
+	example:
+	create user erp identified by erp;
 --
 //TODO
 What is RDBMS?

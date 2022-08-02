@@ -1,0 +1,38 @@
+24. What is data binding?
+Communication between typescript and template.
+	One way binding 
+		Typescript -> template
+			String Interpolation {{data}}
+			Property Binding [property]=”data”
+		Template -> typescript
+			Event Binding (event = “expression”)
+	Two way data binding
+		[(ngModel)] = ”firstName”;
+
+
+Output static content
+Output component content
+Output service content
+	
+
+     25.	 What is string interpolation?
+Data transfer from type script to html in one direction by this technique.  {{}}
+     26. 	What is Property binding?
+Property binding allows Angular to directly access the elements property in the html. When you say [value] = "hello" Angular is grabbing the value property of the element, and setting your variable as that property's value.
+      27. 	Difference between property binding and event binding?
+If you want to output something in your template, print some text, use string interpolation.
+If you want to change some property, be that of html element or of directive, or a component, and then use property binding.
+
+      28.	 What is event binding?
+A click, hover, or a keyboard action are all events that you can use to call component logic within Angular. That's what Angular event binding is all about. It's one-way data binding, in that it sends information from the view to the component class.
+Example: (onClick)=”submit()”;
+       30. 	How to pass data with event binding?
+We will create onClick or any even action and for that, method will be passed. And that method is implemented where it is needed. When the user click on button that method will be called and the implementation logic will be executed.
+      32. 	What is two way data binding?
+The angular is not only watching your variables for changes. It also keeps track of changes that are made by the user and updates the variables accordingly. The transfer between model (typescript) and view (html) takes place at a time by the decorator ngModel
+example:     [(ngModel)] = ”firstName”;
+       33. 	Combining all forms of data binding
+	Even binding to listen to the click
+	String interpolation to output the data
+	Property binding to enable the button in the first place after some duration
+	Two way binding, to fetch ou

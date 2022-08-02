@@ -11,7 +11,7 @@
 			form, formgroup, formcontrol.
 		built-in form validations 
 			valid, touched, dirty
-
+	--
 --
 184 What are the ways to create angular forms?
 	Template Driven Forms

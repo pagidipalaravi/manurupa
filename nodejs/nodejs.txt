@@ -8,8 +8,7 @@
 			C C++
 			OPCODE
 			bytes and bits 0, 1
-			hardware
-			
+			hardware	
 --
 What is NodeJs?
 	Node.js is a JavaScript runtime, Which is built on Chrome's V8 JavaScript engine (JS Compiler)].
