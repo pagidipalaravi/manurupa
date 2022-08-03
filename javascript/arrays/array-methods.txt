@@ -1,0 +1,35 @@
+How to convert array to string?
+	toString() method converts an array to a string of comma separated array values.
+	let employees1 = ["charan","ravi","chakri","sampath"];
+	let employees2 = employees1.toString();
+--
+How to convert array to string with specific separator
+	The join() method also joins all array elements into a string
+	It behaves just like toString(), but in addition you can specify the separator
+	let employees1 = ["charan","ravi","chakri","sampath"];
+	let employees2 = employees1.join("*");
+--
+What is pop?
+	The pop() method removes the last element from an array.
+	let employees = ["charan","ravi","chakri"];
+	employees.pop();
+--
+What is push()?
+	The push() method adds a new element to an array at the end.
+	let employees = ["Ravi", "sampath", "srinivas", "chakri"];
+	employees.push("charan");
+--
+What is shift?
+	The shift() method removes the first element and "shifts" all other elements to a lower index.
+	let employees = ["bharath", "sampath", "ravi", "charan"];
+	employees.shift();	
+--
+What is unshift()
+	The unshift() method adds a new element to an array at the beginning and "unshifts" older elements.
+	const employees = ["bharath", "sampath", "ravi", "charan"];
+	let employees = employees.unshift();	
+--
+How to find array length?
+	The length property provides an easy way to append a new element to an array.
+	const employees = ["Ravi", "sampath", "srinivas", "chakri"];	
+	console.log(employees.length);
